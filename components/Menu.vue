@@ -114,7 +114,7 @@ export default {
       console.log("MENU : beforeEnter")
     },
     afterEnter(el) {
-      this.toggle();
+
       console.log("MENU : afterEnter")
       this.$gsap.set(".list", { background: '#95165d'});
 
@@ -162,6 +162,7 @@ export default {
 
     },
     enter(el, done) {
+      this.toggle();
       var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item", {type:"words,chars"}), chars = mySplitText.words;
       list.from(chars, {
         delay: 1,
