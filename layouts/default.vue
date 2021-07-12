@@ -7,9 +7,10 @@
           <p>LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - </p>
         </div>
       </div>
+      <div class="cover-wooper"></div>
     </div>
     <div class="border-bottom"></div>
-    <Logo />
+    <Logo  v-if="!this.$store.state.preloading" />
     <Menu />
     <Nuxt v-if="!this.$store.state.preloading" />
   </div>
@@ -30,7 +31,7 @@
     mounted() {
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
-        setTimeout(() => this.$nuxt.$loading.finish(), 7600)
+        setTimeout(() => this.$nuxt.$loading.finish(), 4900)
       })
 
     }

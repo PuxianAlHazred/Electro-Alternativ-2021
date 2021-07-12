@@ -133,17 +133,14 @@
 }
 
 /* Loading : SPLIT*/
-.loading_transition-leave-active,
-.loading_transition-enter-active {
+.loading_transition-leave-active {
   transition-duration: 800ms;
   background-color: transparent;
   z-index: 1007;
 
 }
 .loading_transition-leave-active::before,
-.loading_transition-leave-active::after,
-.loading_transition-enter-active::before,
-.loading_transition-enter-active::after {
+.loading_transition-leave-active::after {
   content: "";
   position: fixed;
   top: 0;
@@ -155,30 +152,12 @@
   transition-property: opacity, transform;
   transition-timing-function: ease-in-out;
 }
-.loading_transition-leave-active::before,
-.loading_transition-enter-active::before {
+.loading_transition-leave-active::before {
     background: #f9f69a;
 }
-.loading_transition-leave-active::after,
-.loading_transition-enter-active::after {
+.loading_transition-leave-active::after {
   top: 50%;
     background: #f9f69a;
-}
-.loading_transition-enter::before,
-.loading_transition-enter::after {
-  transform: scaleX(0);
-}
-.loading_transition-enter-active::before {
-  transition-duration: 800ms;
-}
-.loading_transition-enter-active::after {
-  transition-duration: 500ms;
-  transition-delay: 300ms;
-}
-.loading_transition-enter-to::before,
-.loading_transition-enter-to::after {
-  transform: scale(1);
-  transform-origin: left;
 }
 .loading_transition-leave::before,
 .loading_transition-leave::after {

@@ -9,18 +9,32 @@
       v-on:before-leave="beforeLeave"
             v-on:leave="leave"
       v-on:after-leave="afterLeave">
-      <div v-show="menu">
+      <div v-show="menu" class="content-menu">
           <ul class="list">
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/">HOME</NuxtLink>
+                <NuxtLink to="/">LE FESTIVAL</NuxtLink>
               </li>
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/artistes">ARTISTES</NuxtLink>
+                <NuxtLink to="/">ARTISTES</NuxtLink>
               </li>
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/lieux">LIEUX</NuxtLink>
+                <NuxtLink to="/">LIEUX</NuxtLink>
+              </li>
+              <li class="list-item" v-on:click="toggleMenu">
+                <NuxtLink to="/">BILLETTERIE</NuxtLink>
+              </li>
+              <li class="list-item" v-on:click="toggleMenu">
+                <NuxtLink to="/">MERCH</NuxtLink>
+              </li>
+              <li class="list-item" v-on:click="toggleMenu">
+                <div class="social">
+                  <a href="#" class="FB">FB</a>
+                  <a href="#" class="INSTA">INSTA</a>
+                  <a href="#" class="TWITTER">TWITTER</a>
+                </div>
               </li>
           </ul>
+
       </div>
     </transition>
 
@@ -54,9 +68,8 @@
       top: 0;
       right: 75px;
       margin: 0;
-      padding-left: 75px;
-      background: #f9f69a;
   }
+
   .list {
       position: fixed;
       top: 0;
@@ -90,18 +103,26 @@
       text-decoration: none;
       overflow: hidden;
   }
+  .social {
+      display: inline-flex;
+  }
+  .list-item .social a {
+      font-size: 20px;
+      margin: 0 25px;
+  }
 </style>
 <script>
 export default {
   data: () => ({
     menu: false,
-    content: false,
+    content: false
   }),
   methods: {
     appear() {
-        this.$gsap.from(".pink-panth", { opacity: 0, ease: 'power2.inOut', duration: 0.5, delay: 7.4});
+        this.$gsap.from(".pink-panth", { opacity: 0, ease: 'power2.inOut', duration: 1, delay: 5.7});
         var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".menu-span", {type:"words,chars"}), chars = mySplitText.chars;
-        t1.from(chars, {delay: 3, duration: 1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
+        t1.from(chars, {delay: 5.7, duration: 1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
+
         let menu = document.querySelector(".menu-span");
         menu.addEventListener("mouseenter", () => {
           this.$gsap.to(".menu-span", { duration: 0.5, opacity:0.5, text: "OPEN", ease: "back", stagger: 0.1});
@@ -114,7 +135,7 @@ export default {
       console.log("MENU : beforeEnter")
     },
     afterEnter(el) {
-
+      this.toggle();
       console.log("MENU : afterEnter")
       this.$gsap.set(".list", { background: '#95165d'});
 
@@ -138,12 +159,14 @@ export default {
       });
     },
     afterLeave(el) {
+
       console.log("MENU : afterLeave")
     },
     leave(el, done) {
-      console.log("CONTENT : leaave")
-      this.toggle();
-        var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item", {type:"words,chars"}), chars = mySplitText.words;
+        console.log("CONTENT : leaave")
+        this.toggle();
+
+        var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item:not(:last-child)", {type:"words,chars"}), chars = mySplitText.words;
         list.to(chars, {
           delay: 0,
           duration: 0.4,
@@ -153,6 +176,7 @@ export default {
           ease:"back",
           stagger: 0.1,
           onComplete: function () {
+            this.animation === false;
             setTimeout(function () {
               done()
             }, 2300)
@@ -162,8 +186,7 @@ export default {
 
     },
     enter(el, done) {
-      this.toggle();
-      var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item", {type:"words,chars"}), chars = mySplitText.words;
+      var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item:not(:last-child)", {type:"words,chars"}), chars = mySplitText.words;
       list.from(chars, {
         delay: 1,
         duration: 0.6,

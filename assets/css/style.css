@@ -14,7 +14,7 @@ body {
     margin: 0;
     font-family: Orchid;
     overflow-x: hidden;
-    background: #95165d;
+    background: #f9f69a;
 }
 section {
     position: relative;
@@ -46,6 +46,15 @@ section {
 }
 .border-bottom {
     bottom:0;
+}
+.cover-wooper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 75px;
+    width: 250px;
+    background: #f9f69a;
+    z-index: 6;
 }
 .wopper,
 .wopper-top {

@@ -49,9 +49,9 @@ export default {
   methods: {
     appear() {
       var h1 = this.$gsap.timeline(), mySplitText = new SplitType(".title-logo", {type:"words,chars"}), chars = mySplitText.chars;
-        h1.from(chars, {delay: 5, duration: 1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.5}, "+=0");
+        h1.from(chars, {delay: 1, duration: 1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.5}, "+=0");
       var h2 = this.$gsap.timeline(), mySplitText = new SplitType(".logo h2", {type:"words,chars"}), words = mySplitText.words;
-        h2.from(words, {delay: 2, duration: 1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
+        h2.from(words, {delay: 1, duration: 1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
     },
   },
   created() {

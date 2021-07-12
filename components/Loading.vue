@@ -57,7 +57,7 @@
     height: 0px;
     margin:0 auto;
     width: 100%;
-    animation: ani__06 5s;
+    animation: ani__06 3.4s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     transform-origin: 50% 0%;
@@ -83,23 +83,18 @@ export default {
     },
     enter() {
       console.log("enter")
-        this.$gsap.fromTo(".preloader__progress__bar",
-          {opacity: 0,  ease: 'power2.inOut'},
-          {opacity: 1,  delay: 1, ease: 'power2.inOut', duration: 0.5},
-        );
-        this.$gsap.set("body", { delay: 1, background: '#f9f69a'});
         var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".titleload", {type:"words,chars"}), chars = mySplitText.chars;
-          t1.from(chars, {delay: 0.3, duration: 0.1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
+          t1.from(chars, {delay: 0, duration: .1, opacity:0, y:-50, transformPerspective:800, transformOrigin:"center", rotationY:180,  ease:"power2.inOut", stagger: 0.1}, "+=0");
           t1.to(chars, {delay: 0, duration: 0.1, opacity:0, y:50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
 
     },
     afterEnter() {
       // Aprés avoir lancer la function Enter()
       console.log("afterEnter")
-      this.$gsap.to(".preloader__progress", { height: 300, y: -5, ease: 'power2.inOut', duration: 0.5, delay: 5});
-        this.$gsap.to(".preloader__progress__bar", { height: 300, y: -5, ease: 'power2.inOut', duration: 0.5, delay: 5});
-        this.$gsap.to(".preloader__progress", { height: 0, y: 5, ease: 'power2.inOut', duration: 0.5, delay: 6.2});
-          this.$gsap.to(".preloader__progress__bar", { height: 0, y: 5, ease: 'power2.inOut', duration: 0.5, delay: 6.2});
+      this.$gsap.to(".preloader__progress", { height: 300, y: -5, ease: 'power2.inOut', duration: 0.5, delay: 3.4});
+      this.$gsap.to(".preloader__progress__bar", { height: 300, y: -5, ease: 'power2.inOut', duration: 0.5, delay: 3.4});
+      this.$gsap.to(".preloader__progress", { height: 0, y: 5, ease: 'power2.inOut', duration: 0.5, delay: 4.4});
+      this.$gsap.to(".preloader__progress__bar", { height: 0, y: 5, ease: 'power2.inOut', duration: 0.5, delay: 4.4});
     },
     finish() {
       console.log("finish")
