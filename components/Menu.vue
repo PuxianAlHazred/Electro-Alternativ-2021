@@ -128,7 +128,7 @@ export default {
     },
     beforeLeave(el) {
       console.log("MENU : beforeLeave")
-      this.toggle();
+
       let menu = document.querySelector(".menu-span");
       menu.addEventListener("mouseenter", () => {
         this.$gsap.to(".menu-span", { duration: 0.5, opacity:0.5, text: "OPEN", ease: "back", stagger: 0.1});
@@ -142,6 +142,7 @@ export default {
     },
     leave(el, done) {
       console.log("CONTENT : leaave")
+      this.toggle();
         var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item", {type:"words,chars"}), chars = mySplitText.words;
         list.to(chars, {
           delay: 0,
