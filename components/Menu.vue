@@ -57,7 +57,6 @@
       padding-left: 75px;
       background: #f9f69a;
   }
-  .menu-span.close { mix-blend-mode: difference;}
   .list {
       position: fixed;
       top: 0;
