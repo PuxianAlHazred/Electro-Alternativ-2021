@@ -35,6 +35,14 @@ section {
     opacity: 1;
     transition: all .5s linear 1s;
 }
+.cover-fond {
+    position: absolute;
+    top: calc(100vh - ( 150px + 10%));
+    height: 10%;
+    background: rgb(249,246,154);
+    background: linear-gradient(0deg, rgba(249,246,154,1) 0%, rgba(249,246,154,0.7119048302914917) 50%, rgba(249,246,154,0) 100%);
+    width: 100%;
+}
 .border-top,
 .border-bottom {
     width: 100%;
@@ -142,27 +150,61 @@ section .lieux .container {
 .accueil h1 {
     font-size: 180px;
     color: #000;
-    position: relative;
+    position: absolute;
     top: calc(50vh - 75px);
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 150px;
     left: 50%;
     margin: 0;
+    width: 100%;
+}
+.accueil h2 {
+    padding-top: 100vh;
+    text-align: center;
+    font-size: 65px;
+    max-width: 70%;
+    margin: 0 auto;
+    font-weight: lighter;
+}
+.accueil h2 span {
+    color: #95165d;
+}
+.intro-panth {
+    position: relative;
+    left: 50%;
+    width: 15%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    margin-bottom: -5%;
+    display: block;
+}
+.accueil p {
+    display: block;
+    position: relative;
+    background: #95165d;
+    margin: 0 50px;
+    padding: 75px;
+    color: #fff;
+    text-align: center;
+    font-family: "Sequel100Wide45";
+    line-height: 30px;
+}
+.accueil h4 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 25px;
+    font-family: "Sequel100Wide45";
+    font-weight: lighter;
+}
+.accueil h4 span {
+    color: #95165d;
 }
 /**************************************** Page artistes *****************************************/
 .artistes .fond {
     position: absolute;
     height: 40%;
     background: url(/images/EA_2021_fond-site.png) no-repeat bottom / cover;
-}
-.cover-fond {
-    position: absolute;
-    top: calc(75px + 35%);
-    height: 5%;
-    background: rgb(249,246,154);
-    background: linear-gradient(0deg, rgba(249,246,154,1) 0%, rgba(249,246,154,0.7119048302914917) 50%, rgba(249,246,154,0) 100%);
-    width: calc(100% - 150px);
 }
 .artistes .container {
     margin-top: 50vh;

@@ -1,7 +1,6 @@
 <template>
   <section>
     <div class="artistes">
-      <div class="cover-fond"></div>
       <!-- Image -->
       <div class="container">
         <svg class="svg-filter">
