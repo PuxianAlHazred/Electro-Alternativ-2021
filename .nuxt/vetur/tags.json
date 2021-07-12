@@ -1,0 +1,20 @@
+{
+  "Artistes": {
+    "description": "Auto imported from components/Artistes.vue"
+  },
+  "Intro": {
+    "description": "Auto imported from components/Intro.vue"
+  },
+  "Lieux": {
+    "description": "Auto imported from components/Lieux.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from components/Loading.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Menu": {
+    "description": "Auto imported from components/Menu.vue"
+  }
+}

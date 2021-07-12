@@ -1,0 +1,23 @@
+[
+  {
+    "name": "artistes",
+    "path": "/artistes",
+    "component": "Y:\\\\Logiciel\\\\Github\\\\EA\\\\pages\\\\artistes.vue",
+    "chunkName": "pages/artistes",
+    "_name": "_1cdbd72e"
+  },
+  {
+    "name": "lieux",
+    "path": "/lieux",
+    "component": "Y:\\\\Logiciel\\\\Github\\\\EA\\\\pages\\\\lieux.vue",
+    "chunkName": "pages/lieux",
+    "_name": "_898dc8b2"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "Y:\\\\Logiciel\\\\Github\\\\EA\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_94c42c64"
+  }
+]
