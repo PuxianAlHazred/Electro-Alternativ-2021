@@ -323,9 +323,9 @@
                     end: "top top+=50px",
                     scrub: true,
                     toggleActions: "restart none none reverse",
-                    //onEnterBack: e => titleScrolling.play(),
+                    onEnterBack: e => titleScrolling.play(),
                     //onLeaveBack: e => titleScrolling.reverse(),
-                    //onEnter: e => titleScrolling.reverse(),
+                    onEnter: e => titleScrolling.reverse(),
                     //onLeave: e => titleScrolling.reverse(),
                     //markers: true,
               }
@@ -341,9 +341,9 @@
                     end: "bottom bottom-=100px",
                     scrub: true,
                     toggleActions: "restart none none reverse",
-                    //onEnterBack: e => titleScrolling.reverse(),
+                    onEnterBack: e => titleScrolling.reverse(),
                     //onLeaveBack: e => titleScrolling.reverse(),
-                    //onEnter: e => titleScrolling.play(),
+                    onEnter: e => titleScrolling.play(),
                     //onLeave: e => titleScrolling.reverse(),
                     //markers: true,
               }
