@@ -190,7 +190,7 @@ section .lieux .container {
     font-family: "Sequel100Wide45";
     font-weight: lighter;
 }
-.accueil h4 span {
+.accueil h4 .word:last-child {
     color: #95165d;
 }
 /**************************************** Page artistes *****************************************/

@@ -12,25 +12,25 @@
       <div v-show="menu" class="content-menu">
           <ul class="list">
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/">LE FESTIVAL</NuxtLink>
+                <NuxtLink to="/"><h4>LE FESTIVAL</h4></NuxtLink>
               </li>
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/">ARTISTES</NuxtLink>
+                <NuxtLink to="/"><h4>ARTISTES</h4></NuxtLink>
               </li>
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/">LIEUX</NuxtLink>
+                <NuxtLink to="/"><h4>LIEUX</h4></NuxtLink>
               </li>
-              <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/">BILLETTERIE</NuxtLink>
+              <li class="list-item">
+                <a target="_blank" href="https://regarts.eu/event_cat/Electro-Alternativ/"><h4>BILLETTERIE</h4></a>
               </li>
-              <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/">MERCH</NuxtLink>
+              <li class="list-item">
+                <a target="_blank" href="https://shop.regarts.eu/collections/electro-alternativ "><h4>MERCH</h4></a>
               </li>
-              <li class="list-item" v-on:click="toggleMenu">
+              <li class="list-item">
                 <div class="social">
-                  <a href="#" class="FB">FB</a>
-                  <a href="#" class="INSTA">INSTA</a>
-                  <a href="#" class="TWITTER">TWITTER</a>
+                  <a target="_blank" href="https://www.facebook.com/events/815885182336796" class="FB">FACEBOOK</a>
+                  <a target="_blank" href="https://www.instagram.com/electroalternativ/" class="INSTA">INSTAGRAM</a>
+                  <a target="_blank" href="https://open.spotify.com/playlist/5P6DlxBfkAvBwhJx9XxO0A" class="SPOTIFY">SPOTIFY</a>
                 </div>
               </li>
           </ul>
@@ -103,12 +103,16 @@
       text-decoration: none;
       overflow: hidden;
   }
+  .list-item h4 {
+      margin: 0;
+  }
   .social {
       display: inline-flex;
   }
   .list-item .social a {
       font-size: 20px;
       margin: 0 25px;
+      color: #f9f69a;
   }
 </style>
 <script>
@@ -119,9 +123,11 @@ export default {
   }),
   methods: {
     appear() {
-        this.$gsap.from(".pink-panth", { opacity: 0, ease: 'power2.inOut', duration: 1, delay: 5.7});
+        this.$gsap.from(".pink-panth", { opacity: 1, ease: 'power2.inOut', duration: 1, delay: 5.7});
         var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".menu-span", {type:"words,chars"}), chars = mySplitText.chars;
         t1.from(chars, {delay: 5.7, duration: 1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
+
+
 
         let menu = document.querySelector(".menu-span");
         menu.addEventListener("mouseenter", () => {
@@ -138,6 +144,8 @@ export default {
       this.toggle();
       console.log("MENU : afterEnter")
       this.$gsap.set(".list", { background: '#95165d'});
+
+
 
       let menu = document.querySelector(".menu-span");
       menu.addEventListener("mouseenter", () => {
@@ -166,7 +174,9 @@ export default {
         console.log("CONTENT : leaave")
         this.toggle();
 
-        var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item:not(:last-child)", {type:"words,chars"}), chars = mySplitText.words;
+        var retour = this.$gsap.from(".list-item:last-child", { opacity: 1, y:0, transformOrigin:"0% 0% 100", ease: 'back', duration: .3, delay: 0},{ opacity: 0, y:-50, transformOrigin:"0% 50% 100", ease: 'back', duration: .3, delay: 0});
+
+        var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
         list.to(chars, {
           delay: 0,
           duration: 0.4,
@@ -179,14 +189,17 @@ export default {
             this.animation === false;
             setTimeout(function () {
               done()
-            }, 2300)
+            }, 500)
           }
         }, "+=0");
         this.$gsap.set(".list", { background: 'transparent'});
 
     },
     enter(el, done) {
-      var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item:not(:last-child)", {type:"words,chars"}), chars = mySplitText.words;
+
+      var aller = this.$gsap.from(".list-item:last-child", { opacity: 0, y:-50, transformOrigin:"0% 50% 100", ease: 'back', duration: .3, delay: 1},{ opacity: 0, y:0, transformOrigin:"0% 0% 100", ease: 'back', duration: .3, delay: 1});
+
+      var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
       list.from(chars, {
         delay: 1,
         duration: 0.6,
