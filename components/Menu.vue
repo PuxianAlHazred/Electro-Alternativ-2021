@@ -174,7 +174,8 @@ export default {
         console.log("CONTENT : leaave")
         this.toggle();
 
-        var retour = this.$gsap.from(".list-item:last-child", { opacity: 1, y:0, transformOrigin:"0% 0% 100", ease: 'back', duration: .3, delay: 0},{ opacity: 0, y:-50, transformOrigin:"0% 50% 100", ease: 'back', duration: .3, delay: 0});
+        var retour = this.$gsap.to(".list-item:last-child",
+        { opacity: 0, y:50, transformOrigin:"0% 50% 100", ease: 'back', duration: .3, delay: 0});
 
         var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
         list.to(chars, {
@@ -197,7 +198,7 @@ export default {
     },
     enter(el, done) {
 
-      var aller = this.$gsap.from(".list-item:last-child", { opacity: 0, y:-50, transformOrigin:"0% 50% 100", ease: 'back', duration: .3, delay: 1},{ opacity: 0, y:0, transformOrigin:"0% 0% 100", ease: 'back', duration: .3, delay: 1});
+      var aller = this.$gsap.to(".list-item:last-child", { opacity: 1, y:-50, transformOrigin:"0% 0% 100", ease: 'back', duration: .3, delay: 1});
 
       var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
       list.from(chars, {
