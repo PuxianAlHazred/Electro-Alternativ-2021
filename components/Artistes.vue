@@ -46,9 +46,9 @@
         <ul>
           <li class="imagehover">
             <h2 class="artiste">arabian panther</h2>
-            <h3>DJSET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste1.webp">
@@ -57,10 +57,10 @@
             </div>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">chapelier fou ensemb7e</h2>
-            <h3>DJSET - <span>LE BIKINI</span></h3>
+            <h2 class="artiste">chapelier fou ensemb7e live</h2>
+            <h3>LIVESET - <span>AUDITORIUM SAINT PIERRE DES CUISINES</span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4>15 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste2.webp">
@@ -70,9 +70,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">dj marcelle</h2>
-            <h3>DJSET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste3.webp">
@@ -82,9 +82,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">djrum live</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>LIVESET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste4.webp">
@@ -94,9 +94,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">esther</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste5.webp">
@@ -106,9 +106,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">giant swan live</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>LIVESET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste6.webp">
@@ -117,10 +117,10 @@
             </div>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">hysteria temple fondation</h2>
-            <h3>(paul ritch + kmyle) live - <span>LE BIKINI</span></h3>
+            <h2 class="artiste">hysteria temple fondation </h2>
+            <h3>LIVESET (paul ritch + kmyle) - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste7.webp">
@@ -130,9 +130,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">jasss</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste8.webp">
@@ -142,9 +142,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">kendal</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste9.webp">
@@ -154,9 +154,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">kiddy smile</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste10.webp">
@@ -166,9 +166,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">lena willikens</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste11.webp">
@@ -178,9 +178,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">louisahhh live band</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>LIVESET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste12.webp">
@@ -190,9 +190,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">naranja</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste13.webp">
@@ -202,9 +202,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">pablo bozzi</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste14.webp">
@@ -214,9 +214,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">rebekah</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h3>DJSET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste15.webp">
@@ -225,10 +225,10 @@
             </div>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">wallis live</h2>
-            <h3>LIVESET - <span>LE BIKINI</span></h3>
+            <h2 class="artiste">wallis</h2>
+            <h3>LIVESET - <span></span></h3>
             <div class="date">
-                <h4>14 <span>sept</span></h4>
+                <h4> <span></span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artiste16.webp">
