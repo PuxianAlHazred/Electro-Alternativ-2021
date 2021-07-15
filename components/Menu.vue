@@ -1,6 +1,6 @@
 <template>
   <nav class="menu ">
-    <img src="images/panthererose.png" class="pink-panth">
+    <Panthere class="pink-panth"/>
     <h3 v-on:click="toggleMenu();" class="menu-span" :class="{'open': menu, 'close': !menu}">MENU</h3>
     <transition name="page_transition" mode="in-out"
       v-on:before-enter="beforeEnter"
@@ -51,9 +51,10 @@
       width: 70px;
       top: 38px;
       position: relative;
-      -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
-      margin-right: 5px;
+      height: auto;
+      left: auto;
+      margin: 0 5px 0 0;
   }
   .menu-span {
       font-family: "Sequel100Wide45";
