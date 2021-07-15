@@ -21,7 +21,6 @@ section {
 }
 .main-content {
     background: #f9f69a;
-    height: calc(100vh - 150px);
     padding: 75px;
     width: calc(100% - 150px);
     transition: all .5s linear 1s;
