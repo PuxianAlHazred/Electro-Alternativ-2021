@@ -15,6 +15,7 @@
   .shp0 { fill: #000000 }
   #oeil-fermer {opacity: 0;}
   #oeil-demi {opacity: 0;}
+  .pink-panth .shp0 { fill: #95165d }
 </style>
 <script>
   export default {
@@ -36,10 +37,24 @@
             this.$gsap.to("."+ this.$props.typee + " #sourcilgauche", {delay:0.3, duration: 0.3, y:0, ease: "back"});
             this.$gsap.to("."+ this.$props.typee + " #oeil-fermer", { delay:0.2, duration: 0.1, opacity:0, ease: "back"});
             this.$gsap.to("."+ this.$props.typee + " #oeil-demi", { delay:0.3, duration: 0.1, opacity:0, ease: "back"});
-
+      },
+      parallax() {
+          let panth = this.$gsap.timeline({
+            scrollTrigger: {
+              trigger: ".accueil p",
+              start: "top-=850",
+              end: "top-=450",
+              scrub: true
+            }
+          })
+          .fromTo(".intro-panth.intro",
+            { y: -75, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+            { y: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+          )
       }
     },
     mounted() {
+      this.parallax();
       this.hoverpanth();
     }
   }

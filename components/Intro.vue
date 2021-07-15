@@ -59,7 +59,7 @@
             scrollTrigger: {
               trigger: ".accueil p",
               start: "top-=850",
-              end: "top-=650",
+              end: "top-=450",
               scrub: true
             }
           })
@@ -68,18 +68,7 @@
             { opacity: 1, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
 
-          let panth = this.$gsap.timeline({
-            scrollTrigger: {
-              trigger: ".accueil p",
-              start: "top-=850",
-              end: "top-=450",
-              scrub: true
-            }
-          })
-          .fromTo(".intro-panth",
-            { y: -75, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-            { y: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
-          )
+
 
           var titleScrolling = this.$gsap.timeline({paused:true}), mySplitText = new SplitType('.accueil h4' , {type:"words,chars"}), words = mySplitText.words;
           titleScrolling.from(words, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
