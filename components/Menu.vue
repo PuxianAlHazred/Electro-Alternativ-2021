@@ -181,7 +181,7 @@ export default {
         this.toggle();
 
         var retour = this.$gsap.to(".list-item:last-child", { opacity: 0, y:50, transformOrigin:"0% 50% 100", ease: 'back', duration: .4, delay: 0});
-
+        var panth = this.$gsap.to(".pink-panth .shp0", { 'fill': '#95165d', ease: 'back', duration: .4, delay: 1});
         var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
         list.to(chars, {
           delay: 0,
@@ -204,6 +204,7 @@ export default {
     enter(el, done) {
 
       var aller = this.$gsap.to(".list-item:last-child", { opacity: 1, y:0, transformOrigin:"0% 0% 100", ease: 'back', duration: .4, delay: 1});
+      var panth = this.$gsap.to(".pink-panth .shp0", { 'fill': '#f9f69a', ease: 'back', duration: .4, delay: 1});
 
       var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
       list.from(chars, {
