@@ -30,7 +30,6 @@
     },
     methods: {
       hoverpanth(){
-            console.log()
             this.$gsap.to("."+ this.$props.typee +" #sourcilgauche", { duration: 0.3, y:10, ease: "back"});
             this.$gsap.to("."+ this.$props.typee + " #oeil-demi", { duration: 0.1, opacity:1, ease: "back"});
             this.$gsap.to("."+ this.$props.typee + " #oeil-fermer", { delay:0.1, duration: 0.1, opacity:1, ease: "back"});
