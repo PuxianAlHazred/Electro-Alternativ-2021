@@ -1,5 +1,6 @@
 <template>
-  <svg class="intro-panth" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1083 785" width="1083" height="785">
+  <svg class="intro-panth" :class="typee" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1083 785" width="1083" height="785"
+    @mouseover="hoverpanth()">
     	<g id="panthererose">
     		<path id="sourciledroit" class="shp0" d="M710.45 31.8C711.17 32.47 712.11 32.84 713.08 32.84C713.16 32.84 713.23 32.84 713.31 32.84C718.14 32.55 722.96 32.4 727.6 32.4C795.27 32.4 837.74 62.45 844.12 114.88C844.35 116.77 845.97 118.22 847.89 118.24L856.57 118.32L856.6 118.32C857.67 118.32 858.69 117.89 859.41 117.1C860.14 116.33 860.51 115.26 860.43 114.2C857.84 79.83 842.88 50.86 817.19 30.41C792.22 10.52 758.83 0 720.7 0C718.12 0 715.5 0.04 712.89 0.14C710.82 0.21 709.19 1.91 709.19 3.98L709.25 29.01C709.25 30.08 709.68 31.08 710.45 31.8Z" />
     		<path id="sourcilgauche" class="shp0" d="M217.37 118.32L217.41 118.32L226.08 118.24C228.02 118.23 229.62 116.78 229.85 114.86C236.23 62.46 278.7 32.4 346.38 32.4C351.01 32.4 355.83 32.56 360.68 32.83C360.76 32.85 360.81 32.85 360.89 32.85C361.88 32.85 362.81 32.48 363.52 31.8C364.29 31.07 364.74 30.06 364.74 29.02L364.78 3.99C364.8 1.92 363.15 0.22 361.09 0.14C358.49 0.04 355.87 0 353.28 0C315.12 0 281.76 10.5 256.78 30.39C231.09 50.86 216.15 79.84 213.54 114.21C213.46 115.27 213.83 116.33 214.56 117.1C215.3 117.88 216.3 118.32 217.37 118.32Z" />
@@ -9,7 +10,7 @@
     	</g>
   </svg>
 </template>
-<style scooped>
+<style>
   tspan { white-space:pre }
   .shp0 { fill: #000000 }
   #oeil-fermer {opacity: 0;}
@@ -19,20 +20,24 @@
   export default {
     data: () => ({
     }),
+    props: {
+      typee: {
+        type: String,
+        required: true
+      }
+    },
     computed: {
-
     },
     methods: {
       hoverpanth(){
-          let select = document.querySelector(".intro-panth");
-          select.addEventListener("mouseenter", () => {
-            this.$gsap.to("#sourcilgauche", { duration: 0.3, y:10, ease: "back"});
-            this.$gsap.to("#oeil-demi", { duration: 0.1, opacity:1, ease: "back"});
-            this.$gsap.to("#oeil-fermer", { delay:0.1, duration: 0.1, opacity:1, ease: "back"});
-            this.$gsap.to("#sourcilgauche", {delay:0.3, duration: 0.3, y:0, ease: "back"});
-            this.$gsap.to("#oeil-fermer", { delay:0.2, duration: 0.1, opacity:0, ease: "back"});
-            this.$gsap.to("#oeil-demi", { delay:0.3, duration: 0.1, opacity:0, ease: "back"});
-          });
+            console.log()
+            this.$gsap.to("."+ this.$props.typee +" #sourcilgauche", { duration: 0.3, y:10, ease: "back"});
+            this.$gsap.to("."+ this.$props.typee + " #oeil-demi", { duration: 0.1, opacity:1, ease: "back"});
+            this.$gsap.to("."+ this.$props.typee + " #oeil-fermer", { delay:0.1, duration: 0.1, opacity:1, ease: "back"});
+            this.$gsap.to("."+ this.$props.typee + " #sourcilgauche", {delay:0.3, duration: 0.3, y:0, ease: "back"});
+            this.$gsap.to("."+ this.$props.typee + " #oeil-fermer", { delay:0.2, duration: 0.1, opacity:0, ease: "back"});
+            this.$gsap.to("."+ this.$props.typee + " #oeil-demi", { delay:0.3, duration: 0.1, opacity:0, ease: "back"});
+
       }
     },
     mounted() {

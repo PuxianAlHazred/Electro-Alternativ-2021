@@ -1,6 +1,6 @@
 <template>
   <nav class="menu ">
-    <Panthere class="pink-panth"/>
+    <Panthere  :typee="'menu'" class="pink-panth"/>
     <h3 v-on:click="toggleMenu();" class="menu-span" :class="{'open': menu, 'close': !menu}">MENU</h3>
     <transition name="page_transition" mode="in-out"
       v-on:before-enter="beforeEnter"

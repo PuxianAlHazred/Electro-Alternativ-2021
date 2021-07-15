@@ -12,7 +12,7 @@
       <h1>electro<br>alternativ</h1>
       <h2>Electro Alternativ <br> <span>c'est un mélange d'espoir, d'envie et de persévérance.</span></h2>
 
-      <Panthere />
+      <Panthere :typee="'intro'" />
 
       <p>C’est aussi une forme de renaissance ; après ses multiples aventures, le festival a intégré de nouveaux sujets. Pionnier dans le désir de mettre en avant une culture
         stigmatisée, le festival a su proposer des formes originales pour intégrer la musique électronique au paysage culturel toulousain. Aujourd’hui, il a à cœur de soutenir
