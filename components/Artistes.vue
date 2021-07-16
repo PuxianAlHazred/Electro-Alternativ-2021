@@ -376,15 +376,15 @@
             )
             let lineup = this.$gsap.timeline({
               scrollTrigger: {
-                trigger: ".artistes ul",
-                start: "top ",
-                end: "top+=75",
+                trigger: ".marquee",
+                start: "top top+=75",
+                end: "bottom-=75",
                 scrub: true
               }
             })
             .fromTo(".marque",
-              { "top": "75px", ease: "none", stagger: 0.5, ease: 'linear'},
-              { "top": "0", ease: "none", stagger: 0.5, ease: 'linear'}
+              { "top": "75px", ease: "none", stagger: 0.5, ease: 'none'},
+              { "top": "0", ease: "none", stagger: 0.5, ease: 'none'}
             )
         }
 

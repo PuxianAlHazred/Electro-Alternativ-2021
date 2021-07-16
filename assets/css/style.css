@@ -253,12 +253,15 @@ section .lieux .container {
     width: 90px;
     z-index: 3;
 }
+.date .line {
+    text-align: center !important;
+}
 .date .line .word:first-child {
     font-size: 75px;
     word-wrap: break-word;
     text-align: center;
     line-height: 30px;
-    margin: 35px 0;
+    margin: 35px 0 15px;
 }
 .container li:hover .date  .line .word:first-child  {
     color: #f9f69a;
