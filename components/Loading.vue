@@ -110,6 +110,7 @@ export default {
     },
     afterLeave() {
       console.log("afterLeave")
+                this.$ScrollTrigger.refresh();
     },
     toggle() {
         this.$store.dispatch('toggled')

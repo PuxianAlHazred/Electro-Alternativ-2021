@@ -211,7 +211,6 @@ section .lieux .container {
 .container li {
     border-top: 1px solid black;
     padding: 30px 75px;
-    transition: all .3s ease;
     position: relative;
     z-index: 1;
     transform: translate3d(1, 0, 0, 0deg);
@@ -254,24 +253,22 @@ section .lieux .container {
     width: 90px;
     z-index: 3;
 }
-.date h4 {
+.date .line .word:first-child {
     font-size: 75px;
     word-wrap: break-word;
     text-align: center;
     line-height: 30px;
     margin: 35px 0;
-    transition:all .3s ease;
 }
-.container li:hover .date h4 {
+.container li:hover .date  .line .word:first-child  {
     color: #f9f69a;
 }
-.date h4 span {
+.date  .line .word:last-child {
     font-size: 20px;
     text-align: center;
     margin: 0;
-    transition:all .3s ease;
 }
-.container li:hover .date h4 span {
+.container li:hover .date  .line .word:last-child {
     color: #95165d;
 }
 

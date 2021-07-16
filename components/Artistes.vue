@@ -306,55 +306,46 @@
               });
         },
         opacity() {
-
-
-
           this.$gsap.utils.toArray(".imagehover").forEach(e => {
 
-            var test = e.getElementsByClassName('artiste');
-            var titleScrolling = this.$gsap.timeline({paused:true}), mySplitText = new SplitType(test , {type:"words,chars"}), chars = mySplitText.chars;
-            titleScrolling.from(chars, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
+            var artiste = e.getElementsByClassName('artiste');
+            var date = e.getElementsByClassName('date');
 
-            let tll = this.$gsap.timeline({
-                    scrollTrigger: {
+            var titleArtiste = this.$gsap.timeline({paused:true}), SplitText = new SplitType(artiste , {type:"chars"}), chars = SplitText.chars;
+                titleArtiste.from(chars, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
+
+            var dateArtiste = this.$gsap.timeline({paused:true}), SplitDate = new SplitType(date , {type:"words"}), words = SplitDate.words;
+                dateArtiste.from(words, {delay: 0.3, duration: 0.5, opacity:0, x:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
+
+            var blocArtiste = this.$gsap.timeline({
+              scrollTrigger: {
                     trigger: e,
-                    start: "top top+=200px",
-                    end: "top top+=50px",
-                    scrub: true,
-                    toggleActions: "restart none none reverse",
-                    onEnterBack: e => titleScrolling.play(),
-                    //onLeaveBack: e => titleScrolling.reverse(),
-                    onEnter: e => titleScrolling.reverse(),
-                    //onLeave: e => titleScrolling.reverse(),
-                    //markers: true,
+                    start: "center-=25px bottom-=100px",
+                    end: "top-=25px top+=75px",
+                    scrub: false,
+                    toggleActions: "play reverse play reverse",
+                    onEnterBack: e => {
+                      titleArtiste.play();
+                      dateArtiste.play();
+                    },
+                    onLeaveBack: e => {
+                      titleArtiste.reverse();
+                      dateArtiste.reverse();
+                    },
+                    onEnter: e => {
+                      titleArtiste.play();
+                      dateArtiste.play();
+                    },
+                    onLeave: e => {
+                      titleArtiste.reverse();
+                      dateArtiste.reverse();
+                    },
+                    //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
               }
-            })
-            .fromTo(e,
-              {  x: 0, opacity: 1, ease: "none", stagger: 0.5 },
-              {  x: -100, opacity: 0, ease: "none", stagger: 0.5}
-            )
-            let tl = this.$gsap.timeline({
-                    scrollTrigger: {
-                    trigger: e,
-                    start: "bottom bottom",
-                    end: "bottom bottom-=100px",
-                    scrub: true,
-                    toggleActions: "restart none none reverse",
-                    onEnterBack: e => titleScrolling.reverse(),
-                    //onLeaveBack: e => titleScrolling.reverse(),
-                    onEnter: e => titleScrolling.play(),
-                    //onLeave: e => titleScrolling.reverse(),
-                    //markers: true,
-              }
-            })
-            .fromTo(e,
-              {  x: -100, opacity: 0, ease: "none", stagger: 0.5 },
-              {  x: 0, opacity: 1, ease: "none", stagger: 0.5}
-            )
-
-
+            }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
 
           });
+
         },
         sticky() {
             let test = this.$gsap.timeline({
@@ -403,6 +394,7 @@
         this.opacity();
         this.sticky();
         this.stickytop();
+
     }
   }
 </script>
