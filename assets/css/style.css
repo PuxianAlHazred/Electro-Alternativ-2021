@@ -308,7 +308,7 @@ section .lieux .container {
 .lieu-content, .lieu-img {
     width: 50%;
     position: relative;
-    min-height: 350px;
+    min-height: 50vh;
     overflow: hidden;
 }
 .lieu-img{
