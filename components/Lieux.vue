@@ -44,15 +44,15 @@
               </div>
           </li>
           <li>
-              <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Halle-de-la-machine.webp">
-              </div>
-              <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
                       <h2>Halle de la machine</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Halle-de-la-machine.webp">
               </div>
           </li>
           <li>
@@ -68,15 +68,15 @@
               </div>
           </li>
           <li>
-              <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Saint-Pierre-des-cuisines.webp">
-              </div>
-              <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
                       <h2>Saint Pierre des cuisines</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Saint-Pierre-des-cuisines.webp">
               </div>
           </li>
 
