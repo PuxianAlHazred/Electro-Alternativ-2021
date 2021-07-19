@@ -51,9 +51,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste1.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste1.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste1.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste1.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste1.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste1.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -63,9 +63,9 @@
                 <h4>15 <span>sept</span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste2.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste2.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste2.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste2.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste2.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste2.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -75,9 +75,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste3.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste3.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste3.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste3.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste3.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste3.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -87,9 +87,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste4.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste4.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste4.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste4.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste4.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste4.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -99,9 +99,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste5.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste5.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste5.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste5.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste5.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste5.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -111,9 +111,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste6.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste6.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste6.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste6.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste6.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste6.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -123,9 +123,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste7.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste7.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste7.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste7.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste7.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste7.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -135,9 +135,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste8.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste8.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste8.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste8.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste8.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste8.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -147,9 +147,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste9.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste9.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste9.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste9.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste9.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste9.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -159,9 +159,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste10.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste10.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste10.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste10.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste10.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste10.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -171,9 +171,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste11.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste11.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste11.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste11.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste11.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste11.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -183,9 +183,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste12.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste12.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste12.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste12.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste12.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste12.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -195,9 +195,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste13.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste13.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste13.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste13.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste13.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste13.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -207,9 +207,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste14.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste14.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste14.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste14.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste14.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste14.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -219,9 +219,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste15.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste15.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste15.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste15.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste15.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste15.webp">
             </div>
           </li>
           <li class="imagehover">
@@ -231,9 +231,9 @@
                 <h4> <span></span></h4>
             </div>
             <div class="lol">
-              <img loading="lazy" class="follow f3" src="images/artiste16.webp">
-              <img loading="lazy" class="follow f2" src="images/artiste16.webp">
-              <img loading="lazy" class="follow f1" src="images/artiste16.webp">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste16.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste16.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste16.webp">
             </div>
           </li>
         </ul>
