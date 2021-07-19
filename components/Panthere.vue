@@ -15,7 +15,7 @@
   .shp0 { fill: #000000 }
   #oeil-fermer {opacity: 0;}
   #oeil-demi {opacity: 0;}
-  .pink-panth .shp0 { fill: #95165d }
+  .pink-panth .shp0, li .intro-panth .shp0 { fill: #95165d }
 </style>
 <script>
   export default {

@@ -8,45 +8,75 @@
         <h3 class="title-page">LES LIEUX</h3>
         <ul>
           <li>
-              <img loading="lazy" src="images/Saint-Pierre-des-cuisines005---Ville-de-Tlse.jpg">
-              <h2>les abattoirs</h2>
-              <div class="more-link">
-              <p>En savoir plus</p>
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Abattoirs.webp">
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-content">
+                  <div class="center">
+                      <h2>Les abattoirs</h2>
+                      <a href="#"  target="_blank">s'y rendre</a>
+                  </div>
               </div>
           </li>
           <li>
-              <img loading="lazy" src="images/Saint-Pierre-des-cuisines005---Ville-de-Tlse.jpg">
-              <h2>auditorium saint pierre des cuisines</h2>
-              <div class="more-link">
-              <p>En savoir plus</p>
+              <div class="lieu-content">
+                  <div class="center">
+                      <h2>le Bikini</h2>
+                      <a href="#"  target="_blank">s'y rendre</a>
+                  </div>
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Bikini.webp">
               </div>
           </li>
           <li>
-              <img loading="lazy" src="images/Saint-Pierre-des-cuisines005---Ville-de-Tlse.jpg">
-              <h2>le bikini</h2>
-              <div class="more-link">
-              <p>En savoir plus</p>
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Cinema-ABC.webp">
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-content">
+                  <div class="center">
+                      <h2>Cinema ABC</h2>
+                      <a href="#"  target="_blank">s'y rendre</a>
+                  </div>
               </div>
           </li>
           <li>
-              <img loading="lazy" src="images/Saint-Pierre-des-cuisines005---Ville-de-Tlse.jpg">
-              <h2>cinema abc</h2>
-              <div class="more-link">
-              <p>En savoir plus</p>
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Halle-de-la-machine.webp">
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-content">
+                  <div class="center">
+                      <h2>Halle de la machine</h2>
+                      <a href="#"  target="_blank">s'y rendre</a>
+                  </div>
               </div>
           </li>
           <li>
-              <img loading="lazy" src="images/Saint-Pierre-des-cuisines005---Ville-de-Tlse.jpg">
-              <h2>halle de la machine</h2>
-              <div class="more-link">
-              <p>En savoir plus</p>
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Metronum.webp">
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-content">
+                  <div class="center">
+                      <h2>Metronum</h2>
+                      <a href="#"  target="_blank">s'y rendre</a>
+                  </div>
               </div>
           </li>
           <li>
-              <img loading="lazy" src="images/Saint-Pierre-des-cuisines005---Ville-de-Tlse.jpg">
-              <h2>Le Metronum</h2>
-              <div class="more-link">
-              <p>En savoir plus</p>
+              <div class="lieu-img">
+                  <img loading="lazy" src="images/lieux/Saint-Pierre-des-cuisines.webp">
+              </div>
+              <Panthere  :typee="'lieu'" />
+              <div class="lieu-content">
+                  <div class="center">
+                      <h2>Saint Pierre des cuisines</h2>
+                      <a href="#"  target="_blank">s'y rendre</a>
+                  </div>
               </div>
           </li>
 

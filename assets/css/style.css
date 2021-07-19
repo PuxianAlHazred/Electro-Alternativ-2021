@@ -292,16 +292,39 @@ section .lieux .container {
     padding: 0;
 }
 .lieux .container li {
-    border-top: 2px solid black;
-    padding: 30px 75px;
+    border-top: 0px solid black;
+    padding: 0;
     position: relative;
-    overflow:hidden;
+    display: flex;
+    margin-bottom: 75px;
+    transition:all.3s ease;
 }
 .lieux .container li:last-child {
-    border-bottom: 2px solid black;
+    border-bottom: 0px solid black;
 }
 .lieux .container li:hover{
-    background:transparent;
+    background:black;
+}
+.lieu-content, .lieu-img {
+    width: 50%;
+    position: relative;
+    min-height: 350px;
+    overflow: hidden;
+}
+.lieu-img{
+    overflow: hidden;
+    z-index: 1;
+}
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    transition: all .3s ease;
+    padding: 0 75px;
+}
+.lieux .container li:hover .center {
+    text-align: right;
 }
 .lieux .container li img {
     position: absolute;
@@ -309,42 +332,37 @@ section .lieux .container {
     left: 0;
     width: 100%;
     z-index: 0;
-    filter: saturate(100%);
-    opacity: 0;
+    filter: url("#teal-white2");
     transform: translateY(-50%);
     transition: all .3s;
 }
-
-.lieux .container li:hover img{
-    opacity: 0.4;
+.lieux .container li svg {
+    position: absolute;
+    width: 100px;
+    margin: 0;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    transition: all .3s;
+}
+.lieu-content a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #95165d;
+    text-decoration: none;
+}
+.lieux .container li:hover svg{
+    top: 0;
+}
+.lieux .container li h2{
+    font-size: 75px;
+    line-height: 75px;
 }
 .lieux .container li:hover h2 {
-    color: #95165d;
+    color: #fff;
 }
-.more-link {
-    position: absolute;
-    width: 105px;
-    top: 50%;
-    height: 58px;
-    background: url('/images/hover-lieux.png') no-repeat top center;
-    overflow: hidden;
-    right: 0;
-    transform: translatey(-50%) translatex(90%) rotate(-90deg);
-    transition: all .3s ease;
-}
-.container li:hover .more-link {
-    transform: translatey(-50%) translatex(25%) rotate(-90deg);
-}
-.more-link p {
-    margin: 0;
-    font-size: 12px;
-    text-align: center;
-    background: #f9f69a;
-    color: #95165d;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 .more {
     text-transform: uppercase;
     font-size: 12px;
