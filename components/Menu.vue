@@ -51,7 +51,7 @@
       width: 70px;
       top: 38px;
       position: relative;
-      transform: translateY(-50%);
+      transform:translateY(-50%) !important;
       height: auto;
       left: auto;
       margin: 0 5px 0 0;
