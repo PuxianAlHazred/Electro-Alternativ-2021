@@ -247,6 +247,7 @@ section .lieux .container {
 }
 .container li h3 span {
     transition:all .3s ease;
+    cursor: pointer;
 }
 .date {
     position: absolute;
