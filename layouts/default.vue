@@ -35,7 +35,7 @@
     mounted() {
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
-        setTimeout(() => this.$nuxt.$loading.finish(), 49)
+        setTimeout(() => this.$nuxt.$loading.finish(), 4900)
       })
 
     }

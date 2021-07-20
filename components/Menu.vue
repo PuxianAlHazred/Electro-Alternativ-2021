@@ -15,10 +15,10 @@
                 <NuxtLink to="/"><h4>LE FESTIVAL</h4></NuxtLink>
               </li>
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/"><h4>ARTISTES</h4></NuxtLink>
+                <NuxtLink to="/artistes"><h4>ARTISTES</h4></NuxtLink>
               </li>
               <li class="list-item" v-on:click="toggleMenu">
-                <NuxtLink to="/"><h4>LIEUX</h4></NuxtLink>
+                <NuxtLink to="/lieux"><h4>LIEUX</h4></NuxtLink>
               </li>
               <li class="list-item">
                 <a target="_blank" href="https://regarts.eu/event_cat/Electro-Alternativ/"><h4>BILLETTERIE</h4></a>

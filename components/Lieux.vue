@@ -166,17 +166,17 @@
         let proxy = { skew: 0 },
             skewSetter = this.$gsap.quickSetter(".lieux h2", "skewY", "deg"), // fast
             clamp = this.$gsap.utils.clamp(-3, 3); // don't let the skew go beyond 20 degrees.
-        this.$ScrollTrigger.create({
-          onUpdate: (self) => {
-            let skew = clamp(self.getVelocity() / -300);
-            // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
-            if (Math.abs(skew) > Math.abs(proxy.skew)) {
-              proxy.skew = skew;
-              this.$gsap.to(proxy, {skew: 0, duration: 0.3, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
-            }
-          }
-        });
-        this.$gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+            this.$ScrollTrigger.create({
+              onUpdate: (self) => {
+                let skew = clamp(self.getVelocity() / -300);
+                // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+                if (Math.abs(skew) > Math.abs(proxy.skew)) {
+                  proxy.skew = skew;
+                  this.$gsap.to(proxy, {skew: 0, duration: 0.3, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+                }
+              }
+            });
+            this.$gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
       },
       opacity() {
@@ -249,7 +249,33 @@
           }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
 
         });
+        this.$gsap.utils.toArray(".intro-panth.lieu").forEach(e => {
+          var panthOpa = this.$gsap.from(e, {delay: 0.5, duration: 0.5, opacity:0, ease:"power2.inOut", stagger: 0.1});
 
+          var blocPanth = this.$gsap.timeline({
+            scrollTrigger: {
+                  trigger: e,
+                  start: "center bottom-=100px",
+                  end: "center top+=75px",
+                  scrub: false,
+                  toggleActions: "play reverse play reverse",
+                  onEnterBack: e => {
+                    panthOpa.play();
+                  },
+                  onLeaveBack: e => {
+                    panthOpa.reverse();
+                  },
+                  onEnter: e => {
+                    panthOpa.play();
+                  },
+                  onLeave: e => {
+                    panthOpa.reverse();
+                  },
+                //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
+            }
+          }).fromTo(e, {  y: 0, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+
+        });
 
       },
     },

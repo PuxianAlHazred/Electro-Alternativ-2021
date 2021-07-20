@@ -41,6 +41,24 @@
           var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".accueil h1", {type:"words,chars"}), chars = mySplitText.chars;
           t1.from(chars, {delay: 0, duration: .1, opacity:0, y:-50, transformPerspective:800, transformOrigin:"center", rotationY:180,  ease:"power2.inOut", stagger: 0.1}, "+=0");
       },
+      skew(){
+        let proxy = { skew: 0 },
+            skewSetter = this.$gsap.quickSetter(".accueil p", "skewY", "deg"), // fast
+            clamp = this.$gsap.utils.clamp(-3, 3); // don't let the skew go beyond 20 degrees.
+            this.$ScrollTrigger.create({
+              onUpdate: (self) => {
+                let skew = clamp(self.getVelocity() / -300);
+                // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+                if (Math.abs(skew) > Math.abs(proxy.skew)) {
+                  proxy.skew = skew;
+                  this.$gsap.to(proxy, {skew: 0, duration: 0.1, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+                }
+              }
+            });
+            this.$gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+
+      },
+
       parallax() {
           let fond = this.$gsap.timeline({
             scrollTrigger: {
@@ -102,6 +120,7 @@
     mounted() {
         this.enter();
         this.parallax();
+              this.skew();
     }
   }
 </script>
