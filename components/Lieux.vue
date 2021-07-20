@@ -20,7 +20,7 @@
         </div>
 
         <ul>
-          <li>
+          <li id="abattoirs">
               <div class="lieu-img">
                   <img loading="lazy" src="images/lieux/Abattoirs.webp">
               </div>
@@ -32,7 +32,7 @@
                   </div>
               </div>
           </li>
-          <li>
+          <li id="bikini">
               <div class="lieu-content">
                   <div class="center">
                       <h2>le Bikini</h2>
@@ -44,7 +44,7 @@
                   <img loading="lazy" src="images/lieux/Bikini.webp">
               </div>
           </li>
-          <li>
+          <li id="cinema">
               <div class="lieu-img">
                   <img loading="lazy" src="images/lieux/Cinema-ABC.webp">
               </div>
@@ -56,7 +56,7 @@
                   </div>
               </div>
           </li>
-          <li>
+          <li id="halle">
               <div class="lieu-content">
                   <div class="center">
                       <h2>Halle de la machine</h2>
@@ -68,7 +68,7 @@
                   <img loading="lazy" src="images/lieux/Halle-de-la-machine.webp">
               </div>
           </li>
-          <li>
+          <li id="metronum">
               <div class="lieu-img">
                   <img loading="lazy" src="images/lieux/Metronum.webp">
               </div>
@@ -80,7 +80,7 @@
                   </div>
               </div>
           </li>
-          <li>
+          <li id="cuisines">
               <div class="lieu-content">
                   <div class="center">
                       <h2>Saint Pierre des cuisines</h2>

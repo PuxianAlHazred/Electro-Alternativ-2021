@@ -58,7 +58,7 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">chapelier fou ensemb7e live</h2>
-            <h3>LIVESET - <span>AUDITORIUM SAINT PIERRE DES CUISINES</span></h3>
+            <h3>LIVESET - <span class="cuisines">AUDITORIUM SAINT PIERRE DES CUISINES</span></h3>
             <div class="date">
                 <h4>15 <span>sept</span></h4>
             </div>
@@ -388,7 +388,16 @@
               { "top": "75px", ease: "none", stagger: 0.5, ease: 'none'},
               { "top": "0", ease: "none", stagger: 0.5, ease: 'none'}
             )
+        },
+        scrolltoIP() {
+          document.querySelectorAll(".imagehover h3 span").forEach((btn, index) => {
+              var select = btn.getAttribute('class');
+              btn.addEventListener("click", () => {
+                this.$gsap.to(window, {duration: 1, scrollTo:{y:"#" + select, offsetY:75}});
+              });
+          });
         }
+
 
     },
     mounted() {
@@ -396,7 +405,7 @@
         this.opacity();
         this.sticky();
         this.stickytop();
-
+        this.scrolltoIP();
     }
   }
 </script>
