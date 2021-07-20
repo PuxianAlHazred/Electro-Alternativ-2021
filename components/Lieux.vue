@@ -5,7 +5,16 @@
       <!-- Image -->
 
       <div class="container">
-        <h3 class="title-page">LES LIEUX</h3>
+        <div class="wopper">
+          <div class="marquee">
+            <p>
+              LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
+            </p>
+            <p >
+              LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
+            </p>
+          </div>
+        </div>
         <ul>
           <li>
               <div class="lieu-img">
@@ -79,7 +88,6 @@
                   <img loading="lazy" src="images/lieux/Saint-Pierre-des-cuisines.webp">
               </div>
           </li>
-
         </ul>
         <p class="more">& d'autres à venir ;)</p>
       </div>
@@ -97,10 +105,96 @@
 
     },
     methods: {
+      sticky() {
+          let test = this.$gsap.timeline({
+            scrollTrigger: {
+              trigger: ".lieux",
+              start: "top top+=450",
+              end: "top bottom+=50",
+              scrub: false,
+            }
+          })
+          .fromTo(".marquee",
+            { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+            { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+          )
+      },
+      opacity() {
+        this.$gsap.utils.toArray(".lieu-content").forEach(e => {
 
+          var lieu = e.getElementsByTagName('h2');
+          var itineraire = e.getElementsByTagName('a');
+
+          var titleLieu = this.$gsap.timeline({paused:true}), SplitLieu = new SplitType(lieu , {type:"words"}), words = SplitLieu.words;
+              titleLieu.from(words, {delay: 0.3, duration: 0.5, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
+
+          var itineraireLieu = this.$gsap.timeline({paused:true}), SplitItineraire = new SplitType(itineraire , {type:"chars"}), chars = SplitItineraire.chars;
+              itineraireLieu.from(chars, {delay: 0.3, duration: 0.5, opacity:0, y:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
+
+          var blocLieu = this.$gsap.timeline({
+            scrollTrigger: {
+                  trigger: e,
+                  start: "center+=75px bottom-=100px",
+                  end: "center-=75px top+=75px",
+                  scrub: false,
+                  toggleActions: "play reverse play reverse",
+                  onEnterBack: e => {
+                    titleLieu.play();
+                    itineraireLieu.play();
+                  },
+                  onLeaveBack: e => {
+                    titleLieu.reverse();
+                    itineraireLieu.reverse();
+                  },
+                  onEnter: e => {
+                    titleLieu.play();
+                    itineraireLieu.play();
+                  },
+                  onLeave: e => {
+                    titleLieu.reverse();
+                    itineraireLieu.reverse();
+                  },
+                  markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+            }
+          }).fromTo(e, {  y: -100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+
+        });
+        this.$gsap.utils.toArray(".lieu-img").forEach(e => {
+
+          var img = e.getElementsByTagName('img');
+
+          var imgFull = this.$gsap.from(img, {delay: 0, duration: 0.1, opacity:0, ease:"power2.inOut", stagger: 0.1});
+
+          var blocImg = this.$gsap.timeline({
+            scrollTrigger: {
+                  trigger: e,
+                  start: "top-=75px bottom-=100px",
+                  end: "bottom-=300px top+=75px",
+                  scrub: false,
+                  toggleActions: "play reverse play reverse",
+                  onEnterBack: e => {
+                    imgFull.play();
+                  },
+                  onLeaveBack: e => {
+                    imgFull.reverse();
+                  },
+                  onEnter: e => {
+                    imgFull.play();
+                  },
+                  onLeave: e => {
+                    imgFull.reverse();
+                  },
+                  //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
+            }
+          }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+
+        });
+
+      },
     },
     mounted() {
-
+      this.opacity();
+      this.sticky();
     }
   }
 </script>
