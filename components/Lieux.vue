@@ -9,7 +9,7 @@
       <div class="container">
 
         <div class="wopper">
-          <div class="marquee">
+          <div class="marquee marqueelieu">
             <p>
               LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
             </p>
@@ -143,14 +143,14 @@
             scrub: true,
           }
         })
-        .fromTo(".marquee",
+        .fromTo(".marqueelieu",
           { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
           { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
         )
 
         let leslieuxtop = this.$gsap.timeline({
           scrollTrigger: {
-            trigger: ".marquee",
+            trigger: ".marqueelieu",
             start: "top top+=75",
             end: "bottom-=75",
             scrub: true
