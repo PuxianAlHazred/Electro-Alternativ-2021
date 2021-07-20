@@ -234,8 +234,8 @@ section .lieux .container {
     position:relative;
     z-index: 1;
 }
-.container li:hover h2,
-.container li:hover h3 span {
+.artistes .container li:hover h2,
+.artistes .container li:hover h3 span {
     color: white;
 }
 .container li h3 {
@@ -303,6 +303,9 @@ section .lieux .container {
     border-bottom: 0px solid black;
 }
 .lieux .container li:hover{
+    background:transparent;
+}
+.lieux .container .lieu-content:hover{
     background:black;
 }
 .lieu-content, .lieu-img {
@@ -336,9 +339,12 @@ section .lieux .container {
     left: 0;
     width: 100%;
     z-index: 0;
-    filter: url("#teal-white2");
+    filter: url("#teal-white");
     transform: translateY(-50%);
     transition: all .3s;
+}
+.lieux .container li img:hover {
+    filter: url("#teal-white2");
 }
 .lieux .container li svg {
     position: absolute;
@@ -346,12 +352,12 @@ section .lieux .container {
     margin: 0;
     height: 100px;
     top: 50%;
-    left: 60%;
+    left: 40%;
     transform: translate(-50%, -50%) !important;
     transition: all .3s;
 }
 .lieux .container li:nth-child(2n) svg {
-    left: 40%;
+    left: 60%;
 }
 .lieu-content a{
     text-transform: uppercase;
@@ -360,13 +366,16 @@ section .lieux .container {
     text-decoration: none;
 }
 .lieux .container li:hover svg{
-    top: 0;
+    left: 60%;
+}
+.lieux .container li:nth-child(2n):hover svg {
+    left: 40%;
 }
 .lieux .container li h2{
     font-size: 75px;
     line-height: 75px;
 }
-.lieux .container li:hover h2 {
+.lieux .container .lieu-content:hover h2 {
     color: #fff;
 }
 

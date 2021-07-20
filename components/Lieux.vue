@@ -119,7 +119,7 @@
                       console.log("onEnter switchTitleLieu");
                     },
 
-                    markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+                    //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
               }
             });
 
@@ -146,6 +146,23 @@
               }
             });*/
         });
+
+      },
+      skew(){
+        let proxy = { skew: 0 },
+            skewSetter = this.$gsap.quickSetter(".lieux h2", "skewY", "deg"), // fast
+            clamp = this.$gsap.utils.clamp(-3, 3); // don't let the skew go beyond 20 degrees.
+        this.$ScrollTrigger.create({
+          onUpdate: (self) => {
+            let skew = clamp(self.getVelocity() / -300);
+            // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+            if (Math.abs(skew) > Math.abs(proxy.skew)) {
+              proxy.skew = skew;
+              this.$gsap.to(proxy, {skew: 0, duration: 0.3, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+            }
+          }
+        });
+        this.$gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
       },
       opacity() {
@@ -224,6 +241,7 @@
     mounted() {
       this.opacity();
       this.sticky();
+      this.skew();
     }
   }
 </script>
