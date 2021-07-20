@@ -5,16 +5,6 @@
       <!-- Image -->
 
       <div class="container">
-        <div class="wopper">
-          <div class="marquee">
-            <p>
-              LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
-            </p>
-            <p >
-              LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
-            </p>
-          </div>
-        </div>
         <ul>
           <li>
               <div class="lieu-img">
@@ -106,18 +96,56 @@
     },
     methods: {
       sticky() {
-          let test = this.$gsap.timeline({
-            scrollTrigger: {
-              trigger: ".lieux",
-              start: "top top+=450",
-              end: "top bottom+=50",
-              scrub: false,
-            }
-          })
-          .fromTo(".marquee",
-            { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-            { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
-          )
+        this.$gsap.utils.toArray(".marque p").forEach(e => {
+            var switchTitleLieu = this.$gsap.to(e, { duration: 0.5, text: "LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -", ease: "back", stagger: 0.1});
+            var switchTitleLineup = this.$gsap.to(e, { duration: 0.5, text: "LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 -", ease: "back", stagger: 0.1});
+
+            var blocMarqueLieu = this.$gsap.timeline({
+              scrollTrigger: {
+                    trigger: ".lieux",
+                    start: "top bottom-=100px",
+                    end: "bottom top+=75px",
+                    scrub: false,
+                    toggleActions: "play reverse play reverse",
+                    onEnterBack: e => {
+                      switchTitleLieu.play();
+                    },
+                    onLeaveBack: e => {
+                      switchTitleLieu.reverse();
+                    },
+                    onEnter: e => {
+                      switchTitleLieu.play();
+                    },
+                    onLeave: e => {
+                      switchTitleLieu.reverse();
+                    },
+                    //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+              }
+            });
+            var blocMarqueLineup = this.$gsap.timeline({
+              scrollTrigger: {
+                    trigger: ".artistes",
+                    start: "top bottom-=100px",
+                    end: "bottom top+=75px",
+                    scrub: false,
+                    toggleActions: "play reverse play reverse",
+                    onEnterBack: e => {
+                      switchTitleLineup.play();
+                    },
+                    onLeaveBack: e => {
+                      switchTitleLineup.reverse();
+                    },
+                    onEnter: e => {
+                      switchTitleLineup.play();
+                    },
+                    onLeave: e => {
+                      switchTitleLineup.reverse();
+                    },
+                    //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+              }
+            });
+        });
+
       },
       opacity() {
         this.$gsap.utils.toArray(".lieu-content").forEach(e => {

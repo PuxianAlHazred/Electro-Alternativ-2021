@@ -362,6 +362,7 @@
             )
         },
         stickytop() {
+            /*
             let lineupRemove = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".lieux",
@@ -374,6 +375,7 @@
               { y: 0, opacity: 1, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
               { y: 100, opacity: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
+            */
             let lineup = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".marquee",
