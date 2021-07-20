@@ -34,7 +34,7 @@
           </defs>
         </svg>
         <div class="wopper">
-          <div class="marquee">
+          <div class="marquee marqueelineup">
             <p>
               LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 -
             </p>
@@ -356,7 +356,7 @@
                 scrub: true,
               }
             })
-            .fromTo(".marquee",
+            .fromTo(".marqueelineup",
               { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
               { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
@@ -378,7 +378,7 @@
 
             let lineup = this.$gsap.timeline({
               scrollTrigger: {
-                trigger: ".marquee",
+                trigger: ".marqueelineup",
                 start: "top top+=75",
                 end: "bottom-=75",
                 scrub: true
