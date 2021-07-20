@@ -2,9 +2,23 @@
   <section>
     <div class="lieux">
 
+
+
       <!-- Image -->
 
       <div class="container">
+
+        <div class="wopper">
+          <div class="marquee">
+            <p>
+              LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
+            </p>
+            <p >
+              LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -
+            </p>
+          </div>
+        </div>
+
         <ul>
           <li>
               <div class="lieu-img">
@@ -96,7 +110,7 @@
     },
     methods: {
       sticky() {
-        this.$gsap.utils.toArray(".marque p").forEach(e => {
+      /*  this.$gsap.utils.toArray(".marque p").forEach(e => {
             var switchTitleLieu = this.$gsap.to(e, { duration: 0.8, text: "LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -", ease: "back", stagger: 0.1});
             var switchTitleLineup = this.$gsap.to(e, { duration: 0.8, text: "LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 -", ease: "back", stagger: 0.1});
 
@@ -107,45 +121,45 @@
                     end: "top top+=250",
                     scrub: false,
                     toggleActions: "play reverse play reverse",
-
                     onLeaveBack: e => {
                       switchTitleLineup.play();
                       switchTitleLieu.reverse();
-                      console.log("onLeaveBack switchTitleLineup");
                     },
                     onEnter: e => {
                       switchTitleLineup.reverse();
                       switchTitleLieu.play();
-                      console.log("onEnter switchTitleLieu");
                     },
-
                     //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
               }
             });
 
-          /*  var blocMarqueLineup = this.$gsap.timeline({
-              scrollTrigger: {
-                    trigger: ".artistes",
-                    start: "top bottom-=100px",
-                    end: "bottom top+=75px",
-                    scrub: false,
-                    toggleActions: "play reverse play reverse",
-                    onEnterBack: e => {
-                      switchTitleLineup.play();
-                    },
-                    onLeaveBack: e => {
-                      switchTitleLineup.reverse();
-                    },
-                    onEnter: e => {
-                      switchTitleLineup.play();
-                    },
-                    onLeave: e => {
-                      switchTitleLineup.reverse();
-                    },
-                    //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
-              }
-            });*/
-        });
+        });*/
+
+        let leslieux = this.$gsap.timeline({
+          scrollTrigger: {
+            trigger: ".lieux",
+            start: "top top+=450",
+            end: "top top+=50",
+            scrub: true,
+          }
+        })
+        .fromTo(".marquee",
+          { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+          { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+        )
+
+        let leslieuxtop = this.$gsap.timeline({
+          scrollTrigger: {
+            trigger: ".marquee",
+            start: "top top+=75",
+            end: "bottom-=75",
+            scrub: true
+          }
+        })
+        .fromTo(".marquelieu",
+          { "top": "75px", opacity:0, ease: "none", stagger: 0.5, ease: 'none'},
+          { "top": "0", opacity:1, ease: "none", stagger: 0.5, ease: 'none'}
+        )
 
       },
       skew(){
@@ -230,11 +244,12 @@
                   onLeave: e => {
                     imgFull.reverse();
                   },
-                  //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
+                //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
             }
           }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
 
         });
+
 
       },
     },

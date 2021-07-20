@@ -2,9 +2,13 @@
   <div>
     <div class="border-top">
       <div class="wopper-top">
-        <div class="marque">
+        <div class="marque marquelineup">
           <p>LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - </p>
           <p>LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - </p>
+        </div>
+        <div class="marque marquelieu">
+          <p>LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - </p>
+          <p>LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - </p>
         </div>
       </div>
       <div class="cover-wooper"></div>

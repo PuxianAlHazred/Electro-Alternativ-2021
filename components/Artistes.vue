@@ -348,7 +348,7 @@
 
         },
         sticky() {
-            let test = this.$gsap.timeline({
+            let lineup = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".artistes",
                 start: "top top+=450",
@@ -362,7 +362,7 @@
             )
         },
         stickytop() {
-            /*
+
             let lineupRemove = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".lieux",
@@ -371,11 +371,11 @@
                 scrub: true
               }
             })
-            .fromTo(".marque",
-              { y: 0, opacity: 1, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-              { y: 100, opacity: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+            .fromTo(".marquelineup",
+              {  opacity: 1, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+              {  opacity: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
-            */
+
             let lineup = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".marquee",
@@ -384,7 +384,7 @@
                 scrub: true
               }
             })
-            .fromTo(".marque",
+            .fromTo(".marquelineup",
               { "top": "75px", ease: "none", stagger: 0.5, ease: 'none'},
               { "top": "0", ease: "none", stagger: 0.5, ease: 'none'}
             )

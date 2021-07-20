@@ -81,10 +81,13 @@ section {
     border-bottom-color: 1px solid rgba(149, 22, 93, 0);
 }
 .marque{
-  font-size:45px ;
-  line-height: 75px;
-  color: #000;
-  position:relative;
+    font-size:45px ;
+    line-height: 75px;
+    color: #000;
+    position:relative;
+}
+.marque.marquelieu {
+    position: absolute;
 }
 .marquee p,
 .marque p {
@@ -281,12 +284,8 @@ section .lieux .container {
     top: 50%;
     transform: translateY(-50%);
 }
-.title-page {
-    color: #95165d;
-    text-align: right;
-    border-top: 2px solid #95165d;
-    margin: 0;
-    padding: 15px 0;
+.lieux .wopper {
+    margin: 0 0 300px;
 }
 .lieux .container ul {
     padding: 0;
