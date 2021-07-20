@@ -97,32 +97,33 @@
     methods: {
       sticky() {
         this.$gsap.utils.toArray(".marque p").forEach(e => {
-            var switchTitleLieu = this.$gsap.to(e, { duration: 0.5, text: "LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -", ease: "back", stagger: 0.1});
-            var switchTitleLineup = this.$gsap.to(e, { duration: 0.5, text: "LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 -", ease: "back", stagger: 0.1});
+            var switchTitleLieu = this.$gsap.to(e, { duration: 0.8, text: "LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -", ease: "back", stagger: 0.1});
+            var switchTitleLineup = this.$gsap.to(e, { duration: 0.8, text: "LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 -", ease: "back", stagger: 0.1});
 
             var blocMarqueLieu = this.$gsap.timeline({
               scrollTrigger: {
                     trigger: ".lieux",
-                    start: "top bottom-=100px",
-                    end: "bottom top+=75px",
+                    start: "top top+=450",
+                    end: "top top+=250",
                     scrub: false,
                     toggleActions: "play reverse play reverse",
-                    onEnterBack: e => {
-                      switchTitleLieu.play();
-                    },
+
                     onLeaveBack: e => {
+                      switchTitleLineup.play();
                       switchTitleLieu.reverse();
+                      console.log("onLeaveBack switchTitleLineup");
                     },
                     onEnter: e => {
+                      switchTitleLineup.reverse();
                       switchTitleLieu.play();
+                      console.log("onEnter switchTitleLieu");
                     },
-                    onLeave: e => {
-                      switchTitleLieu.reverse();
-                    },
-                    //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+
+                    markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
               }
             });
-            var blocMarqueLineup = this.$gsap.timeline({
+
+          /*  var blocMarqueLineup = this.$gsap.timeline({
               scrollTrigger: {
                     trigger: ".artistes",
                     start: "top bottom-=100px",
@@ -143,7 +144,7 @@
                     },
                     //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
               }
-            });
+            });*/
         });
 
       },
@@ -182,7 +183,7 @@
                     titleLieu.reverse();
                     itineraireLieu.reverse();
                   },
-                  markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+                  //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
             }
           }).fromTo(e, {  y: -100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
 
