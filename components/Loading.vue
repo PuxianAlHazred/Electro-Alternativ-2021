@@ -71,18 +71,14 @@ export default {
   }),
   methods: {
     start() {
-      console.log("start")
         this.toggle();
         this.content = true; // Boolean du contenu = true
         // Début du chargement du component loading.vue
-
     },
     beforeEnter() {
-      console.log("beforeEnter")
       // Avant de lancer la function Enter()
     },
     enter() {
-      console.log("enter")
         var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".titleload", {type:"words,chars"}), chars = mySplitText.chars;
           t1.from(chars, {delay: 0, duration: .1, opacity:0, y:-50, transformPerspective:800, transformOrigin:"center", rotationY:180,  ease:"power2.inOut", stagger: 0.1}, "+=0");
           t1.to(chars, {delay: 0, duration: 0.1, opacity:0, y:50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
@@ -90,27 +86,22 @@ export default {
     },
     afterEnter() {
       // Aprés avoir lancer la function Enter()
-      console.log("afterEnter")
       this.$gsap.to(".preloader__progress", { height: 300, y: -5, ease: 'power2.inOut', duration: 0.5, delay: 3.4});
       this.$gsap.to(".preloader__progress__bar", { height: 300, y: -5, ease: 'power2.inOut', duration: 0.5, delay: 3.4});
       this.$gsap.to(".preloader__progress", { height: 0, y: 5, ease: 'power2.inOut', duration: 0.5, delay: 4.4});
       this.$gsap.to(".preloader__progress__bar", { height: 0, y: 5, ease: 'power2.inOut', duration: 0.5, delay: 4.4});
     },
     finish() {
-      console.log("finish")
         this.content = false; // Boolean du contenu = false
         this.toggle();
       // Fin du chargement du component loading.vue
     },
     beforeLeave() {
-      console.log("beforeLeave")
     },
     leave() {
-      console.log("leave")
     },
     afterLeave() {
-      console.log("afterLeave")
-                this.$ScrollTrigger.refresh();
+        this.$ScrollTrigger.refresh();
     },
     toggle() {
         this.$store.dispatch('toggled')

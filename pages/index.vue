@@ -1,30 +1,41 @@
 <template>
   <section>
     <div class="main-content">
-
-      <Intro />
+      <Intro :titre="'electro alternativ'"/>
       <Artistes />
       <Lieux />
-
     </div>
-
   </section>
 </template>
-
+<style scooped>
+    .container li h3 span {
+        cursor: pointer;
+    }
+</style>
 <script>
   export default {
     data: () => ({
     }),
     computed: {
+
     },
     methods: {
-      appear() {
-        var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".title", {type:"words,chars"}), chars = mySplitText.words;
-          t1.from(chars, {delay: 0.6, duration: 1, opacity:0, y:50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
+      scrolltoID() {
+        document.querySelectorAll(".imagehover h3 span").forEach((btn, index) => {
+            var select = btn.getAttribute('class');
+            if( this.$device.isDesktop) {
+              var y = "75";
+            } else {
+              var y = "25";
+            }
+            btn.addEventListener("click", () => {
+              this.$gsap.to(window, {duration: 1, scrollTo:{y:"#" + select, offsetY:y}});
+            });
+        });
       }
     },
     mounted() {
-      this.appear();
+      this.scrolltoID();
     }
   }
 </script>

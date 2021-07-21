@@ -2,10 +2,6 @@
   <section>
     <div class="lieux">
 
-
-
-      <!-- Image -->
-
       <div class="container">
 
         <div class="wopper">
@@ -93,10 +89,7 @@
               </div>
           </li>
         </ul>
-        <p class="more">& d'autres à venir ;)</p>
       </div>
-
-
 
     </div>
   </section>
@@ -110,55 +103,18 @@
     },
     methods: {
       sticky() {
-      /*  this.$gsap.utils.toArray(".marque p").forEach(e => {
-            var switchTitleLieu = this.$gsap.to(e, { duration: 0.8, text: "LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX - LES LIEUX -", ease: "back", stagger: 0.1});
-            var switchTitleLineup = this.$gsap.to(e, { duration: 0.8, text: "LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 - LINEUP 2021 -", ease: "back", stagger: 0.1});
-
-            var blocMarqueLieu = this.$gsap.timeline({
-              scrollTrigger: {
-                    trigger: ".lieux",
-                    start: "top top+=450",
-                    end: "top top+=250",
-                    scrub: false,
-                    toggleActions: "play reverse play reverse",
-                    onLeaveBack: e => {
-                      switchTitleLineup.play();
-                      switchTitleLieu.reverse();
-                    },
-                    onEnter: e => {
-                      switchTitleLineup.reverse();
-                      switchTitleLieu.play();
-                    },
-                    //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
-              }
-            });
-
-        });*/
 
         let leslieux = this.$gsap.timeline({
           scrollTrigger: {
-            trigger: ".lieux",
+            trigger: ".lieux .container",
             start: "top top+=450",
             end: "top top+=50",
-            scrub: true,
+            scrub: true
           }
         })
         .fromTo(".marqueelieu",
           { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
           { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
-        )
-
-        let leslieuxtop = this.$gsap.timeline({
-          scrollTrigger: {
-            trigger: ".marqueelieu",
-            start: "top top+=75",
-            end: "bottom-=75",
-            scrub: true
-          }
-        })
-        .fromTo(".marquelieu",
-          { "top": "75px", opacity:0, ease: "none", stagger: 0.5, ease: 'none'},
-          { "top": "0", opacity:1, ease: "none", stagger: 0.5, ease: 'none'}
         )
 
       },

@@ -81,10 +81,13 @@ section {
     border-bottom-color: 1px solid rgba(149, 22, 93, 0);
 }
 .marque{
-    font-size:45px ;
+    font-size:20px ;
     line-height: 75px;
     color: #000;
     position:relative;
+}
+.marque span {
+    color: #95165d;
 }
 .marque.marquelieu {
     position: absolute;
@@ -115,7 +118,7 @@ section {
     margin-bottom: 150px;
 }
 .main-content > section:nth-child(3) {
-    margin-bottom: 75px;
+    margin-bottom: 0;
 }
 .main-content > section .artistes {
     min-height: calc(100vh - 150px);
@@ -123,7 +126,7 @@ section {
 }
 section .lieux .container {
     transform: none;
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 .main-content .artistes .cover-fond {
     top: calc(-148px - 5%);
@@ -247,7 +250,6 @@ section .lieux .container {
 }
 .container li h3 span {
     transition:all .3s ease;
-    cursor: pointer;
 }
 .date {
     position: absolute;
@@ -304,9 +306,6 @@ section .lieux .container {
 }
 .lieux .container li:hover{
     background:transparent;
-}
-.lieux .container .lieu-content:hover{
-    background:black;
 }
 .lieu-content, .lieu-img {
     width: 40%;
@@ -376,7 +375,7 @@ section .lieux .container {
     line-height: 75px;
 }
 .lieux .container .lieu-content:hover h2 {
-    color: #fff;
+    color: #95165d;
 }
 
 .more {

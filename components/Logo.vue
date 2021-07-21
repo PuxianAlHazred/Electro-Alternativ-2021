@@ -3,50 +3,8 @@
 
     <NuxtLink to="/">
       <h1 class="title-logo">ea</h1>
-      <div v-if="this.$device.isMobile">
-           isMobile
-         </div>
-         <div v-if="this.$device.isDesktop">
-           isDesktop
-         </div>
-         <div v-if="this.$device.isTablet">
-           isTablet
-         </div>
-         <div v-if="this.$device.isMobileOrTablet">
-           isMobileOrTablet
-         </div>
-         <div v-if="this.$device.isIos">
-           isIos
-         </div>
-         <div v-if="this.$device.isAndroid">
-           isAndroid
-         </div>
-         <div v-if="this.$device.isWindows">
-           isWindows
-         </div>
-         <div v-if="this.$device.isMacOS">
-           isMacOS
-         </div>
-         <div v-if="this.$device.isDesktopOrTablet">
-           isDesktopOrTablet
-         </div>
-         <div v-if="this.$device.isSafari">
-           isSafari
-         </div>
-         <div v-if="this.$device.isFirefox">
-           isFirefox
-         </div>
-         <div v-if="this.$device.isEdge">
-           isEdge
-         </div>
-         <div v-if="this.$device.isChrome">
-           isChrome
-         </div>
-         <div v-if="this.$device.isSamsung">
-           isSamsung
-         </div>
     </NuxtLink>
-    <h2 class="ea-date">du 10 au 18 septembre 2021 - toulouse</h2>
+    <h2 class="ea-date">{{this.$route.name}}</h2>
   </div>
 </template>
 <style scoped>

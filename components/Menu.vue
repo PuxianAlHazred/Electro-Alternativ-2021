@@ -147,7 +147,6 @@ export default {
       console.log("MENU : beforeEnter")
     },
     afterEnter(el) {
-      this.toggle();
       console.log("MENU : afterEnter")
       this.$gsap.set(".list", { background: '#95165d'});
 
@@ -178,7 +177,6 @@ export default {
     },
     leave(el, done) {
         console.log("CONTENT : leaave")
-        this.toggle();
 
         var retour = this.$gsap.to(".list-item:last-child", { opacity: 0, y:50, transformOrigin:"0% 50% 100", ease: 'back', duration: .4, delay: 0});
         var panth = this.$gsap.to(".pink-panth .shp0", { 'fill': '#95165d', ease: 'back', duration: .4, delay: 1});
@@ -232,17 +230,10 @@ export default {
         this.$gsap.to(".menu-span", {delay: 0.7, duration: 0.5, opacity:1, text: "MENU", ease: "back", stagger: 0.1});
       }
     },
-    toggle() {
-        this.$store.dispatch('toggled')
-    }
+
   },
   mounted() {
     this.appear();
-  },
-  computed: {
-    preloading () {
-      return this.$store.getters['toggled']
-    },
-  },
+  }
 }
 </script>

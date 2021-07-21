@@ -9,7 +9,7 @@
         </div>
       </div>
       <!-- Titre EA -->
-      <h1>electro<br>alternativ</h1>
+      <h1>{{titre}}</h1>
       <h2>Electro Alternativ <br> <span>c'est un mélange d'espoir, d'envie et de persévérance.</span></h2>
 
       <Panthere :typee="'intro'" />
@@ -23,8 +23,6 @@
         détourne les règles et se les approprie pour profiter de la vie. C’est donc avec un esprit positif que nous vous annonçons Electro Alternativ 2021 du 11 au 19 septembre
         à Toulouse !</p>
 
-      <h4>10 / 11 / 14 / 15 / 16 / 17 / 18 <span>SEPTEMBRE</span></h4>
-
     </div>
 
   </section>
@@ -33,21 +31,26 @@
   export default {
     data: () => ({
     }),
+    props: {
+      titre: {
+        type: String,
+        required: true
+      }
+    },
     computed: {
-
     },
     methods: {
       enter() {
           var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".accueil h1", {type:"words,chars"}), chars = mySplitText.chars;
-          t1.from(chars, {delay: 0, duration: .1, opacity:0, y:-50, transformPerspective:800, transformOrigin:"center", rotationY:180,  ease:"power2.inOut", stagger: 0.1}, "+=0");
+          t1.from(chars, {delay: 0.5, duration: .1, opacity:0, y:-50, transformPerspective:800, transformOrigin:"center", rotationY:180,  ease:"power2.inOut", stagger: 0.1}, "+=0");
       },
       skew(){
         let proxy = { skew: 0 },
             skewSetter = this.$gsap.quickSetter(".accueil p", "skewY", "deg"), // fast
-            clamp = this.$gsap.utils.clamp(-3, 3); // don't let the skew go beyond 20 degrees.
+            clamp = this.$gsap.utils.clamp(-5, 5); // don't let the skew go beyond 20 degrees.
             this.$ScrollTrigger.create({
               onUpdate: (self) => {
-                let skew = clamp(self.getVelocity() / -300);
+                let skew = clamp(self.getVelocity() / -500);
                 // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
                 if (Math.abs(skew) > Math.abs(proxy.skew)) {
                   proxy.skew = skew;
@@ -99,22 +102,6 @@
             { y: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
 
-          var titleScrolling = this.$gsap.timeline({paused:true}), mySplitText = new SplitType('.accueil h4' , {type:"words,chars"}), words = mySplitText.words;
-          titleScrolling.from(words, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
-
-          let tll = this.$gsap.timeline({
-                  scrollTrigger: {
-                  trigger: ".accueil p",
-                  start: "top-=200px",
-                  end: "top+=100px",
-                  toggleActions: "restart none none reverse",
-                  onEnterBack: e => titleScrolling.reverse(),
-                  //onLeaveBack: e => titleScrolling.reverse(),
-                  onEnter: e => titleScrolling.play(),
-                  //onLeave: e => titleScrolling.reverse(),
-                  //markers: true,
-            }
-          })
       },
     },
     mounted() {
