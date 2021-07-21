@@ -4,7 +4,7 @@
     <NuxtLink to="/">
       <h1 class="title-logo">ea</h1>
     </NuxtLink>
-    <h2 class="ea-date">{{this.$route.name}}</h2>
+    <h2 class="ea-title-page">{{this.$route.name}}</h2>
   </div>
 </template>
 <style scoped>
@@ -39,7 +39,7 @@
       color: #95165d;
       font-weight: lighter;
   }
-  .ea-date {
+  .ea-title-page {
       padding-right: 75px;
       background: #f9f69a;
   }

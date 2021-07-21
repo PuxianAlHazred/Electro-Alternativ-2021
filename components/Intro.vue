@@ -67,7 +67,7 @@
             scrollTrigger: {
               trigger: ".parallax",
               start: "top-=75px",
-              end: "+=750",
+              end: "+=950",
               scrub: true
             }
           })
@@ -94,12 +94,13 @@
               trigger: ".accueil p",
               start: "top-=850",
               end: "top-=450",
-              scrub: true
+              scrub: true,
+              markers:true
             }
           })
           .fromTo(".intro-panth",
-            { y: -75, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-            { y: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+            { y: -75, ease: "none", stagger: 0.5, ease: 'linear'},
+            { y: 0, ease: "none", stagger: 0.5, ease: 'linear'}
           )
 
       },
