@@ -484,22 +484,26 @@ section .lieux .container {
 .date .line {
     text-align: center !important;
 }
-.date .line .word:first-child {
+.date .line .word:first-child,
+.date h4 {
     font-size: 75px;
     word-wrap: break-word;
     text-align: center;
     line-height: 30px;
     margin: 35px 0 15px;
 }
-.container li:hover .date  .line .word:first-child  {
+.container li:hover .date  .line .word:first-child,
+.container li:hover .date h4  {
     color: #f9f69a;
 }
-.date  .line .word:last-child {
+.date  .line .word:last-child,
+.date h4 span {
     font-size: 20px;
     text-align: center;
     margin: 0;
 }
-.container li:hover .date  .line .word:last-child {
+.container li:hover .date  .line .word:last-child,
+.container li:hover .date h4 span {
     color: #95165d;
 }
 
