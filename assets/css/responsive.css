@@ -146,6 +146,14 @@
   .menu-span {
       width: 70px;
   }
+  .list-item {
+      font-size: 35px;
+      line-height: 55px;
+  }
+  .list-item .social a {
+      margin: 0 10px;
+      font-size: 14px;
+  }
   .main-content {
       width: calc(100% - 30px);
       padding: 50px 15px;
