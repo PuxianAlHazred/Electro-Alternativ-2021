@@ -102,7 +102,7 @@
 
     },
     methods: {
-      sticky() {
+      artiste() {
         if( window.innerWidth > 1024) {
             let leslieux = this.$gsap.timeline({
               scrollTrigger: {
@@ -131,8 +131,7 @@
               { "font-size": "35px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
         }
-      },
-      skew(){
+
         let proxy = { skew: 0 },
             skewSetter = this.$gsap.quickSetter(".lieux h2", "skewY", "deg"), // fast
             clamp = this.$gsap.utils.clamp(-3, 3); // don't let the skew go beyond 20 degrees.
@@ -148,8 +147,7 @@
             });
             this.$gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
-      },
-      opacity() {
+
         this.$gsap.utils.toArray(".lieu-content").forEach(e => {
 
           var lieu = e.getElementsByTagName('h2');
@@ -307,11 +305,8 @@
       },
     },
     mounted() {
-      this.opacity();
-      this.sticky();
-      this.skew();
-      window.addEventListener('resize', this.sticky);
-      window.addEventListener('resize', this.opacity);
+      this.artiste();
+      window.addEventListener('resize', this.artiste);
     }
   }
 </script>

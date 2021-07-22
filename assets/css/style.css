@@ -26,6 +26,8 @@ section {
     background: #f9f69a;
     padding: 75px;
     width: calc(100% - 150px);
+    -webkit-transition: all .5s linear 1s;
+    -o-transition: all .5s linear 1s;
     transition: all .5s linear 1s;
     position: relative;
 }
@@ -34,6 +36,8 @@ section {
     width: 100%;
     background: url(/images/background.jpg) no-repeat 50%/cover;
     opacity: 1;
+    -webkit-transition: all .5s linear 1s;
+    -o-transition: all .5s linear 1s;
     transition: all .5s linear 1s;
 }
 /**************************************** UI *****************************************/
@@ -71,6 +75,8 @@ section {
     font-family: "Sequel100Wide45";
     font-size: 16px;
     position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     top: 0;
     left: 75px;
@@ -113,7 +119,8 @@ section {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: marquee 60s linear infinite;
+    -webkit-animation: marquee 60s linear infinite;
+            animation: marquee 60s linear infinite;
     font-size: 5vw;
     line-height: 100px;
     border-bottom-color: 1px solid rgba(149, 22, 93, 0);
@@ -138,25 +145,36 @@ section {
 .follow {
     position:absolute;
     visibility: hidden;
-    transform: translateX(20px)  translateY(-50%);
+    -webkit-transform: translateX(20px)  translateY(-50%);
+        -ms-transform: translateX(20px)  translateY(-50%);
+            transform: translateX(20px)  translateY(-50%);
     pointer-events:none;
     width:25vw;
     overflow:hidden;
 }
 .lol {
-    animation: lolking 5s linear;
-    animation-iteration-count: infinite;
+    -webkit-animation: lolking 5s linear;
+            animation: lolking 5s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .f1 {
-    filter: url("#teal-white");
+    -webkit-filter: url("#teal-white");
+            filter: url("#teal-white");
 }
 .f2 {
-    filter: url("#teal-white2");
+    -webkit-filter: url("#teal-white2");
+            filter: url("#teal-white2");
+    -webkit-transition:.1s !important;
+    -o-transition:.1s !important;
     transition:.1s !important;
     position: absolute;
 }
 .f3 {
-    filter: saturate(0);
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+    -webkit-transition:.2s !important;
+    -o-transition:.2s !important;
     transition:.2s !important;
     position: absolute;
 }
@@ -164,12 +182,25 @@ section {
     visibility: visible;
 }
 
-@keyframes marquee {
+@-webkit-keyframes marquee {
   0% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -183,7 +214,9 @@ section {
     width: 70px;
     top: 38px;
     position: relative;
-    transform:translateY(-50%) !important;
+    -webkit-transform:translateY(-50%) !important;
+        -ms-transform:translateY(-50%) !important;
+            transform:translateY(-50%) !important;
     height: auto;
     left: auto;
     margin: 0 5px 0 0;
@@ -211,10 +244,17 @@ section {
     z-index: 1006 !important;
     padding: 0 200px;
     min-height: 100vh;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding:0;
     margin:0;
 }
@@ -241,10 +281,16 @@ section {
 }
 .list-item:last-child {
     opacity: 0;
-    transform: translate(0px, -50px);
-    transform-origin: 0% 0% 0px;
+    -webkit-transform: translate(0px, -50px);
+        -ms-transform: translate(0px, -50px);
+            transform: translate(0px, -50px);
+    -webkit-transform-origin: 0% 0% 0px;
+        -ms-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
 }
 .social {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 .list-item .social a {
@@ -259,13 +305,19 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     opacity: 1;
+    -webkit-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
     max-width: 80%;
 }
 .container {
     position: relative;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -282,7 +334,9 @@ section {
     position: relative;
 }
 section .lieux .container {
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
     padding: 150px 0 0;
 }
 .main-content .artistes .cover-fond {
@@ -306,7 +360,9 @@ section .lieux .container {
     color: #000;
     position: absolute;
     top: calc(50vh - 75px);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
     line-height: 150px;
     left: 50%;
@@ -330,7 +386,9 @@ section .lieux .container {
     left: 50%;
     height: 200px;
     margin-top: 50px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     margin-bottom: -5%;
     display: block;
 }
@@ -369,14 +427,16 @@ section .lieux .container {
     padding: 0 0 75px;
     list-style: none;
     position: relative;
-    perspective: 800px;
+    -webkit-perspective: 800px;
+            perspective: 800px;
 }
 .container li {
     border-top: 1px solid black;
     padding: 30px 75px;
     position: relative;
     z-index: 1;
-    transform: translate3d(1, 0, 0, 0deg);
+    -webkit-transform: translate3d(1, 0, 0, 0deg);
+            transform: translate3d(1, 0, 0, 0deg);
 }
 .container li:last-child {
     border-bottom: 1px solid black;
@@ -389,6 +449,8 @@ section .lieux .container {
     margin: 0;
     font-size: 45px;
     line-height: 45px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
     position: relative;
     z-index: 3;
@@ -406,6 +468,8 @@ section .lieux .container {
     color: #95165d;
 }
 .container li h3 span {
+    -webkit-transition:all .3s ease;
+    -o-transition:all .3s ease;
     transition:all .3s ease;
 }
 .date {
@@ -442,7 +506,9 @@ section .lieux .container {
 
 .lieux .container {
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .lieux .wopper {
     margin: 0 0 300px;
@@ -454,8 +520,12 @@ section .lieux .container {
     border-top: 0px solid black;
     padding: 0;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 75px;
+    -webkit-transition:all.3s ease;
+    -o-transition:all.3s ease;
     transition:all.3s ease;
 }
 .lieux .container li:last-child {
@@ -478,8 +548,12 @@ section .lieux .container {
 .center {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: center;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
     padding: 0 75px;
 }
@@ -495,12 +569,18 @@ section .lieux .container {
     left: 0;
     width: 100%;
     z-index: 0;
-    filter: url("#teal-white");
-    transform: translateY(-50%);
+    -webkit-filter: url("#teal-white");
+            filter: url("#teal-white");
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 .lieux .container li img:hover {
-    filter: url("#teal-white2");
+    -webkit-filter: url("#teal-white2");
+            filter: url("#teal-white2");
 }
 .lieux .container li svg {
     position: absolute;
@@ -509,7 +589,11 @@ section .lieux .container {
     height: 100px;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 .lieux .container li:nth-child(2n) svg {

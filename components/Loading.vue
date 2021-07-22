@@ -11,7 +11,9 @@
 
       <div v-if="content">
           <h1 class="titleload">electro  <br/>alternativ</h1>
-          <div class="preloader__progress"><div class="preloader__progress__bar"></div></div>
+          <div class="preloader__progress">
+            <div class="preloader__progress__bar"></div>
+          </div>
       </div>
     </div>
   </transition>
