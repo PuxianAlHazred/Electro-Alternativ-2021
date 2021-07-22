@@ -26,7 +26,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/style.css','~/assets/css/transition.css','~/assets/css/keyframes.css',],
+  css: ['~/assets/css/style.css','~/assets/css/transition.css','~/assets/css/keyframes.css','~/assets/css/responsive.css'],
 
   // Loading
   loading: '~/components/Loading.vue',

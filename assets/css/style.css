@@ -10,6 +10,9 @@
  src:url('~assets/fonts/Sequel100Wide45.ttf') format("truetype")
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: Orchid;

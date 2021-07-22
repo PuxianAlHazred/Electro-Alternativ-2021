@@ -1,0 +1,37 @@
+/*Format laptop*/
+@media (min-width:1025px) and (max-width:1400px) {
+  .accueil h1 {
+      font-size: 130px;
+  }
+  .accueil h2 {
+      max-width: 85%;
+      font-size: 45px;
+  }
+  .accueil p {
+      padding: 50px 25px;
+      margin: 0 25px;
+  }
+  .container li h2 {
+      font-size: 40px;
+  }
+  .center {
+      padding: 0 25px;
+  }
+  .lieux .container li h2 {
+      font-size: 45px;
+      line-height: 50px;
+  }
+  .follow {
+      width: 30vw;
+  }
+}
+
+/*Format tablette*/
+@media (max-width:1024px) {
+
+}
+
+/*Format telephone*/
+@media (max-width:767px) {
+
+}

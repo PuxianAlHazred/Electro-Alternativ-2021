@@ -94,8 +94,7 @@
               trigger: ".accueil p",
               start: "top-=850",
               end: "top-=450",
-              scrub: true,
-              markers:true
+              scrub: true
             }
           })
           .fromTo(".intro-panth",
@@ -108,7 +107,7 @@
     mounted() {
         this.enter();
         this.parallax();
-              this.skew();
+        this.skew();
     }
   }
 </script>
