@@ -43,7 +43,7 @@ section {
 /**************************************** UI *****************************************/
 .border-top,
 .border-bottom {
-    width: 100%;
+    width: 100vw;
     height: 75px;
     position: fixed;
     background: #f9f69a;
@@ -354,6 +354,7 @@ section .lieux .container {
 .accueil {
     min-height: calc(100vh - 150px);
     position: relative;
+    overflow: hidden;
 }
 .accueil h1 {
     font-size: 180px;
