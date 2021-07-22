@@ -342,7 +342,7 @@
         });
       },
       sticky() {
-        if( this.$device.isDesktop) {
+        if( window.innerWidth > 1024) {
           let lineup = this.$gsap.timeline({
             scrollTrigger: {
               trigger: ".artistes .container",
@@ -356,7 +356,7 @@
             { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
         }
-        if( this.$device.isTablet) {
+        if( window.innerWidth > 767 && window.innerWidth <= 1024) {
           let lineup = this.$gsap.timeline({
             scrollTrigger: {
               trigger: ".artistes .container",
@@ -377,7 +377,7 @@
         this.follow();
         this.opacity();
         this.sticky();
-
+        window.addEventListener('resize', this.sticky)
     }
   }
 </script>

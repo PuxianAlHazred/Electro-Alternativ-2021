@@ -136,5 +136,18 @@
 
 /*Format telephone*/
 @media (max-width:767px) {
-
+  .logo h2 {
+      padding-right: 25px;
+      padding-left: 0;
+  }
+  .cover-wooper {
+      width: 150px;
+  }
+  .accueil h1 {
+      font-size: 66px;
+      line-height: 56px;
+  }
+  .accueil h2 {
+      font-size: 30px;
+  }
 }

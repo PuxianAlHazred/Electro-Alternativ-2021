@@ -67,6 +67,7 @@
     computed: {
     },
     methods: {
+
     },
     mounted() {
       this.$nextTick(() => {

@@ -103,7 +103,7 @@
     },
     methods: {
       sticky() {
-        if( this.$device.isDesktop) {
+        if( window.innerWidth > 1024) {
             let leslieux = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".lieux .container",
@@ -117,7 +117,7 @@
               { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
         }
-        if( this.$device.isTablet) {
+        if( window.innerWidth > 767 && window.innerWidth <= 1024) {
             let leslieux = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".lieux .container",
@@ -253,6 +253,7 @@
       this.opacity();
       this.sticky();
       this.skew();
+      window.addEventListener('resize', this.sticky);
     }
   }
 </script>
