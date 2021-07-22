@@ -213,47 +213,7 @@
     </div>
   </section>
 </template>
-<style>
-  .follow {
-      position:absolute;
-      visibility: hidden;
-      transform: translateX(20px)  translateY(-50%);
-      pointer-events:none;
-      width:25vw;
-      overflow:hidden;
-  }
-  .lol {
-      animation: lolking 5s linear;
-      animation-iteration-count: infinite;
-  }
-  .f1 {
-      filter: url("#teal-white");
-  }
-  .f2 {
-      filter: url("#teal-white2");
-      transition:.1s !important;
-      position: absolute;
-  }
-  .f3 {
-      filter: saturate(0);
-      transition:.2s !important;
-      position: absolute;
-  }
-  .follow.visible {
-      visibility: visible;
-  }
 
-
-
-  @keyframes marquee {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-50%, 0, 0);
-    }
-  }
-</style>
 <script>
   export default {
     data: () => ({
@@ -262,7 +222,7 @@
     },
     methods: {
       follow() {
-        if( this.$device.isDesktop) {
+        if( window.innerWidth > 767) {
           $('.imagehover').mouseenter(function(e){
             $(this).find('.follow').addClass('visible')
             var height = $(this).find('.follow').height();
@@ -283,62 +243,34 @@
               titleArtiste.from(chars, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
           var dateArtiste = this.$gsap.timeline({paused:true}), SplitDate = new SplitType(date , {type:"words"}), words = SplitDate.words;
               dateArtiste.from(words, {delay: 0.3, duration: 0.5, opacity:0, x:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
-          if( this.$device.isDesktop) {
-            var blocArtiste = this.$gsap.timeline({
-              scrollTrigger: {
-                    trigger: e,
-                    start: "center-=25px bottom-=100px",
-                    end: "top-=25px top+=75px",
-                    scrub: false,
-                    toggleActions: "play reverse play reverse",
-                    onEnterBack: e => {
-                      titleArtiste.play();
-                      dateArtiste.play();
-                    },
-                    onLeaveBack: e => {
-                      titleArtiste.reverse();
-                      dateArtiste.reverse();
-                    },
-                    onEnter: e => {
-                      titleArtiste.play();
-                      dateArtiste.play();
-                    },
-                    onLeave: e => {
-                      titleArtiste.reverse();
-                      dateArtiste.reverse();
-                    },
-                    //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
-              }
-            }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
-          }
-          if( this.$device.isTablet) {
-            var blocArtiste = this.$gsap.timeline({
-              scrollTrigger: {
-                    trigger: e,
-                    start: "center-=25px bottom-=100px",
-                    end: "top-=25px top+=50px",
-                    scrub: false,
-                    toggleActions: "play reverse play reverse",
-                    onEnterBack: e => {
-                      titleArtiste.play();
-                      dateArtiste.play();
-                    },
-                    onLeaveBack: e => {
-                      titleArtiste.reverse();
-                      dateArtiste.reverse();
-                    },
-                    onEnter: e => {
-                      titleArtiste.play();
-                      dateArtiste.play();
-                    },
-                    onLeave: e => {
-                      titleArtiste.reverse();
-                      dateArtiste.reverse();
-                    },
-                    //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
-              }
-            }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
-          }
+
+          var blocArtiste = this.$gsap.timeline({
+            scrollTrigger: {
+                  trigger: e,
+                  start: "center-=25px bottom-=100px",
+                  end: "top-=25px top+=75px",
+                  scrub: false,
+                  toggleActions: "play reverse play reverse",
+                  onEnterBack: e => {
+                    titleArtiste.play();
+                    dateArtiste.play();
+                  },
+                  onLeaveBack: e => {
+                    titleArtiste.reverse();
+                    dateArtiste.reverse();
+                  },
+                  onEnter: e => {
+                    titleArtiste.play();
+                    dateArtiste.play();
+                  },
+                  onLeave: e => {
+                    titleArtiste.reverse();
+                    dateArtiste.reverse();
+                  },
+                  //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
+            }
+          }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
+
         });
       },
       sticky() {
@@ -356,7 +288,7 @@
             { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
         }
-        if( window.innerWidth > 767 && window.innerWidth <= 1024) {
+        if( window.innerWidth <= 1024) {
           let lineup = this.$gsap.timeline({
             scrollTrigger: {
               trigger: ".artistes .container",

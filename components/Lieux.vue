@@ -117,7 +117,7 @@
               { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
         }
-        if( window.innerWidth > 767 && window.innerWidth <= 1024) {
+        if(window.innerWidth <= 1024) {
             let leslieux = this.$gsap.timeline({
               scrollTrigger: {
                 trigger: ".lieux .container",
@@ -154,97 +154,154 @@
 
           var lieu = e.getElementsByTagName('h2');
           var itineraire = e.getElementsByTagName('a');
+          var mobile = e.parentNode;
 
           var titleLieu = this.$gsap.timeline({paused:true}), SplitLieu = new SplitType(lieu , {type:"words"}), words = SplitLieu.words;
-              titleLieu.from(words, {delay: 0.3, duration: 0.5, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
+              titleLieu.from(words, {delay: 0.2, duration: 0.5, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
 
           var itineraireLieu = this.$gsap.timeline({paused:true}), SplitItineraire = new SplitType(itineraire , {type:"chars"}), chars = SplitItineraire.chars;
-              itineraireLieu.from(chars, {delay: 0.3, duration: 0.5, opacity:0, y:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
+              itineraireLieu.from(chars, {delay: 0.2, duration: 0.5, opacity:0, y:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
 
-          var blocLieu = this.$gsap.timeline({
-            scrollTrigger: {
-                  trigger: e,
-                  start: "center+=75px bottom-=100px",
-                  end: "center-=75px top+=75px",
-                  scrub: false,
-                  toggleActions: "play reverse play reverse",
-                  onEnterBack: e => {
-                    titleLieu.play();
-                    itineraireLieu.play();
-                  },
-                  onLeaveBack: e => {
-                    titleLieu.reverse();
-                    itineraireLieu.reverse();
-                  },
-                  onEnter: e => {
-                    titleLieu.play();
-                    itineraireLieu.play();
-                  },
-                  onLeave: e => {
-                    titleLieu.reverse();
-                    itineraireLieu.reverse();
-                  },
-                  //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+          if( window.innerWidth > 767) {
+              var blocLieu = this.$gsap.timeline({
+                scrollTrigger: {
+                      trigger: e,
+                      start: "center+=75px bottom-=100px",
+                      end: "center-=75px top+=75px",
+                      scrub: false,
+                      toggleActions: "play reverse play reverse",
+                      onEnterBack: e => {
+                        titleLieu.play();
+                        itineraireLieu.play();
+                      },
+                      onLeaveBack: e => {
+                        titleLieu.reverse();
+                        itineraireLieu.reverse();
+                      },
+                      onEnter: e => {
+                        titleLieu.play();
+                        itineraireLieu.play();
+                      },
+                      onLeave: e => {
+                        titleLieu.reverse();
+                        itineraireLieu.reverse();
+                      },
+                      //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+                }
+              }).fromTo(e, {  y: -100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
             }
-          }).fromTo(e, {  y: -100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
-
+            if( window.innerWidth <= 767) {
+              var blocLieu = this.$gsap.timeline({
+                scrollTrigger: {
+                      trigger: mobile,
+                      start: "top center+=100px",
+                      end: "bottom center-=100px",
+                      scrub: false,
+                      toggleActions: "play reverse play reverse",
+                      onEnterBack: e => {
+                        titleLieu.play();
+                        itineraireLieu.play();
+                      },
+                      onLeaveBack: e => {
+                        titleLieu.reverse();
+                        itineraireLieu.reverse();
+                      },
+                      onEnter: e => {
+                        titleLieu.play();
+                        itineraireLieu.play();
+                      },
+                      onLeave: e => {
+                        titleLieu.reverse();
+                        itineraireLieu.reverse();
+                      },
+                      //markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0}
+                }
+              }).fromTo(e, {  y: -100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+            }
         });
         this.$gsap.utils.toArray(".lieu-img").forEach(e => {
 
           var img = e.getElementsByTagName('img');
+          var mobile = e.parentNode;
 
           var imgFull = this.$gsap.from(img, {delay: 0, duration: 0.1, opacity:0, ease:"power2.inOut", stagger: 0.1});
 
-          var blocImg = this.$gsap.timeline({
-            scrollTrigger: {
-                  trigger: e,
-                  start: "top-=75px bottom-=100px",
-                  end: "bottom-=300px top+=75px",
-                  scrub: false,
-                  toggleActions: "play reverse play reverse",
-                  onEnterBack: e => {
-                    imgFull.play();
-                  },
-                  onLeaveBack: e => {
-                    imgFull.reverse();
-                  },
-                  onEnter: e => {
-                    imgFull.play();
-                  },
-                  onLeave: e => {
-                    imgFull.reverse();
-                  },
-                //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
-            }
-          }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+          if( window.innerWidth > 767) {
+              var blocImg = this.$gsap.timeline({
+                scrollTrigger: {
+                      trigger: e,
+                      start: "top-=75px bottom-=100px",
+                      end: "bottom-=300px top+=75px",
+                      scrub: false,
+                      toggleActions: "play reverse play reverse",
+                      onEnterBack: e => {
+                        imgFull.play();
+                      },
+                      onLeaveBack: e => {
+                        imgFull.reverse();
+                      },
+                      onEnter: e => {
+                        imgFull.play();
+                      },
+                      onLeave: e => {
+                        imgFull.reverse();
+                      },
+                    //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
+                }
+              }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+          }
+          if( window.innerWidth <= 767) {
+              var blocImg = this.$gsap.timeline({
+                scrollTrigger: {
+                      trigger: mobile,
+                      start: "top center+=100px",
+                      end: "bottom center-=100px",
+                      scrub: false,
+                      toggleActions: "play reverse play reverse",
+                      onEnterBack: e => {
+                        imgFull.play();
+                      },
+                      onLeaveBack: e => {
+                        imgFull.reverse();
+                      },
+                      onEnter: e => {
+                        imgFull.play();
+                      },
+                      onLeave: e => {
+                        imgFull.reverse();
+                      },
+                    //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
+                }
+              }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+          }
 
         });
         this.$gsap.utils.toArray(".intro-panth.lieu").forEach(e => {
           var panthOpa = this.$gsap.from(e, {delay: 0.5, duration: 0.5, opacity:0, ease:"power2.inOut", stagger: 0.1});
-
-          var blocPanth = this.$gsap.timeline({
-            scrollTrigger: {
-                  trigger: e,
-                  start: "center bottom-=100px",
-                  end: "center top+=75px",
-                  scrub: false,
-                  toggleActions: "play reverse play reverse",
-                  onEnterBack: e => {
-                    panthOpa.play();
-                  },
-                  onLeaveBack: e => {
-                    panthOpa.reverse();
-                  },
-                  onEnter: e => {
-                    panthOpa.play();
-                  },
-                  onLeave: e => {
-                    panthOpa.reverse();
-                  },
-                //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
-            }
-          }).fromTo(e, {  y: 0, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
-
+          if( window.innerWidth > 767) {
+              var blocPanth = this.$gsap.timeline({
+                scrollTrigger: {
+                      trigger: e,
+                      start: "center bottom-=100px",
+                      end: "center top+=75px",
+                      scrub: false,
+                      toggleActions: "play reverse play reverse",
+                      onEnterBack: e => {
+                        panthOpa.play();
+                      },
+                      onLeaveBack: e => {
+                        panthOpa.reverse();
+                      },
+                      onEnter: e => {
+                        panthOpa.play();
+                      },
+                      onLeave: e => {
+                        panthOpa.reverse();
+                      },
+                    //  markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
+                }
+              }).fromTo(e, {  y: 0, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
+          }
         });
 
       },
@@ -254,6 +311,7 @@
       this.sticky();
       this.skew();
       window.addEventListener('resize', this.sticky);
+      window.addEventListener('resize', this.opacity);
     }
   }
 </script>

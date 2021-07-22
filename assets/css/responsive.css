@@ -143,11 +143,49 @@
   .cover-wooper {
       width: 150px;
   }
+  .main-content {
+      width: calc(100% - 30px);
+      padding: 50px 15px;
+  }
   .accueil h1 {
       font-size: 66px;
       line-height: 56px;
   }
   .accueil h2 {
       font-size: 30px;
+      padding-top: 80vh;
+      padding-bottom: 50px;
+  }
+  .intro-panth {
+      height: 75px;
+      margin-top: 75px;
+  }
+  .accueil p {
+      padding: 15px;
+  }
+  .lieux .wopper {
+      margin: 0 0 50px;
+  }
+  .lieux .container li {
+      display: block;
+      margin-bottom: 150px;
+  }
+  .lieu-content, .lieu-img {
+      width: 100%;
+  }
+  .lieu-content {
+      min-height: auto;
+  }
+  .lieux .container li svg {
+      display: none;
+  }
+  .center {
+      display: contents;
+  }
+  .lieux .container li:nth-child(2n) .lieu-content{
+      float:right;
+  }
+  .lieux .container li:nth-child(2n) .lieu-img{
+
   }
 }

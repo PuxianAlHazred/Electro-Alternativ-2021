@@ -135,6 +135,43 @@ section {
     margin: 0px;
     display: inline-block;
 }
+.follow {
+    position:absolute;
+    visibility: hidden;
+    transform: translateX(20px)  translateY(-50%);
+    pointer-events:none;
+    width:25vw;
+    overflow:hidden;
+}
+.lol {
+    animation: lolking 5s linear;
+    animation-iteration-count: infinite;
+}
+.f1 {
+    filter: url("#teal-white");
+}
+.f2 {
+    filter: url("#teal-white2");
+    transition:.1s !important;
+    position: absolute;
+}
+.f3 {
+    filter: saturate(0);
+    transition:.2s !important;
+    position: absolute;
+}
+.follow.visible {
+    visibility: visible;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
 
 .menu {
     position: fixed;
