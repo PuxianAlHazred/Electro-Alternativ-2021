@@ -7,43 +7,6 @@
     <h2 class="ea-title-page">{{this.$route.name}}</h2>
   </div>
 </template>
-<style scoped>
-  .logo {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1007 !important;
-  }
-  .logo a {
-      text-decoration: none;
-  }
-  .title-logo {
-      color: black;
-      margin: 0;
-      max-width: 60px;
-      font-size: 85px;
-      word-wrap: break-word;
-      line-height: 70px;
-      padding: 0 7.5px;
-  }
-  .logo h2 {
-      font-family: "Sequel100Wide45";
-      font-size: 16px;
-      position: absolute;
-      width: max-content;
-      top: 0;
-      left: 75px;
-      margin: 0;
-      line-height: 75px;
-      text-transform: uppercase;
-      color: #95165d;
-      font-weight: lighter;
-  }
-  .ea-title-page {
-      padding-right: 75px;
-      background: #f9f69a;
-  }
-</style>
 <script>
 export default {
   methods: {

@@ -36,7 +36,7 @@ section {
     opacity: 1;
     transition: all .5s linear 1s;
 }
-
+/**************************************** UI *****************************************/
 .border-top,
 .border-bottom {
     width: 100%;
@@ -48,6 +48,41 @@ section {
 }
 .border-bottom {
     bottom:0;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1007 !important;
+}
+.logo a {
+    text-decoration: none;
+}
+.title-logo {
+    color: black;
+    margin: 0;
+    max-width: 60px;
+    font-size: 85px;
+    word-wrap: break-word;
+    line-height: 70px;
+    padding: 0 7.5px;
+}
+.logo h2 {
+    font-family: "Sequel100Wide45";
+    font-size: 16px;
+    position: absolute;
+    width: max-content;
+    top: 0;
+    left: 75px;
+    margin: 0;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #95165d;
+    font-weight: lighter;
+}
+.ea-title-page {
+    padding-right: 75px;
+    background: #f9f69a;
 }
 .cover-wooper {
     position: absolute;
@@ -100,6 +135,88 @@ section {
     margin: 0px;
     display: inline-block;
 }
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1007 !important;
+}
+.menu .pink-panth {
+    width: 70px;
+    top: 38px;
+    position: relative;
+    transform:translateY(-50%) !important;
+    height: auto;
+    left: auto;
+    margin: 0 5px 0 0;
+}
+.menu-span {
+    font-family: "Sequel100Wide45";
+    z-index: 1009 !important;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 75px;
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+    top: 0;
+    right: 75px;
+    margin: 0;
+}
+
+.list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1006 !important;
+    padding: 0 200px;
+    min-height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+}
+.list-item {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    font-family: orchid;
+    font-size: 45px;
+    color: #fff;
+    line-height: 75px;
+}
+.list-item a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+}
+.list-item h4 {
+    margin: 0;
+}
+.list-item:last-child {
+    opacity: 0;
+    transform: translate(0px, -50px);
+    transform-origin: 0% 0% 0px;
+}
+.social {
+    display: inline-flex;
+}
+.list-item .social a {
+    font-size: 20px;
+    margin: 0 25px;
+    color: #f9f69a;
+}
+
+/**************************************** Content *****************************************/
 
 #title {
     position: absolute;

@@ -103,20 +103,34 @@
     },
     methods: {
       sticky() {
-
-        let leslieux = this.$gsap.timeline({
-          scrollTrigger: {
-            trigger: ".lieux .container",
-            start: "top top+=450",
-            end: "top top+=50",
-            scrub: true
-          }
-        })
-        .fromTo(".marqueelieu",
-          { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-          { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
-        )
-
+        if( this.$device.isDesktop) {
+            let leslieux = this.$gsap.timeline({
+              scrollTrigger: {
+                trigger: ".lieux .container",
+                start: "top top+=450",
+                end: "top top+=50",
+                scrub: true
+              }
+            })
+            .fromTo(".marqueelieu",
+              { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+              { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+            )
+        }
+        if( this.$device.isTablet) {
+            let leslieux = this.$gsap.timeline({
+              scrollTrigger: {
+                trigger: ".lieux .container",
+                start: "top top+=450",
+                end: "top top+=50",
+                scrub: true
+              }
+            })
+            .fromTo(".marqueelieu",
+              { "font-size": "75px", "line-height": "75px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+              { "font-size": "35px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+            )
+        }
       },
       skew(){
         let proxy = { skew: 0 },

@@ -28,7 +28,110 @@
 
 /*Format tablette*/
 @media (max-width:1024px) {
+  .border-top, .border-bottom {
+      height: 50px;
+  }
+  .title-logo {
+      max-width: 40px;
+      padding: 0 5px;
+      font-size: 60px;
+      line-height: 50px;
+  }
+  .logo h2 {
+      left: 50px;
+      line-height: 50px;
+      padding-left: 25px;
+      padding-right: 50px;
+  }
+  .wopper-top {
+      left: 50px;
+      max-width: calc(100% - 100px);
+  }
+  .marque {
+      line-height: 50px;
+      font-size: 16px;
+  }
+  .cover-wooper {
+      width: 175px;
+      height: 50px;
+  }
+  .menu .pink-panth {
+      width: 45px;
+      top: 25px;
+  }
+  .menu-span {
+      line-height: 50px;
+      right: 50px;
+      font-size: 16px;
+  }
 
+  .main-content {
+      width: calc(100% - 100px);
+      padding: 50px;
+  }
+  .main-content > section {
+      margin-bottom: 100px;
+  }
+  .accueil h1 {
+      font-size: 100px;
+      line-height: 90px;
+  }
+  .accueil h2 {
+      font-size: 40px;
+      max-width: 95%;
+  }
+  .accueil p {
+      margin: 0;
+      padding: 25px;
+      line-height: 25px;
+      font-size: 14px;
+  }
+
+  .main-content .artistes ul {
+      padding-top: 250px;
+  }
+  .container li {
+      padding: 25px;
+  }
+  .container li h2 {
+      font-size: 30px;
+  }
+  .container li h3 {
+      font-size: 14px;
+      margin-bottom: 15px;
+  }
+  .date .line .word:first-child {
+      font-size: 55px;
+      margin: 38px 0 0px;
+  }
+  .date .line .word:last-child {
+      font-size: 18px;
+      line-height: 16px;
+  }
+
+  .lieu-content, .lieu-img {
+      width: 50%;
+  }
+  .center {
+      padding: 0 0 0 40px;
+  }
+  .lieux .container li:nth-child(2n) .center{
+    padding: 0 40px 0 0;
+  }
+  .lieux .container li {
+      margin: 0;
+  }
+  .lieux .container li h2 {
+      font-size: 48px;
+      line-height: 50px;
+  }
+  .lieux .container li svg {
+      width: 75px;
+      height: 75px;
+  }
+  .lieux .container li:hover svg {
+      left: 50% !important;
+  }
 }
 
 /*Format telephone*/

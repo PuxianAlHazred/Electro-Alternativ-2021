@@ -310,12 +310,13 @@
                     //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
               }
             }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
-          } else {
+          }
+          if( this.$device.isTablet) {
             var blocArtiste = this.$gsap.timeline({
               scrollTrigger: {
                     trigger: e,
                     start: "center-=25px bottom-=100px",
-                    end: "top-=25px top+=75px",
+                    end: "top-=25px top+=50px",
                     scrub: false,
                     toggleActions: "play reverse play reverse",
                     onEnterBack: e => {
@@ -354,7 +355,8 @@
             { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
             { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
-        } else {
+        }
+        if( this.$device.isTablet) {
           let lineup = this.$gsap.timeline({
             scrollTrigger: {
               trigger: ".artistes .container",
@@ -364,8 +366,8 @@
             }
           })
           .fromTo(".marqueelineup",
-            { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-            { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+            { "font-size": "75px", "line-height": "75px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
+            { "font-size": "35px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
         }
       },
