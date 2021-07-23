@@ -45,8 +45,8 @@ export default {
 
   // Image config: https://image.nuxtjs.org/getting-started/installation
   image: {
-    //staticFilename: '[publicPath]/images/[name]-[hash][ext]',
-    dir: 'static/images',
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]',
+    dir: 'static',
     screens: {
       xs: 767,
       md: 1024,
