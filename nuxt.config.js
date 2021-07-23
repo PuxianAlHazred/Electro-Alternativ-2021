@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
+  target: 'static',
   head: {
     title: 'Electro Alternativ 2021 - Du 10 au 18 septembre, Toulouse',
     htmlAttrs: {
@@ -38,12 +39,14 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  target: 'static',
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/device','nuxt-gsap-module'],
+  buildModules: ['@nuxt/image', '@nuxtjs/device','nuxt-gsap-module'],
 
   // Image config: https://image.nuxtjs.org/getting-started/installation
   image: {
+    //staticFilename: '[publicPath]/images/[name]-[hash][ext]',
+    dir: 'static/images',
     screens: {
       xs: 767,
       md: 1024,
@@ -74,7 +77,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/image'],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
