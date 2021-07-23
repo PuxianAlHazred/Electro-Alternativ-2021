@@ -38,20 +38,16 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  target: 'static',
+  target: 'static/images',
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxt/image','@nuxtjs/device','nuxt-gsap-module'],
+  buildModules: ['@nuxtjs/device','nuxt-gsap-module'],
 
   // Image config: https://image.nuxtjs.org/getting-started/installation
   image: {
     screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-      '2xl': 1536
+      xs: 767,
+      md: 1024,
+      xl: 1440
     },
   },
   // Device config: https://github.com/nuxt-community/device-module
@@ -78,8 +74,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: ['@nuxt/image'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

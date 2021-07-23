@@ -18,7 +18,7 @@
         <ul>
           <li id="abattoirs">
               <div class="lieu-img">
-                <nuxt-img sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw" loading="lazy" src="images/lieux/Abattoirs.webp"/>
+                <nuxt-img sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="images/lieux/Abattoirs.webp"/>
               </div>
               <Panthere :typee="'lieu'" />
               <div class="lieu-content">
@@ -103,6 +103,7 @@
     },
     methods: {
       sticky() {
+        console.log(this.$img.options.screens.md)
         if( window.innerWidth > 1024) {
             let leslieux = this.$gsap.timeline({
               scrollTrigger: {
