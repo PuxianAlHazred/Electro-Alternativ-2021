@@ -18,9 +18,9 @@
         <ul>
           <li id="abattoirs">
               <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Abattoirs.webp">
+                <nuxt-img sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw" loading="lazy" src="images/lieux/Abattoirs.webp"/>
               </div>
-              <Panthere  :typee="'lieu'" />
+              <Panthere :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
                       <h2>Les abattoirs</h2>

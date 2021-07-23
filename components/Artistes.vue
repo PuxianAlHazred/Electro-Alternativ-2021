@@ -238,7 +238,7 @@
       opacity() {
         this.$gsap.utils.toArray(".imagehover").forEach(e => {
           if( window.innerWidth > 767) {
-            
+
             var artiste = e.getElementsByClassName('artiste');
             var date = e.getElementsByClassName('date');
             var titleArtiste = this.$gsap.timeline({paused:true}), SplitText = new SplitType(artiste , {type:"chars"}), chars = SplitText.chars;
