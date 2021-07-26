@@ -18,7 +18,7 @@
     <div class="border-bottom">
 
       <div class="sound">
-        <div v-if="this.$store.state.muted" v-on:click="mute()" class="play">
+        <div v-if="!this.$store.state.muted" v-on:click="mute()" class="play">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 153.667 153.667" style="enable-background:new 0 0 153.667 153.667;" xml:space="preserve">
           <g>
@@ -32,7 +32,7 @@
           </g>
           </svg>
         </div>
-        <div v-else="!this.$store.state.muted" v-on:click="mute()" class="pause">
+        <div v-else="this.$store.state.muted" v-on:click="mute()" class="pause">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 191.519 191.519" style="enable-background:new 0 0 191.519 191.519;" xml:space="preserve">
           <g>
