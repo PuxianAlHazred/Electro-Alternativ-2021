@@ -549,6 +549,9 @@ section .lieux .container {
     z-index: 1;
     width: 60%;
 }
+.lieux .container li:nth-child(2n) .lieu-img{
+    order:1;
+}
 .center {
     position: relative;
     top: 50%;

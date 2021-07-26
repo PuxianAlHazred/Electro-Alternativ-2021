@@ -31,17 +31,17 @@
               </div>
           </li>
           <li id="bikini">
+            <div class="lieu-img">
+              <img srcset="/images/lieux/Bikini-xl.webp 1440w, /images/lieux/Bikini-md.webp 1024w, /images/lieux/Bikini-xs.webp 767w"
+                  sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                  src="/images/lieux/Bikini-xs.webp" loading="lazy" alt="Le Bikini - Toulouse" />
+            </div>
+              <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
                       <h2>le Bikini</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
-              </div>
-              <Panthere  :typee="'lieu'" />
-              <div class="lieu-img">
-                <img srcset="/images/lieux/Bikini-xl.webp 1440w, /images/lieux/Bikini-md.webp 1024w, /images/lieux/Bikini-xs.webp 767w"
-                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
-                    src="/images/lieux/Bikini-xs.webp" loading="lazy" alt="Le Bikini - Toulouse" />
               </div>
           </li>
           <li id="cinema">
@@ -59,17 +59,17 @@
               </div>
           </li>
           <li id="halle">
+            <div class="lieu-img">
+              <img srcset="/images/lieux/Halle-de-la-machine-xl.webp 1440w, /images/lieux/Halle-de-la-machine-md.webp 1024w, /images/lieux/Halle-de-la-machine-xs.webp 767w"
+                  sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                  src="/images/lieux/Halle-de-la-machine-xs.webp" loading="lazy" alt="Halle de la machine - Toulouse" />
+            </div>
+              <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
                       <h2>Halle de la machine</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
-              </div>
-              <Panthere  :typee="'lieu'" />
-              <div class="lieu-img">
-                <img srcset="/images/lieux/Halle-de-la-machine-xl.webp 1440w, /images/lieux/Halle-de-la-machine-md.webp 1024w, /images/lieux/Halle-de-la-machine-xs.webp 767w"
-                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
-                    src="/images/lieux/Halle-de-la-machine-xs.webp" loading="lazy" alt="Halle de la machine - Toulouse" />
               </div>
           </li>
           <li id="metronum">
@@ -86,18 +86,18 @@
                   </div>
               </div>
           </li>
-          <li id="cuisines">
+          <li id="cuisines">              
+              <div class="lieu-img">
+                <img srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp 1440w, /images/lieux/Saint-Pierre-des-cuisines-md.webp 1024w, /images/lieux/Saint-Pierre-des-cuisines-xs.webp 767w"
+                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                    src="/images/lieux/Saint-Pierre-des-cuisines-xs.webp" loading="lazy" alt="Saint Pierre des cuisines - Toulouse" />
+              </div>
+              <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
                       <h2>Saint Pierre des cuisines</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
-              </div>
-              <Panthere  :typee="'lieu'" />
-              <div class="lieu-img">
-                <img srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp 1440w, /images/lieux/Saint-Pierre-des-cuisines-md.webp 1024w, /images/lieux/Saint-Pierre-des-cuisines-xs.webp 767w"
-                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
-                    src="/images/lieux/Saint-Pierre-des-cuisines-xs.webp" loading="lazy" alt="Saint Pierre des cuisines - Toulouse" />
               </div>
           </li>
         </ul>
