@@ -39,22 +39,16 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="/images/lieux/Bikini-xs.webp">
-                  <source media="(max-width: 1024px)" srcset="/images/lieux/Bikini-md.webp">
-                  <source media="(max-width: 1440px)" srcset="/images/lieux/Bikini-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Bikini.webp" alt="Le Bikini - Toulouse">
-                </picture>
+                <img srcset="/images/lieux/Bikini-xl.webp 1440w, /images/lieux/Bikini-md.webp 1024w, /images/lieux/Bikini-xs.webp 767w"
+                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                    src="/images/lieux/Bikini-xs.webp" loading="lazy" alt="Le Bikini - Toulouse" />
               </div>
           </li>
           <li id="cinema">
               <div class="lieu-img">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="/images/lieux/Cinema-ABC-xs.webp">
-                  <source media="(max-width: 1024px)" srcset="/images/lieux/Cinema-ABC-md.webp">
-                  <source media="(max-width: 1440px)" srcset="/images/lieux/Cinema-ABC-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Cinema-ABC.webp" alt="Cinema ABC - Toulouse">
-                </picture>
+                <img srcset="/images/lieux/Cinema-ABC-xl.webp 1440w, /images/lieux/Cinema-ABC-md.webp 1024w, /images/lieux/Cinema-ABC-xs.webp 767w"
+                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                    src="/images/lieux/Cinema-ABC-xs.webp" loading="lazy" alt="Cinema ABC - Toulouse" />
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
@@ -73,22 +67,16 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="/images/lieux/Halle-de-la-machine-xs.webp">
-                  <source media="(max-width: 1024px)" srcset="/images/lieux/Halle-de-la-machine-md.webp">
-                  <source media="(max-width: 1440px)" srcset="/images/lieux/Halle-de-la-machine-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Halle-de-la-machine.webp" alt="Halle de la machine - Toulouse">
-                </picture>
+                <img srcset="/images/lieux/Halle-de-la-machine-xl.webp 1440w, /images/lieux/Halle-de-la-machine-md.webp 1024w, /images/lieux/Halle-de-la-machine-xs.webp 767w"
+                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                    src="/images/lieux/Halle-de-la-machine-xs.webp" loading="lazy" alt="Halle de la machine - Toulouse" />
               </div>
           </li>
           <li id="metronum">
               <div class="lieu-img">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="/images/lieux/Metronum-xs.webp">
-                  <source media="(max-width: 1024px)" srcset="/images/lieux/Metronum-md.webp">
-                  <source media="(max-width: 1440px)" srcset="/images/lieux/Metronum-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Metronum.webp" alt="Le Metronum - Toulouse">
-                </picture>
+                <img srcset="/images/lieux/Metronum-xl.webp 1440w, /images/lieux/Metronum-md.webp 1024w, /images/lieux/Metronum-xs.webp 767w"
+                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                    src="/images/lieux/Metronum-xs.webp" loading="lazy" alt="Le Metronum - Toulouse" />
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
@@ -107,12 +95,9 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-xs.webp">
-                  <source media="(max-width: 1024px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-md.webp">
-                  <source media="(max-width: 1440px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Saint-Pierre-des-cuisines.webp" alt="Saint Pierre des cuisines - Toulouse">
-                </picture>
+                <img srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp 1440w, /images/lieux/Saint-Pierre-des-cuisines-md.webp 1024w, /images/lieux/Saint-Pierre-des-cuisines-xs.webp 767w"
+                    sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
+                    src="/images/lieux/Saint-Pierre-des-cuisines-xs.webp" loading="lazy" alt="Saint Pierre des cuisines - Toulouse" />
               </div>
           </li>
         </ul>
