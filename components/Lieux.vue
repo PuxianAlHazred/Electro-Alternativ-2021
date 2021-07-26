@@ -37,12 +37,12 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Bikini.webp">
+                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Bikini.webp"/>
               </div>
           </li>
           <li id="cinema">
               <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Cinema-ABC.webp">
+                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Cinema-ABC.webp"/>
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
@@ -61,12 +61,12 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Halle-de-la-machine.webp">
+                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Halle-de-la-machine.webp"/>
               </div>
           </li>
           <li id="metronum">
               <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Metronum.webp">
+                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Metronum.webp"/>
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
@@ -85,7 +85,7 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                  <img loading="lazy" src="images/lieux/Saint-Pierre-des-cuisines.webp">
+                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Saint-Pierre-des-cuisines.webp"/>
               </div>
           </li>
         </ul>
