@@ -19,9 +19,9 @@
           <li id="abattoirs">
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Abattoirs-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Abattoirs-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Abattoirs-xl.webp">
+                  <source media="(max-width: 767px)" srcset="/images/lieux/Abattoirs-xs.webp">
+                  <source media="(max-width: 1024px)" srcset="/images/lieux/Abattoirs-md.webp">
+                  <source media="(max-width: 1440px)" srcset="/images/lieux/Abattoirs-xl.webp">
                   <img loading="lazy" src="/images/lieux/Abattoirs.webp" alt="Les Abattoirs - Toulouse">
                 </picture>
               </div>
@@ -43,9 +43,9 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Bikini-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Bikini-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Bikini-xl.webp">
+                  <source media="(max-width: 767px)" srcset="/images/lieux/Bikini-xs.webp">
+                  <source media="(max-width: 1024px)" srcset="/images/lieux/Bikini-md.webp">
+                  <source media="(max-width: 1440px)" srcset="/images/lieux/Bikini-xl.webp">
                   <img loading="lazy" src="/images/lieux/Bikini.webp" alt="Le Bikini - Toulouse">
                 </picture>
               </div>
@@ -53,9 +53,9 @@
           <li id="cinema">
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Cinema-ABC-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Cinema-ABC-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Cinema-ABC-xl.webp">
+                  <source media="(max-width: 767px)" srcset="/images/lieux/Cinema-ABC-xs.webp">
+                  <source media="(max-width: 1024px)" srcset="/images/lieux/Cinema-ABC-md.webp">
+                  <source media="(max-width: 1440px)" srcset="/images/lieux/Cinema-ABC-xl.webp">
                   <img loading="lazy" src="/images/lieux/Cinema-ABC.webp" alt="Cinema ABC - Toulouse">
                 </picture>
               </div>
@@ -77,9 +77,9 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Halle-de-la-machine-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Halle-de-la-machine-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Halle-de-la-machine-xl.webp">
+                  <source media="(max-width: 767px)" srcset="/images/lieux/Halle-de-la-machine-xs.webp">
+                  <source media="(max-width: 1024px)" srcset="/images/lieux/Halle-de-la-machine-md.webp">
+                  <source media="(max-width: 1440px)" srcset="/images/lieux/Halle-de-la-machine-xl.webp">
                   <img loading="lazy" src="/images/lieux/Halle-de-la-machine.webp" alt="Halle de la machine - Toulouse">
                 </picture>
               </div>
@@ -87,9 +87,9 @@
           <li id="metronum">
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Metronum-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Metronum-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Metronum-xl.webp">
+                  <source media="(max-width: 767px)" srcset="/images/lieux/Metronum-xs.webp">
+                  <source media="(max-width: 1024px)" srcset="/images/lieux/Metronum-md.webp">
+                  <source media="(max-width: 1440px)" srcset="/images/lieux/Metronum-xl.webp">
                   <img loading="lazy" src="/images/lieux/Metronum.webp" alt="Le Metronum - Toulouse">
                 </picture>
               </div>
@@ -111,9 +111,9 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp">
+                  <source media="(max-width: 767px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-xs.webp">
+                  <source media="(max-width: 1024px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-md.webp">
+                  <source media="(max-width: 1440px)" srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp">
                   <img loading="lazy" src="/images/lieux/Saint-Pierre-des-cuisines.webp" alt="Saint Pierre des cuisines - Toulouse">
                 </picture>
               </div>
