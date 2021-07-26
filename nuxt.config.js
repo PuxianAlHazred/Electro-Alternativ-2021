@@ -45,8 +45,16 @@ export default {
 
   // Image config: https://image.nuxtjs.org/getting-started/installation
   image: {
-    provider: 'static',
-    dir: 'static',
+    providers: {
+      customProvider: {
+        name: 'customProvider', // optional value to overrider provider name
+        provider: '~/static/images/lieux', // Path to custom provider
+        options: {
+          // ... provider options
+        }
+      }
+    },
+    staticFilename: '[publicPath]/gen/images/[name]-[hash][ext]',
     screens: {
       xs: 767,
       md: 1024,

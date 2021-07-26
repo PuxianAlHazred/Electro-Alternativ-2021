@@ -18,7 +18,7 @@
         <ul>
           <li id="abattoirs">
               <div class="lieu-img">
-                <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Abattoirs.webp"/>
+                <nuxt-img provider="customProvider" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/Abattoirs.webp"/>
               </div>
               <Panthere :typee="'lieu'" />
               <div class="lieu-content">
