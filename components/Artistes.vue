@@ -294,10 +294,10 @@
                   });
                 } else {
                   e.addEventListener("mouseenter", () => {
-                    console.clear();
+
                   });
                   e.addEventListener("mouseleave", () => {
-                    console.clear();
+      
                   });
                 }
                 var artiste = e.getElementsByClassName('artiste');
