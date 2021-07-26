@@ -17,8 +17,8 @@
     </div>
     <div class="border-bottom">
       <div class="sound">
-        <div class="play">&#9205;</div>
-        <div class="pause">&#9208;</div>
+        <div v-if="this.$store.state.muted" v-on:click="mute()" class="play">&#9205;</div>
+        <div v-else="!this.$store.state.muted" v-on:click="mute()" class="pause">&#9208;</div>
       </div>
       <svg class="svg-filter">
         <defs>
@@ -67,11 +67,15 @@
 
 <script>
   export default {
-    data: () => ({
-    }),
-    computed: {
-    },
     methods: {
+      mute() {
+        this.$store.dispatch('muteed')
+      }
+    },
+    computed: {
+      muteeed () {
+        return this.$store.getters['muteed']
+      },
     },
     mounted() {
       this.$gsap.config({
