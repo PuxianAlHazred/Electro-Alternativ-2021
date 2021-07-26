@@ -64,6 +64,12 @@
       right: 50px;
       font-size: 16px;
   }
+  .play,
+  .pause {
+      width: 20px;
+      height: 20px;
+      margin: 15px;
+  }
 
   .main-content {
       width: calc(100% - 100px);
