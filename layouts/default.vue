@@ -54,6 +54,7 @@
 </template>
 
 <style>
+
   .svg-filter {
     visibility: hidden;
     height: 0;
@@ -67,7 +68,6 @@
     computed: {
     },
     methods: {
-
     },
     mounted() {
       this.$nextTick(() => {
