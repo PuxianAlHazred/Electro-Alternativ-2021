@@ -284,6 +284,7 @@
             this.$gsap.utils.toArray(".imagehover").forEach(e => {
                 e.addEventListener("mouseenter", () => {
                   var audio = e.querySelector(".myaudio");
+                  audio.volume = 0.5;
                   audio.play();
                 });
                 e.addEventListener("mouseleave", () => {
