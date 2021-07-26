@@ -18,12 +18,7 @@
         <ul>
           <li id="abattoirs">
               <div class="lieu-img">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="/images/lieux/Abattoirs-xs.webp">
-                  <source media="(max-width: 1024px)" srcset="/images/lieux/Abattoirs-md.webp">
-                  <source media="(max-width: 1440px)" srcset="/images/lieux/Abattoirs-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Abattoirs.webp" alt="Les Abattoirs - Toulouse">
-                </picture>
+                <img srcset="/images/lieux/Abattoirs-xl.webp  1440w,  /images/lieux/Abattoirs-md.webp 1024w,  /images/lieux/Abattoirs-xs.webp  767w"  sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"  src="/images/lieux/Abattoirs-xs.webp"  alt="Les Abattoires - Toulouse" />
               </div>
               <Panthere :typee="'lieu'" />
               <div class="lieu-content">
