@@ -26,6 +26,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste1.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste1.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-arabianpanther.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">chapelier fou ensemb7e live</h2>
@@ -38,6 +41,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste2.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste2.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-chapelir.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">dj marcelle</h2>
@@ -50,6 +56,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste3.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste3.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-djmarcelle.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">djrum live</h2>
@@ -74,6 +83,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste5.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste5.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-esther.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">giant swan live</h2>
@@ -86,6 +98,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste6.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste6.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-giantswan.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">hysteria temple fondation </h2>
@@ -98,6 +113,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste7.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste7.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-htf.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">jasss</h2>
@@ -110,6 +128,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste8.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste8.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-jass.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">kendal</h2>
@@ -122,6 +143,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste9.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste9.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-kendal.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">kiddy smile</h2>
@@ -134,6 +158,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste10.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste10.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-kiddy.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">lena willikens</h2>
@@ -146,6 +173,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste11.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste11.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-lena.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">louisahhh live band</h2>
@@ -158,6 +188,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste12.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste12.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-louisahh.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">naranja</h2>
@@ -170,6 +203,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste13.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste13.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-naranja.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">pablo bozzi</h2>
@@ -182,6 +218,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste14.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste14.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-pablo.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">rebekah</h2>
@@ -194,6 +233,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste15.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste15.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-rebekah.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">wallis</h2>
@@ -206,6 +248,9 @@
               <img loading="lazy" class="follow f2" src="images/artistes/artiste16.webp">
               <img loading="lazy" class="follow f1" src="images/artistes/artiste16.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-wallis.mp3"></source>
+            </audio>
           </li>
         </ul>
       </div>
@@ -232,10 +277,20 @@
               var height = $(this).find('.follow').height();
               $(this).find('.follow').css({left:e.pageX, top: - height / 4});
             }).mouseleave(function(e){
+
               $(this).find('.follow').removeClass('visible');
             });
 
             this.$gsap.utils.toArray(".imagehover").forEach(e => {
+                e.addEventListener("mouseenter", () => {
+                  var audio = e.querySelector(".myaudio");
+                  audio.play();
+                });
+                e.addEventListener("mouseleave", () => {
+                  var audio = e.querySelector(".myaudio");
+
+                  audio.pause();
+                });
 
                 var artiste = e.getElementsByClassName('artiste');
                 var date = e.getElementsByClassName('date');
@@ -273,7 +328,6 @@
 
             });
         }
-
         if( window.innerWidth > 1024) {
           let lineup = this.$gsap.timeline({
             scrollTrigger: {
