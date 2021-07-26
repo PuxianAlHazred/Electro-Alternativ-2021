@@ -22,9 +22,9 @@ export default {
   mounted() {
     this.appear();
     if(this.$store.state.preloading === false) {
-      console.log("IORE 1")
+      //console.log("IORE 1")
     } else {
-      console.log("IORE 2")
+      //console.log("IORE 2")
     }
   }
 }

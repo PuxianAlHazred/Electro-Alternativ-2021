@@ -64,10 +64,10 @@ export default {
         });
     },
     beforeEnter(el) {
-      console.log("MENU : beforeEnter")
+      //console.log("MENU : beforeEnter")
     },
     afterEnter(el) {
-      console.log("MENU : afterEnter")
+      //console.log("MENU : afterEnter")
       this.$gsap.set(".list", { background: '#95165d'});
 
 
@@ -81,7 +81,7 @@ export default {
       });
     },
     beforeLeave(el) {
-      console.log("MENU : beforeLeave")
+      //console.log("MENU : beforeLeave")
 
       let menu = document.querySelector(".menu-span");
       menu.addEventListener("mouseenter", () => {
@@ -93,10 +93,10 @@ export default {
     },
     afterLeave(el) {
 
-      console.log("MENU : afterLeave")
+      //console.log("MENU : afterLeave")
     },
     leave(el, done) {
-        console.log("CONTENT : leaave")
+        //console.log("CONTENT : leaave")
 
         var retour = this.$gsap.to(".list-item:last-child", { opacity: 0, y:50, transformOrigin:"0% 50% 100", ease: 'back', duration: .4, delay: 0});
         var panth = this.$gsap.to(".pink-panth .shp0", { 'fill': '#95165d', ease: 'back', duration: .4, delay: 1});
@@ -137,16 +137,16 @@ export default {
           done()
         }
       }, "+=0");
-      console.log("CONTENT : eenter")
+      //console.log("CONTENT : eenter")
     },
 
     toggleMenu() {
       this.menu = !this.menu
       if(this.menu === true) {
-        console.log("toggleMenu : true")
+        //console.log("toggleMenu : true")
         this.$gsap.to(".menu-span", {delay: 0.7, duration: 0.5, opacity:1, text: "CLOSE", ease: "back", stagger: 0.1});
       } else {
-        console.log("toggleMenu : false")
+        //console.log("toggleMenu : false")
         this.$gsap.to(".menu-span", {delay: 0.7, duration: 0.5, opacity:1, text: "MENU", ease: "back", stagger: 0.1});
       }
     },
