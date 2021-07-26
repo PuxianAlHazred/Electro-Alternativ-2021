@@ -159,23 +159,6 @@
             )
         }
       },
-      skew(){
-        let proxy = { skew: 0 },
-            skewSetter = this.$gsap.quickSetter(".lieux h2", "skewY", "deg"), // fast
-            clamp = this.$gsap.utils.clamp(-3, 3); // don't let the skew go beyond 20 degrees.
-            this.$ScrollTrigger.create({
-              onUpdate: (self) => {
-                let skew = clamp(self.getVelocity() / -300);
-                // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
-                if (Math.abs(skew) > Math.abs(proxy.skew)) {
-                  proxy.skew = skew;
-                  this.$gsap.to(proxy, {skew: 0, duration: 0.3, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
-                }
-              }
-            });
-            this.$gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
-
-      },
       opacity() {
         this.$gsap.utils.toArray(".lieu-content").forEach(e => {
 
@@ -251,9 +234,9 @@
           var img = e.getElementsByTagName('img');
           var mobile = e.parentNode;
 
-          var imgFull = this.$gsap.from(img, {delay: 0, duration: 0.1, opacity:0, ease:"power2.inOut", stagger: 0.1});
-
           if( window.innerWidth > 767) {
+
+              var imgFull = this.$gsap.from(img, {delay: 0, duration: 0.1, opacity:0, ease:"power2.inOut", stagger: 0.1});
               var blocImg = this.$gsap.timeline({
                 scrollTrigger: {
                       trigger: e,
@@ -312,7 +295,6 @@
     mounted() {
       this.opacity();
       this.sticky();
-      this.skew();
       window.addEventListener('resize', this.sticky);
       window.addEventListener('resize', this.opacity);
     }
