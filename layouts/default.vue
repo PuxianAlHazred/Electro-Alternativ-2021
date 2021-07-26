@@ -16,6 +16,10 @@
       <div class="cover-wooper"></div>
     </div>
     <div class="border-bottom">
+      <div class="sound">
+        <div class="play">&#9205;</div>
+        <div class="pause">&#9208;</div>
+      </div>
       <svg class="svg-filter">
         <defs>
           <filter id="teal-white" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

@@ -125,8 +125,8 @@
               }
             })
             .fromTo(".marqueelieu",
-              { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-              { "font-size": "45px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+              { "font-size": "100px", "line-height": "100px","color": "#95165d", ease: 'power2.inOut'},
+              { "font-size": "45px", "line-height": "75px","color": "#000", ease: 'power2.inOut'}
             )
         }
         if(window.innerWidth <= 1024) {
@@ -139,8 +139,8 @@
               }
             })
             .fromTo(".marqueelieu",
-              { "font-size": "75px", "line-height": "75px","color": "#95165d", ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-              { "font-size": "35px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+              { "font-size": "75px", "line-height": "75px","color": "#95165d", ease: 'power2.inOut'},
+              { "font-size": "35px", "line-height": "75px","color": "#000", ease: 'power2.inOut'}
             )
         }
 
@@ -220,7 +220,7 @@
 
           if( window.innerWidth > 767) {
 
-              var imgFull = this.$gsap.from(img, {delay: 0, duration: 0.1, opacity:0, ease:"power2.inOut", stagger: 0.1});
+              var imgFull = this.$gsap.from(img, {delay: 0, duration: 0.1, opacity:0, ease:"power2.inOut"});
               var blocImg = this.$gsap.timeline({
                 scrollTrigger: {
                       trigger: e,
@@ -247,7 +247,7 @@
 
         });
         this.$gsap.utils.toArray(".intro-panth.lieu").forEach(e => {
-          var panthOpa = this.$gsap.from(e, {delay: 0.5, duration: 0.5, opacity:0, ease:"power2.inOut", stagger: 0.1});
+          var panthOpa = this.$gsap.from(e, {delay: 0.5, duration: 0.5, opacity:0, ease:"power2.inOut"});
           if( window.innerWidth > 767) {
               var blocPanth = this.$gsap.timeline({
                 scrollTrigger: {
