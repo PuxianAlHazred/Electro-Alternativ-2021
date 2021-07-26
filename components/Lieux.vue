@@ -280,30 +280,6 @@
                 }
               }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
           }
-          if( window.innerWidth <= 767) {
-              var blocImg = this.$gsap.timeline({
-                scrollTrigger: {
-                      trigger: mobile,
-                      start: "top center+=100px",
-                      end: "bottom center-=100px",
-                      scrub: false,
-                      toggleActions: "play reverse play reverse",
-                      onEnterBack: e => {
-                        imgFull.play();
-                      },
-                      onLeaveBack: e => {
-                        imgFull.reverse();
-                      },
-                      onEnter: e => {
-                        imgFull.play();
-                      },
-                      onLeave: e => {
-                        imgFull.reverse();
-                      },
-                      markers: {startColor: "blue", endColor: "blue", fontSize: "25px", fontWeight: "bold", indent: 0}
-                }
-              }).fromTo(e, {  y: 100, opacity: 0, ease: "linear"}, {  y: 0, opacity: 1, ease: "linear"});
-          }
 
         });
         this.$gsap.utils.toArray(".intro-panth.lieu").forEach(e => {
