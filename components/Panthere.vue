@@ -1,5 +1,5 @@
 <template>
-  <svg class="intro-panth" :class="typee" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1083 785" width="auto" height="auto"
+  <svg class="intro-panth" :class="typee" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1083 785" width="200px" height="175px"
     @mouseover="hoverpanth()">
     	<g id="panthererose">
     		<path id="sourciledroit" class="shp0" d="M710.45 31.8C711.17 32.47 712.11 32.84 713.08 32.84C713.16 32.84 713.23 32.84 713.31 32.84C718.14 32.55 722.96 32.4 727.6 32.4C795.27 32.4 837.74 62.45 844.12 114.88C844.35 116.77 845.97 118.22 847.89 118.24L856.57 118.32L856.6 118.32C857.67 118.32 858.69 117.89 859.41 117.1C860.14 116.33 860.51 115.26 860.43 114.2C857.84 79.83 842.88 50.86 817.19 30.41C792.22 10.52 758.83 0 720.7 0C718.12 0 715.5 0.04 712.89 0.14C710.82 0.21 709.19 1.91 709.19 3.98L709.25 29.01C709.25 30.08 709.68 31.08 710.45 31.8Z" />
