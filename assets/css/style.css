@@ -123,7 +123,6 @@ section {
             animation: marquee 60s linear infinite;
     font-size: 5vw;
     line-height: 100px;
-    border-bottom-color: 1px solid rgba(149, 22, 93, 0);
 }
 .marque{
     font-size:20px ;

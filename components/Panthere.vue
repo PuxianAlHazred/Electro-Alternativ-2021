@@ -48,8 +48,8 @@
             }
           })
           .fromTo(".intro-panth.intro",
-            { y: -75, ease: "none", stagger: 0.5, ease: 'power2.inOut'},
-            { y: 0, ease: "none", stagger: 0.5, ease: 'power2.inOut'}
+            { y: -75,  stagger: 0.5, ease: 'power2.inOut'},
+            { y: 0,  stagger: 0.5, ease: 'power2.inOut'}
           )
       }
     },
