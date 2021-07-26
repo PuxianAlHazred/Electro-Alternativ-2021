@@ -19,10 +19,10 @@
           <li id="abattoirs">
               <div class="lieu-img">
                 <picture>
-                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Bikini-xs.webp">
-                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Bikini-md.webp">
-                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Bikini-xl.webp">
-                  <img loading="lazy" src="/images/lieux/Bikini.webp" alt="Le Bikini - Toulouse">
+                  <source loading="lazy" media="(max-width: 767px)" srcset="/images/lieux/Abattoirs-xs.webp">
+                  <source loading="lazy" media="(max-width: 1024px)" srcset="/images/lieux/Abattoirs-md.webp">
+                  <source loading="lazy" media="(max-width: 1440px)" srcset="/images/lieux/Abattoirs-xl.webp">
+                  <img loading="lazy" src="/images/lieux/Abattoirs.webp" alt="Les Abattoirs - Toulouse">
                 </picture>
               </div>
               <Panthere :typee="'lieu'" />
