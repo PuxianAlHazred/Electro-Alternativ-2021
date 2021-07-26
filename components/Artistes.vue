@@ -221,62 +221,59 @@
     computed: {
     },
     methods: {
-      follow() {
+      animationArtiste() {
         if( window.innerWidth > 767) {
-          $('.imagehover').mouseenter(function(e){
-            $(this).find('.follow').addClass('visible')
-            var height = $(this).find('.follow').height();
-            $(this).find('.follow').css({left:e.pageX, top: - height / 4});
-          }).mousemove(function(e){
-            var height = $(this).find('.follow').height();
-            $(this).find('.follow').css({left:e.pageX, top: - height / 4});
-          }).mouseleave(function(e){
-            $(this).find('.follow').removeClass('visible');
-          });
+
+            $('.imagehover').mouseenter(function(e){
+              $(this).find('.follow').addClass('visible')
+              var height = $(this).find('.follow').height();
+              $(this).find('.follow').css({left:e.pageX, top: - height / 4});
+            }).mousemove(function(e){
+              var height = $(this).find('.follow').height();
+              $(this).find('.follow').css({left:e.pageX, top: - height / 4});
+            }).mouseleave(function(e){
+              $(this).find('.follow').removeClass('visible');
+            });
+
+            this.$gsap.utils.toArray(".imagehover").forEach(e => {
+
+                var artiste = e.getElementsByClassName('artiste');
+                var date = e.getElementsByClassName('date');
+                var titleArtiste = this.$gsap.timeline({paused:true}), SplitText = new SplitType(artiste , {type:"chars"}), chars = SplitText.chars;
+                    titleArtiste.from(chars, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
+                var dateArtiste = this.$gsap.timeline({paused:true}), SplitDate = new SplitType(date , {type:"words"}), words = SplitDate.words;
+                    dateArtiste.from(words, {delay: 0.3, duration: 0.5, opacity:0, x:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
+
+                var blocArtiste = this.$gsap.timeline({
+                  scrollTrigger: {
+                        trigger: e,
+                        start: "center-=25px bottom-=100px",
+                        end: "top-=25px top+=75px",
+                        scrub: false,
+                        toggleActions: "play reverse play reverse",
+                        onEnterBack: e => {
+                          titleArtiste.play();
+                          dateArtiste.play();
+                        },
+                        onLeaveBack: e => {
+                          titleArtiste.reverse();
+                          dateArtiste.reverse();
+                        },
+                        onEnter: e => {
+                          titleArtiste.play();
+                          dateArtiste.play();
+                        },
+                        onLeave: e => {
+                          titleArtiste.reverse();
+                          dateArtiste.reverse();
+                        },
+                        //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
+                  }
+                }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
+
+            });
         }
-      },
-      opacity() {
-        this.$gsap.utils.toArray(".imagehover").forEach(e => {
-          if( window.innerWidth > 767) {
 
-            var artiste = e.getElementsByClassName('artiste');
-            var date = e.getElementsByClassName('date');
-            var titleArtiste = this.$gsap.timeline({paused:true}), SplitText = new SplitType(artiste , {type:"chars"}), chars = SplitText.chars;
-                titleArtiste.from(chars, {delay: 0, duration: 0.1, opacity:0, x:-50, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0.1}, "+=0");
-            var dateArtiste = this.$gsap.timeline({paused:true}), SplitDate = new SplitType(date , {type:"words"}), words = SplitDate.words;
-                dateArtiste.from(words, {delay: 0.3, duration: 0.5, opacity:0, x:100, transformOrigin:"0% 50% 100",  ease:"power2.inOut", stagger: 0}, "+=0");
-
-            var blocArtiste = this.$gsap.timeline({
-              scrollTrigger: {
-                    trigger: e,
-                    start: "center-=25px bottom-=100px",
-                    end: "top-=25px top+=75px",
-                    scrub: false,
-                    toggleActions: "play reverse play reverse",
-                    onEnterBack: e => {
-                      titleArtiste.play();
-                      dateArtiste.play();
-                    },
-                    onLeaveBack: e => {
-                      titleArtiste.reverse();
-                      dateArtiste.reverse();
-                    },
-                    onEnter: e => {
-                      titleArtiste.play();
-                      dateArtiste.play();
-                    },
-                    onLeave: e => {
-                      titleArtiste.reverse();
-                      dateArtiste.reverse();
-                    },
-                    //markers: {startColor: "black", endColor: "black", fontSize: "25px", fontWeight: "bold", indent: 0}
-              }
-            }).fromTo(e, {  x: -100, opacity: 0, ease: "linear"}, {  x: 0, opacity: 1, ease: "lineary"});
-          }
-
-        });
-      },
-      sticky() {
         if( window.innerWidth > 1024) {
           let lineup = this.$gsap.timeline({
             scrollTrigger: {
@@ -305,14 +302,13 @@
             { "font-size": "35px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
           )
         }
-      },
+
+      }
 
     },
     mounted() {
-        this.follow();
-        this.opacity();
-        this.sticky();
-        window.addEventListener('resize', this.sticky)
+        this.animationArtiste();
+        window.addEventListener('resize', this.animationArtiste)
     }
   }
 </script>

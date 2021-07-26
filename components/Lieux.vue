@@ -86,7 +86,7 @@
                   </div>
               </div>
           </li>
-          <li id="cuisines">              
+          <li id="cuisines">
               <div class="lieu-img">
                 <img srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp 1440w, /images/lieux/Saint-Pierre-des-cuisines-md.webp 1024w, /images/lieux/Saint-Pierre-des-cuisines-xs.webp 767w"
                     sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
@@ -114,7 +114,7 @@
 
     },
     methods: {
-      sticky() {
+      animationLieux() {
         if( window.innerWidth > 1024) {
             let leslieux = this.$gsap.timeline({
               scrollTrigger: {
@@ -143,8 +143,7 @@
               { "font-size": "35px", "line-height": "75px","color": "#000", ease: "none", stagger: 0.5, ease: 'power2.inOut'}
             )
         }
-      },
-      opacity() {
+
         this.$gsap.utils.toArray(".lieu-content").forEach(e => {
 
           var lieu = e.getElementsByTagName('h2');
@@ -278,10 +277,8 @@
       },
     },
     mounted() {
-      this.opacity();
-      this.sticky();
-      window.addEventListener('resize', this.sticky);
-      window.addEventListener('resize', this.opacity);
+      this.animationLieux();
+      window.addEventListener('resize', this.animationLieux);
     }
   }
 </script>
