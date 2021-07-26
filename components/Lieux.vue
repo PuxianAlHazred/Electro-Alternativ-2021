@@ -18,7 +18,7 @@
         <ul>
           <li id="abattoirs">
               <div class="lieu-img">
-                <nuxt-img provider="customProvider" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/Abattoirs.webp"/>
+                <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Abattoirs.webp"/>
               </div>
               <Panthere :typee="'lieu'" />
               <div class="lieu-content">
@@ -37,12 +37,12 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Bikini.webp"/>
+                  <img loading="lazy" src="images/lieux/Bikini.webp">
               </div>
           </li>
           <li id="cinema">
               <div class="lieu-img">
-                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Cinema-ABC.webp"/>
+                  <img loading="lazy" src="images/lieux/Cinema-ABC.webp">
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
@@ -61,12 +61,12 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Halle-de-la-machine.webp"/>
+                  <img loading="lazy" src="images/lieux/Halle-de-la-machine.webp">
               </div>
           </li>
           <li id="metronum">
               <div class="lieu-img">
-                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Metronum.webp"/>
+                  <img loading="lazy" src="images/lieux/Metronum.webp">
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
@@ -85,7 +85,7 @@
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-img">
-                  <nuxt-img provider="static" sizes="xs:100vw md:100vw xl:100vw" loading="lazy" src="/images/lieux/Saint-Pierre-des-cuisines.webp"/>
+                  <img loading="lazy" src="images/lieux/Saint-Pierre-des-cuisines.webp">
               </div>
           </li>
         </ul>
@@ -199,6 +199,7 @@
                       end: "bottom center-=100px",
                       scrub: false,
                       toggleActions: "play reverse play reverse",
+                      markers: {startColor: "pink", endColor: "pink", fontSize: "25px", fontWeight: "bold", indent: 0},
                       onEnterBack: e => {
                         titleLieu.play();
                         itineraireLieu.play();

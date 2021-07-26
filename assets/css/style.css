@@ -484,8 +484,7 @@ section .lieux .container {
 .date .line {
     text-align: center !important;
 }
-.date .line .word:first-child,
-.date h4 {
+.date .line .word:first-child {
     font-size: 75px;
     word-wrap: break-word;
     text-align: center;
