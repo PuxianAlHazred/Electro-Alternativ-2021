@@ -1,6 +1,6 @@
 <template>
   <nav class="menu ">
-    <Panthere  :typee="'menu'" class="pink-panth"/>
+    <Panthere :typee="'menu'" class="pink-panth"/>
     <h3 v-on:click="toggleMenu();" class="menu-span" :class="{'open': menu, 'close': !menu}">MENU</h3>
     <transition name="page_transition" mode="in-out"
       v-on:before-enter="beforeEnter"
@@ -49,11 +49,9 @@ export default {
   }),
   methods: {
     appear() {
-        this.$gsap.from(".pink-panth", { opacity: 1, ease: 'power2.inOut', duration: 1, delay: 5.7});
         var t1 = this.$gsap.timeline(), mySplitText = new SplitType(".menu-span", {type:"words,chars"}), chars = mySplitText.chars;
         t1.from(chars, {delay: 5.7, duration: 1, opacity:0, y:-50, transformOrigin:"0% 50% 100",  ease:"back", stagger: 0.1}, "+=0");
-
-
+        t1.fromTo(".intro-panth.menu", { opacity: 0, ease: 'power2.inOut', duration: 1, delay: 0}, { opacity: 1, ease: 'power2.inOut', duration: 1, delay: 0});
 
         let menu = document.querySelector(".menu-span");
         menu.addEventListener("mouseenter", () => {
@@ -99,7 +97,7 @@ export default {
         //console.log("CONTENT : leaave")
 
         var retour = this.$gsap.to(".list-item:last-child", { opacity: 0, y:50, transformOrigin:"0% 50% 100", ease: 'back', duration: .4, delay: 0});
-        var panth = this.$gsap.to(".pink-panth .shp0", { 'fill': '#95165d', ease: 'back', duration: .4, delay: 1});
+        var panth = this.$gsap.to(".intro-panth.menu .shp0", { 'fill': '#95165d', ease: 'back', duration: .4, delay: 1});
         var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
         list.to(chars, {
           delay: 0,
@@ -122,7 +120,7 @@ export default {
     enter(el, done) {
 
       var aller = this.$gsap.to(".list-item:last-child", { opacity: 1, y:0, transformOrigin:"0% 0% 100", ease: 'back', duration: .4, delay: 1});
-      var panth = this.$gsap.to(".pink-panth .shp0", { 'fill': '#f9f69a', ease: 'back', duration: .4, delay: 1});
+      var panth = this.$gsap.to(".intro-panth.lieu .shp0", { 'fill': '#f9f69a', ease: 'back', duration: .4, delay: 1});
 
       var list = this.$gsap.timeline(), mySplitText = new SplitType(".list-item h4", {type:"words,chars"}), chars = mySplitText.words;
       list.from(chars, {

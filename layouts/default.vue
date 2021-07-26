@@ -70,6 +70,10 @@
     methods: {
     },
     mounted() {
+      this.$gsap.config({
+        nullTargetWarn: false,
+        trialWarn: false,
+      })
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
         setTimeout(() => this.$nuxt.$loading.finish(), 4900)
