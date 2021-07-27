@@ -471,12 +471,13 @@ section .lieux .container {
 }
 .container li h3 {
     margin: 0;
-    color: #95165d;
+    color: #fbcafc;
 }
 .container li h3 span {
     -webkit-transition:all .3s ease;
     -o-transition:all .3s ease;
     transition:all .3s ease;
+    color: #95165d;
 }
 .date {
     position: absolute;
@@ -490,7 +491,7 @@ section .lieux .container {
     text-align: center !important;
 }
 .date .line .word:first-child {
-    font-size: 75px;
+    font-size: 70px;
     word-wrap: break-word;
     text-align: center;
     line-height: 30px;
@@ -505,6 +506,7 @@ section .lieux .container {
     font-size: 20px;
     text-align: center;
     margin: 0;
+    color: #95165d;
 }
 .container li:hover .date  .line .word:last-child,
 .container li:hover .date h4 span {
@@ -624,8 +626,8 @@ section .lieux .container {
     left: 40%;
 }
 .lieux .container li h2{
-    font-size: 75px;
-    line-height: 75px;
+    font-size: 65px;
+    line-height: 65px;
 }
 .lieux .container .lieu-content:hover h2 {
     color: #95165d;

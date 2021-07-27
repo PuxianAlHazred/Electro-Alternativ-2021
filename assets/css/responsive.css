@@ -201,9 +201,14 @@
       width: 70px;
   }
   .date h4 {
-      font-size: 55px;
-      line-height: 30px;
-      margin: 38px 0 0px;
+      font-size: 50px;
+      line-height: 20px;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translatey(-50%);
+      transform: translatey(-50%);
+      margin: 5px 0 0;
   }
   .lieux .wopper {
       margin: 0 0 50px;

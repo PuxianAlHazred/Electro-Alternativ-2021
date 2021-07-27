@@ -16,7 +16,7 @@
         </div>
 
         <ul>
-          <li id="abattoirs">
+          <li id="abattoires">
               <div class="lieu-img">
                 <img srcset="/images/lieux/Abattoirs-xl.webp 1440w, /images/lieux/Abattoirs-md.webp 1024w, /images/lieux/Abattoirs-xs.webp 767w"
                     sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"

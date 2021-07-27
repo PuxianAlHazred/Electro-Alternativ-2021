@@ -323,6 +323,9 @@
     computed: {
     },
     methods: {
+      scrolltoID() {
+
+      },
       animationArtiste() {
         if( window.innerWidth > 767) {
 
@@ -340,10 +343,11 @@
 
             this.$gsap.utils.toArray(".imagehover").forEach(e => {
                 if(!this.$store.state.muted) {
+
                   e.addEventListener("mouseenter", () => {
-                    var audio = e.querySelector(".myaudio");
-                    audio.volume = 0.5;
-                    audio.play();
+                      var audio = e.querySelector(".myaudio");
+                      audio.volume = 0.5;
+                      audio.play();
                   });
                   e.addEventListener("mouseleave", () => {
                     var audio = e.querySelector(".myaudio");
@@ -351,7 +355,7 @@
                   });
                 } else {
                   e.addEventListener("mouseenter", () => {
-
+                      
                   });
                   e.addEventListener("mouseleave", () => {
 
@@ -425,6 +429,7 @@
       },
     },
     mounted() {
+        this.scrolltoID();
         this.animationArtiste();
         window.addEventListener('resize', this.animationArtiste)
     }
