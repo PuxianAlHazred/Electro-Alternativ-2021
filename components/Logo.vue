@@ -4,7 +4,8 @@
     <NuxtLink to="/">
       <h1 class="title-logo">ea</h1>
     </NuxtLink>
-    <h2 class="ea-title-page">{{this.$route.name}}</h2>
+    <h2 v-if="this.$route.path === '/'" class="ea-title-page">Accueil</h2>
+    <h2 v-if="this.$route.path != '/'" class="ea-title-page">{{this.$route.name}}</h2>
   </div>
 </template>
 <script>
