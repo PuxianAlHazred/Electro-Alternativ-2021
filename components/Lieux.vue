@@ -25,7 +25,7 @@
               <Panthere :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>Les abattoirs</h2>
+                      <h2>les abattoirs</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>
@@ -39,7 +39,7 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>le Bikini</h2>
+                      <h2>le bikini</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>
@@ -53,7 +53,7 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>Cinema ABC</h2>
+                      <h2>cinema abc</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>
@@ -67,7 +67,7 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>Halle de la machine</h2>
+                      <h2>halle de la machine</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>
@@ -81,7 +81,7 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>Metronum</h2>
+                      <h2>metronum</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>
@@ -95,7 +95,7 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>Saint Pierre des cuisines</h2>
+                      <h2>saint pierre des cuisines</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>

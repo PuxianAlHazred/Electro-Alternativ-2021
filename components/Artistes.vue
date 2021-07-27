@@ -1,9 +1,7 @@
 <template>
   <section>
     <div class="artistes">
-      <!-- Image -->
       <div class="container">
-
         <div class="wopper">
           <div class="marquee marqueelineup">
             <p>
@@ -17,9 +15,9 @@
         <ul>
           <li class="imagehover">
             <h2 class="artiste">arabian panther</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="abattoires">LES ABATTOIRES</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>11 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste1.webp">
@@ -28,6 +26,21 @@
             </div>
             <audio v-if="this.$store.state.muted" class="myaudio">
               <source src="/sounds/extrait-arabianpanther.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">bruit ≤</h2>
+            <h3>LIVESET - <span class="metronum">LE METRONUM</span></h3>
+            <div class="date">
+                <h4>16 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste17.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste17.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste17.webp">
+            </div>
+            <audio v-if="this.$store.state.muted" class="myaudio">
+              <source src="/sounds/extrait-chapelir.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -47,9 +60,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">dj marcelle</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste3.webp">
@@ -62,9 +75,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">djrum live</h2>
-            <h3>LIVESET - <span></span></h3>
+            <h3>LIVESET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>17 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste4.webp">
@@ -74,9 +87,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">esther</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste5.webp">
@@ -88,10 +101,25 @@
             </audio>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">giant swan live</h2>
-            <h3>LIVESET - <span></span></h3>
+            <h2 class="artiste">flore</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>10 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste19.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste19.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste19.webp">
+            </div>
+            <audio v-if="this.$store.state.muted" class="myaudio">
+              <source src="/sounds/extrait-esther.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">giant swan live</h2>
+            <h3>LIVESET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste6.webp">
@@ -103,10 +131,25 @@
             </audio>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">hysteria temple fondation </h2>
-            <h3>LIVESET (paul ritch + kmyle) - <span></span></h3>
+            <h2 class="artiste">helena hauff</h2>
+            <h3>DJSET - <span class="abattoirs">LES ABATTOIRS</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>11 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste20.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste20.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste20.webp">
+            </div>
+            <audio v-if="this.$store.state.muted" class="myaudio">
+              <source src="/sounds/extrait-giantswan.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">hysteria temple fondation </h2>
+            <h3>LIVESET (paul ritch + kmyle) - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste7.webp">
@@ -119,9 +162,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">jasss</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>11 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste8.webp">
@@ -134,9 +177,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">kendal</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste9.webp">
@@ -149,9 +192,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">kiddy smile</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste10.webp">
@@ -164,9 +207,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">lena willikens</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="abattoirs">LES ABATTOIRS</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste11.webp">
@@ -179,9 +222,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">louisahhh live band</h2>
-            <h3>LIVESET - <span></span></h3>
+            <h3>LIVESET - <span class="metronum">LE METRONUM</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>16 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste12.webp">
@@ -194,9 +237,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">naranja</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="metronum">HALLE DE LA MACHINE</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>10 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste13.webp">
@@ -208,10 +251,25 @@
             </audio>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">pablo bozzi</h2>
-            <h3>DJSET - <span></span></h3>
+            <h2 class="artiste">onyvaa</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>11 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="images/artistes/artiste18.webp">
+              <img loading="lazy" class="follow f2" src="images/artistes/artiste18.webp">
+              <img loading="lazy" class="follow f1" src="images/artistes/artiste18.webp">
+            </div>
+            <audio v-if="this.$store.state.muted" class="myaudio">
+              <source src="/sounds/extrait-naranja.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">pablo bozzi</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>10 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste14.webp">
@@ -224,9 +282,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">rebekah</h2>
-            <h3>DJSET - <span></span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste15.webp">
@@ -239,9 +297,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">wallis</h2>
-            <h3>LIVESET - <span></span></h3>
+            <h3>LIVESET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4> <span></span></h4>
+                <h4>18 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="images/artistes/artiste16.webp">
@@ -254,7 +312,6 @@
           </li>
         </ul>
       </div>
-
     </div>
   </section>
 </template>
@@ -297,7 +354,7 @@
 
                   });
                   e.addEventListener("mouseleave", () => {
-      
+
                   });
                 }
                 var artiste = e.getElementsByClassName('artiste');
