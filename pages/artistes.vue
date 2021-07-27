@@ -27,7 +27,7 @@
             }
             btn.addEventListener("click", () => {
               this.$router.push('/lieux#'+select);
-              this.$gsap.to(window, {duration: 1, scrollTo:{y:"#" + select, offsetY:y}});
+              this.$gsap.to(window, {delay: .8, duration: 1, scrollTo:{y:"#" + select, offsetY:y}});
             });
         });
       }
