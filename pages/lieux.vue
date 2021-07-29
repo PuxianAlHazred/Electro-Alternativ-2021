@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="main-content">
+    <div class="main-content page-lieux">
       <Intro  :titre="'les lieux'"/>
       <Lieux />
     </div>

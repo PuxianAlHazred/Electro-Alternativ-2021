@@ -274,6 +274,10 @@ section {
     color: #FFF;
     text-decoration: none;
     overflow: hidden;
+    transition: all .3s ease;
+}
+.list-item a:hover {
+    color: #fbcafc;
 }
 .list-item h4 {
     margin: 0;
@@ -420,6 +424,22 @@ section .lieux .container {
     color: #95165d;
 }
 /**************************************** Page artistes *****************************************/
+.page-artistes .accueil p, .page-artistes .accueil svg,
+.page-lieux .accueil p, .page-lieux .accueil svg,
+.page-lieux .wopper, .page-artistes .wopper{
+    display: none;
+}
+.page-artistes .accueil h2,
+.page-lieux .accueil h2 {
+    opacity: 0 !important;
+}
+.page-artistes > section,
+.page-lieux > section {
+    margin: 0;
+}
+.page-artistes.main-content .artistes ul {
+    padding-top: 0;
+}
 .artistes .fond {
     position: absolute;
     height: 40%;
