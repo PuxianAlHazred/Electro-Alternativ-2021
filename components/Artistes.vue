@@ -14,6 +14,21 @@
         </div>
         <ul>
           <li class="imagehover">
+            <h2 class="artiste">ancient methods</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>11 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste22.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste22.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste22.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
             <h2 class="artiste">arabian panther</h2>
             <h3>DJSET - <span class="abattoires">LES ABATTOIRES</span></h3>
             <div class="date">
@@ -24,7 +39,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste1.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste1.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-arabianpanther.mp3"></source>
             </audio>
           </li>
@@ -39,8 +54,8 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste17.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste17.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
-              <source src="/sounds/extrait-chapelir.mp3"></source>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-bruit.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -54,8 +69,23 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste2.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste2.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-chapelir.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">coucou chloé</h2>
+            <h3>LIVESET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>10 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste21.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste21.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste21.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -69,7 +99,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste3.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste3.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-djmarcelle.mp3"></source>
             </audio>
           </li>
@@ -84,6 +114,9 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste4.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste4.webp">
             </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-djrum.mp3"></source>
+            </audio>
           </li>
           <li class="imagehover">
             <h2 class="artiste">esther</h2>
@@ -96,7 +129,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste5.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste5.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-esther.mp3"></source>
             </audio>
           </li>
@@ -111,8 +144,8 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste19.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste19.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
-              <source src="/sounds/extrait-esther.mp3"></source>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-flore.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -126,7 +159,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste6.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste6.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-giantswan.mp3"></source>
             </audio>
           </li>
@@ -141,7 +174,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste20.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste20.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-giantswan.mp3"></source>
             </audio>
           </li>
@@ -156,7 +189,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste7.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste7.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-htf.mp3"></source>
             </audio>
           </li>
@@ -171,7 +204,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste8.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste8.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-jass.mp3"></source>
             </audio>
           </li>
@@ -186,7 +219,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste9.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste9.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-kendal.mp3"></source>
             </audio>
           </li>
@@ -201,7 +234,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste10.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste10.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-kiddy.mp3"></source>
             </audio>
           </li>
@@ -216,7 +249,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste11.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste11.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-lena.mp3"></source>
             </audio>
           </li>
@@ -231,7 +264,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste12.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste12.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-louisahh.mp3"></source>
             </audio>
           </li>
@@ -246,7 +279,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste13.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste13.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-naranja.mp3"></source>
             </audio>
           </li>
@@ -261,8 +294,8 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste18.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste18.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
-              <source src="/sounds/extrait-naranja.mp3"></source>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-onyvaa.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -276,7 +309,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste14.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste14.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-pablo.mp3"></source>
             </audio>
           </li>
@@ -291,7 +324,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste15.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste15.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-rebekah.mp3"></source>
             </audio>
           </li>
@@ -306,7 +339,7 @@
               <img loading="lazy" class="follow f2" src="/images/artistes/artiste16.webp">
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste16.webp">
             </div>
-            <audio v-if="this.$store.state.muted" class="myaudio">
+            <audio class="myaudio">
               <source src="/sounds/extrait-wallis.mp3"></source>
             </audio>
           </li>
