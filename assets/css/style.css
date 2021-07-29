@@ -432,6 +432,7 @@ section .lieux .container {
 .page-artistes .accueil h2,
 .page-lieux .accueil h2 {
     opacity: 0 !important;
+    padding-bottom: 150px;
 }
 .page-artistes > section,
 .page-lieux > section {

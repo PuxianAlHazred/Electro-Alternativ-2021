@@ -142,9 +142,8 @@
 
 /*Format telephone*/
 @media (max-width:767px) {
-  .logo h2 {
-      padding-right: 10px;
-      padding-left: 0;
+  .ea-title-page {
+      display: none;
   }
   .cover-wooper {
       width: 125px;
