@@ -438,9 +438,7 @@ section .lieux .container {
 .page-lieux > section {
     margin: 0;
 }
-.page-artistes.main-content .artistes ul {
-    padding-top: 0;
-}
+
 .artistes .fond {
     position: absolute;
     height: 40%;
