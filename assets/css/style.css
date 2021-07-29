@@ -152,14 +152,15 @@ section {
     overflow:hidden;
 }
 .lol {
-    -webkit-animation: lolking 5s linear;
-            animation: lolking 5s linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+
 }
 .f1 {
     -webkit-filter: url("#teal-white");
             filter: url("#teal-white");
+            -webkit-animation: lolking 5s linear;
+                    animation: lolking 5s linear;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
 }
 .f2 {
     -webkit-filter: url("#teal-white2");
@@ -168,6 +169,10 @@ section {
     -o-transition:.1s !important;
     transition:.1s !important;
     position: absolute;
+    -webkit-animation: lolking 5s linear .2s;
+            animation: lolking 5s linear .2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .f3 {
     -webkit-filter: saturate(0);
@@ -176,11 +181,31 @@ section {
     -o-transition:.2s !important;
     transition:.2s !important;
     position: absolute;
+    -webkit-animation: lolking 5s linear .4s;
+            animation: lolking 5s linear .4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .follow.visible {
     visibility: visible;
 }
-
+@keyframes lolking {
+  0% {
+    transform: rotate(0deg) translatey(-50%);
+  }
+  25% {
+    transform: rotate(-3deg) translatey(-50%);
+  }
+  50% {
+    transform: rotate(0deg) translatey(-50%);
+  }
+  75% {
+    transform: rotate(3deg) translatey(-50%);
+  }
+  100% {
+    transform: rotate(0deg) translatey(-50%);
+  }
+}
 @-webkit-keyframes marquee {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
