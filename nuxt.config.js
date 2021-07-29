@@ -74,7 +74,14 @@ export default {
       disabled: false
     }]
   ],
-
+  sitemap: {
+    hostname: 'https://electro-alternativ.com',
+    gzip: true,
+    routes: [
+      '/lieux',
+      '/artiste'
+    ]
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
