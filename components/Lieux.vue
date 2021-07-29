@@ -26,7 +26,7 @@
               <div class="lieu-content">
                   <div class="center">
                       <h2>les abattoirs</h2>
-                      <a href="#"  target="_blank">s'y rendre</a>
+                      <a href="https://www.google.com/maps/dir//les+abattoirs/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aebb6dfd01bc3b:0x1e32c9b07a10045f?sa=X&ved=2ahUKEwiUi8OekYjyAhXByIUKHQ0_D2kQ9RcwH3oECGEQBQ"  target="_blank">s'y rendre</a>
                   </div>
               </div>
           </li>
@@ -40,7 +40,7 @@
               <div class="lieu-content">
                   <div class="center">
                       <h2>le bikini</h2>
-                      <a href="#"  target="_blank">s'y rendre</a>
+                      <a href="https://www.google.com/maps/dir//le+bikini/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aebe7ee871a669:0xb149601aacc445fd?sa=X&ved=2ahUKEwjwkeOSkYjyAhXQxYUKHZmXDGYQ9RcwHnoECF0QBA"  target="_blank">s'y rendre</a>
                   </div>
               </div>
           </li>
@@ -54,7 +54,7 @@
               <div class="lieu-content">
                   <div class="center">
                       <h2>cinema abc</h2>
-                      <a href="#"  target="_blank">s'y rendre</a>
+                      <a href="https://www.google.com/maps/dir/43.6580614,1.375866/Cinema+ABC/@43.6330325,1.370846,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12aebc9ff855640f:0xaafde9d9f0d327e6!2m2!1d1.4439486!2d43.6090337"  target="_blank">s'y rendre</a>
                   </div>
               </div>
           </li>
@@ -68,7 +68,7 @@
               <div class="lieu-content">
                   <div class="center">
                       <h2>halle de la machine</h2>
-                      <a href="#"  target="_blank">s'y rendre</a>
+                      <a href="https://www.google.com/maps/dir//Hall+de+la+machine/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aebc4bcb5b53e3:0x64ca48cf32cf95ec?sa=X&ved=2ahUKEwixncLTkYjyAhURy4UKHVQ3BSsQ9RcwF3oECFkQBQ"  target="_blank">s'y rendre</a>
                   </div>
               </div>
           </li>
@@ -82,7 +82,7 @@
               <div class="lieu-content">
                   <div class="center">
                       <h2>le metronum</h2>
-                      <a href="#"  target="_blank">s'y rendre</a>
+                      <a href="https://www.google.com/maps/dir//le+metronum/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aea35ba036bd85:0x2a2105d30116f851?sa=X&ved=2ahUKEwi1w4zqkYjyAhWHyYUKHTXnAugQ9RcwFHoECE8QBA"  target="_blank">s'y rendre</a>
                   </div>
               </div>
           </li>
@@ -90,13 +90,13 @@
               <div class="lieu-img">
                 <img srcset="/images/lieux/Saint-Pierre-des-cuisines-xl.webp 1440w, /images/lieux/Saint-Pierre-des-cuisines-md.webp 1024w, /images/lieux/Saint-Pierre-des-cuisines-xs.webp 767w"
                     sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
-                    src="/images/lieux/Saint-Pierre-des-cuisines-xs.webp" loading="lazy" alt="Saint Pierre des cuisines - Toulouse" />
+                    src="/images/lieux/Saint-Pierre-des-cuisines-xs.webp" loading="lazy" alt="Auditorium Saint Pierre des cuisines - Toulouse" />
               </div>
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>saint pierre des cuisines</h2>
-                      <a href="#"  target="_blank">s'y rendre</a>
+                      <h2>auditorium saint pierre des cuisines</h2>
+                      <a href="https://www.google.com/maps/dir//Auditorium+Saint+Pierre+des+Cuisines/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aebb65db33b0d5:0xd949f78018046335?sa=X&ved=2ahUKEwiM-Yz7kYjyAhXxzIUKHeOWBEkQ9RcwE3oECEMQBA"  target="_blank">s'y rendre</a>
                   </div>
               </div>
           </li>

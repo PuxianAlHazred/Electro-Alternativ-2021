@@ -175,7 +175,7 @@
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste20.webp">
             </div>
             <audio class="myaudio">
-              <source src="/sounds/extrait-giantswan.mp3"></source>
+              <source src="/"></source>
             </audio>
           </li>
           <li class="imagehover">
