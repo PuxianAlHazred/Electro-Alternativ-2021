@@ -30,7 +30,7 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">arabian panther</h2>
-            <h3>DJSET - <span class="abattoires">LES ABATTOIRES</span></h3>
+            <h3>DJSET - <span class="abattoires">LES ABATTOIRS</span></h3>
             <div class="date">
                 <h4>11 <span>sept</span></h4>
             </div>

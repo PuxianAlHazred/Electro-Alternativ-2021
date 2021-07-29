@@ -81,7 +81,7 @@
               <Panthere  :typee="'lieu'" />
               <div class="lieu-content">
                   <div class="center">
-                      <h2>metronum</h2>
+                      <h2>le metronum</h2>
                       <a href="#"  target="_blank">s'y rendre</a>
                   </div>
               </div>
