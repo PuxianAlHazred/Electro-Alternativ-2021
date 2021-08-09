@@ -283,6 +283,21 @@
               <source src="/sounds/extrait-louisahh.mp3"></source>
             </audio>
           </li>
+        <!--  <li class="imagehover">
+            <h2 class="artiste">mall grab</h2>
+            <h3>DJSET - <span class="halle">HALLE DE LA MACHINE</span></h3>
+            <div class="date">
+                <h4>10 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste25.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste25.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste25.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/"></source>
+            </audio>
+          </li>  -->
           <li class="imagehover">
             <h2 class="artiste">murdock</h2>
             <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
@@ -300,7 +315,7 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">naranja</h2>
-            <h3>DJSET - <span class="metronum">HALLE DE LA MACHINE</span></h3>
+            <h3>DJSET - <span class="halle">HALLE DE LA MACHINE</span></h3>
             <div class="date">
                 <h4>10 <span>sept</span></h4>
             </div>
