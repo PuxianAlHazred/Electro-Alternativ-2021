@@ -20,7 +20,7 @@
         festival saura s’adapter aux contraintes liées à la situation. Plus que jamais, nous avons envie de faire et d’exister, nous avons envie de vous retrouver unis autour
         de la musique. Visuellement, l’orchidée anthropomorphique est là pour illustrer ce mouvement, ce changement de forme, cette adaptation dont nous avons fait et dont nous
         allons devoir faire preuve tout au long de la construction du festival. Son visage est celui de la panthère rose, qui représente ici un esprit joueur, très créatif, qui
-        détourne les règles et se les approprie pour profiter de la vie. C’est donc avec un esprit positif que nous vous annonçons Electro Alternativ 2021 du 11 au 19 septembre
+        détourne les règles et se les approprie pour profiter de la vie. C’est donc avec un esprit positif que nous vous annonçons Electro Alternativ 2021 du 10 au 19 septembre
         à Toulouse !</p>
 
     </div>

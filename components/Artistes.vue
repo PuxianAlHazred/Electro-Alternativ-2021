@@ -17,7 +17,7 @@
             <h2 class="artiste">ancient methods</h2>
             <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4>11 <span>sept</span></h4>
+                <h4>10 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="/images/artistes/artiste22.webp">
@@ -86,6 +86,21 @@
             </div>
             <audio class="myaudio">
               <source src="/"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">dirtyphonics</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste23.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste23.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste23.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-dirty.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -266,6 +281,21 @@
             </div>
             <audio class="myaudio">
               <source src="/sounds/extrait-louisahh.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">murdock</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste24.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste24.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste24.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-murdock.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
