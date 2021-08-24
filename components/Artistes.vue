@@ -25,7 +25,7 @@
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste22.webp">
             </div>
             <audio class="myaudio">
-              <source src="/"></source>
+              <source src="/sounds/extrait-ancient.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -41,6 +41,21 @@
             </div>
             <audio class="myaudio">
               <source src="/sounds/extrait-arabianpanther.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">bohll</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>11 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste26.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste26.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste26.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-bohll.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -225,9 +240,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">kendal</h2>
-            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <h3>DJSET - <span class="halle">HALLE DE LA MACHINE</span></h3>
             <div class="date">
-                <h4>18 <span>sept</span></h4>
+                <h4>10 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="/images/artistes/artiste9.webp">
@@ -283,7 +298,7 @@
               <source src="/sounds/extrait-louisahh.mp3"></source>
             </audio>
           </li>
-        <!--  <li class="imagehover">
+          <li class="imagehover">
             <h2 class="artiste">mall grab</h2>
             <h3>DJSET - <span class="halle">HALLE DE LA MACHINE</span></h3>
             <div class="date">
@@ -295,9 +310,9 @@
               <img loading="lazy" class="follow f1" src="/images/artistes/artiste25.webp">
             </div>
             <audio class="myaudio">
-              <source src="/"></source>
+              <source src="/sounds/extrait-mall.mp3"></source>
             </audio>
-          </li>  -->
+          </li>
           <li class="imagehover">
             <h2 class="artiste">murdock</h2>
             <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
@@ -315,9 +330,9 @@
           </li>
           <li class="imagehover">
             <h2 class="artiste">naranja</h2>
-            <h3>DJSET - <span class="halle">HALLE DE LA MACHINE</span></h3>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
-                <h4>10 <span>sept</span></h4>
+                <h4>17 <span>sept</span></h4>
             </div>
             <div class="lol">
               <img loading="lazy" class="follow f3" src="/images/artistes/artiste13.webp">
@@ -326,6 +341,21 @@
             </div>
             <audio class="myaudio">
               <source src="/sounds/extrait-naranja.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">octo octa</h2>
+            <h3>DJSET - <span class="halle">HALLE DE LA MACHINE</span></h3>
+            <div class="date">
+                <h4>10 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste28.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste28.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste28.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-octo.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -341,6 +371,21 @@
             </div>
             <audio class="myaudio">
               <source src="/sounds/extrait-onyvaa.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">outlines</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste32.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste32.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste32.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-outlines.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
@@ -371,6 +416,51 @@
             </div>
             <audio class="myaudio">
               <source src="/sounds/extrait-rebekah.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">roüge</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>11 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste29.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste29.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste29.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-rouge.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">samplifire x graphyt</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste30.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste30.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste30.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">sqwad</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste31.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste31.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste31.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-sqwad.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
