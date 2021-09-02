@@ -21,7 +21,7 @@
                 <NuxtLink to="/lieux"><h4>LIEUX</h4></NuxtLink>
               </li>
               <li class="list-item">
-                <a target="_blank" href="https://regarts.eu/event_cat/Electro-Alternativ/"><h4>BILLETTERIE</h4></a>
+                <a target="_blank" href="https://regarts.festik.net/evenements"><h4>BILLETTERIE</h4></a>
               </li>
               <li class="list-item">
                 <a target="_blank" href="https://shop.regarts.eu/collections/electro-alternativ "><h4>MERCH</h4></a>
