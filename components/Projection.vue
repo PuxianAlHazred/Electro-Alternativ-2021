@@ -18,17 +18,15 @@
           <ul>
             <li id="abattoires-projection">
                 <div class="projection-img">a
-                  <img srcset="/images/projectionx/Abattoirs-xl.webp 1440w, /images/projectionx/Abattoirs-md.webp 1024w, /images/projectionx/Abattoirs-xs.webp 767w"
-                      sizes="(max-width: 1440px), (max-width: 1024px), (max-width: 767px)"
-                      src="/images/projectionx/Abattoirs-xs.webp" loading="lazy" alt="Les Abattoires - Toulouse" />
+                  <img src="/images/film-lisarovner.jpg" loading="lazy" alt="Les Abattoires - Toulouse" />
                 </div>
                 <Panthere :typee="'projection'" />
                 <div class="projection-content">
                     <div class="center">
                         <h2>Sisters with Transistor</h2>
                         <h4>Lisa Rovner</h4>
-                        <p>Cinéma ABC / Mardi 14 septembre / 20h30 - 7€ - Réservation au guichet</p>
-                        <a href="https://www.google.com/maps/dir//les+abattoirs/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aebb6dfd01bc3b:0x1e32c9b07a10045f?sa=X&ved=2ahUKEwiUi8OekYjyAhXByIUKHQ0_D2kQ9RcwH3oECGEQBQ"  target="_blank">s'y rendre</a>
+                        <p>Cinéma ABC - Mardi 14 septembre à 20h30 - <b>7€</b> - <i>Réservation au guichet</i></p>
+                        <a href="https://www.google.com/maps/dir/43.6580614,1.375866/Cinema+ABC/@43.6330325,1.370846,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12aebc9ff855640f:0xaafde9d9f0d327e6!2m2!1d1.4439486!2d43.6090337"  target="_blank">s'y rendre</a>
                     </div>
                 </div>
             </li>
