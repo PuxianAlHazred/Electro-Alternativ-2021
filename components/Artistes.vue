@@ -224,6 +224,21 @@
             </audio>
           </li>
           <li class="imagehover">
+            <h2 class="artiste">inhuman</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>17 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste27.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste27.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste27.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-inhuman.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
             <h2 class="artiste">jasss</h2>
             <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
@@ -359,21 +374,6 @@
             </audio>
           </li>
           <li class="imagehover">
-            <h2 class="artiste">onyvaa</h2>
-            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
-            <div class="date">
-                <h4>11 <span>sept</span></h4>
-            </div>
-            <div class="lol">
-              <img loading="lazy" class="follow f3" src="/images/artistes/artiste18.webp">
-              <img loading="lazy" class="follow f2" src="/images/artistes/artiste18.webp">
-              <img loading="lazy" class="follow f1" src="/images/artistes/artiste18.webp">
-            </div>
-            <audio class="myaudio">
-              <source src="/sounds/extrait-onyvaa.mp3"></source>
-            </audio>
-          </li>
-          <li class="imagehover">
             <h2 class="artiste">outlines</h2>
             <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
             <div class="date">
@@ -461,6 +461,21 @@
             </div>
             <audio class="myaudio">
               <source src="/sounds/extrait-sqwad.mp3"></source>
+            </audio>
+          </li>
+          <li class="imagehover">
+            <h2 class="artiste">surgeon</h2>
+            <h3>DJSET - <span class="bikini">LE BIKINI</span></h3>
+            <div class="date">
+                <h4>11 <span>sept</span></h4>
+            </div>
+            <div class="lol">
+              <img loading="lazy" class="follow f3" src="/images/artistes/artiste33.webp">
+              <img loading="lazy" class="follow f2" src="/images/artistes/artiste33.webp">
+              <img loading="lazy" class="follow f1" src="/images/artistes/artiste33.webp">
+            </div>
+            <audio class="myaudio">
+              <source src="/sounds/extrait-surgeon.mp3"></source>
             </audio>
           </li>
           <li class="imagehover">
