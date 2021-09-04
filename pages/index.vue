@@ -3,6 +3,7 @@
     <div class="main-content">
       <Intro :titre="'electro alternativ'"/>
       <Artistes />
+      <Projection />
       <Lieux />
       
     </div>
