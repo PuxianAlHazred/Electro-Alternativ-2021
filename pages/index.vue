@@ -2,10 +2,6 @@
   <section>
     <div class="main-content">
       <Intro :titre="'electro alternativ'"/>
-      <Artistes />
-
-      <Lieux />
-            <Projection />
     </div>
   </section>
 </template>

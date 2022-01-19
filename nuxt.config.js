@@ -2,7 +2,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
   head: {
-    title: 'Electro Alternativ 2021 - Du 10 au 18 septembre, Toulouse',
+    title: 'Electro Alternativ 2022',
     htmlAttrs: {
       lang: 'fr'
     },
@@ -25,11 +25,14 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/style.css','~/assets/css/transition.css','~/assets/css/keyframes.css','~/assets/css/responsive.css'],
+  css: ['~/assets/css/style.css','~/assets/css/transition.css','~/assets/css/keyframes.css',],
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    exposeConfig: false,
+  },
 
   // Loading
-  loading: '~/components/Loading.vue',
+  //loading: '~/components/Loading.vue',
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -39,8 +42,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/device','nuxt-gsap-module'],
-
+  buildModules: ['@nuxtjs/device','nuxt-gsap-module','@nuxtjs/tailwindcss'],
   // Device config: https://github.com/nuxt-community/device-module
   device: {
     refreshOnResize: true
@@ -77,10 +79,10 @@ export default {
   sitemap: {
     hostname: 'https://electro-alternativ.com',
     gzip: true,
-    routes: [
-      '/lieux',
-      '/artiste'
-    ]
+    //routes: [
+      //'/lieux',
+      //'/artiste'
+    //]
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

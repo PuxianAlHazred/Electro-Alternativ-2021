@@ -1,118 +1,176 @@
 <template>
-  <div :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}" >
-    <div class="border-top">
-      <div class="wopper-top" :class="this.$route.name">
-        <div class="marque marquelineup">
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-          <p> 10 / 11 / 14 / 15 / 16 / 17 / 18 - <span>SEPTEMBRE</span> - </p>
-        </div>
-      </div>
-      <div class="cover-wooper"></div>
-    </div>
-    <div class="border-bottom">
+  <div :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}" class="cursor-crosshair" >
+    <div class="cursor">
+      <div class="cursor__circle">
+        <svg height="64" width="64">
+          
+          <rect fill="black" width="64" height="64"/>
+          <circle fill="white" cx="32" cy="32" r="16"></circle>
 
-      <div class="sound">
-        <div v-if="!this.$store.state.muted" v-on:click="mute()" class="play">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 153.667 153.667" style="enable-background:new 0 0 153.667 153.667;" xml:space="preserve">
-          <g>
-          	<path style="fill:#1D1D1B;" d="M143.221,141.225L97.919,89.519V7.501c0-2.931-1.707-5.593-4.37-6.815
-          		c-2.665-1.225-5.796-0.784-8.018,1.127L48.76,33.411L21.728,2.559c-2.73-3.115-7.469-3.428-10.583-0.698
-          		C8.029,4.59,7.716,9.328,10.446,12.443l26.568,30.323H16.087c-4.142,0-7.5,3.357-7.5,7.5V103.4c0,4.143,3.358,7.5,7.5,7.5h21.787
-          		l47.658,40.954c1.388,1.192,3.129,1.812,4.89,1.812c1.06,0,2.127-0.225,3.128-0.685c2.663-1.223,4.37-3.885,4.37-6.815v-33.885
-          		l34.02,38.828c1.483,1.692,3.558,2.558,5.644,2.558c1.754,0,3.517-0.612,4.939-1.859
-          		C145.638,149.078,145.951,144.34,143.221,141.225z M82.919,23.835v48.564L58.645,44.694L82.919,23.835z M23.587,57.767h9.566V95.9
-          		h-9.566V57.767z M82.919,129.832L48.153,99.956V55.481l34.766,39.68V129.832z"/>
-          </g>
-          </svg>
-        </div>
-        <div v-else="this.$store.state.muted" v-on:click="mute()" class="pause">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 191.519 191.519" style="enable-background:new 0 0 191.519 191.519;" xml:space="preserve">
-          <g>
-          	<path style="fill:#95165d;" d="M115.347,70.679c-2.929-2.929-7.678-2.93-10.606-0.001c-2.929,2.929-2.929,7.678,0,10.606
-          		c7.98,7.981,7.98,20.968,0,28.949c-2.929,2.929-2.929,7.678,0,10.606c1.464,1.464,3.384,2.196,5.303,2.196s3.839-0.732,5.303-2.197
-          		C129.176,107.01,129.176,84.508,115.347,70.679z"/>
-          	<path style="fill:#95165d;" d="M137.33,48.696c-2.929-2.928-7.678-2.928-10.606,0c-2.929,2.93-2.929,7.678,0,10.607
-          		c20.102,20.102,20.102,52.811,0,72.912c-2.929,2.93-2.929,7.678,0,10.607c1.464,1.464,3.384,2.196,5.303,2.196
-          		s3.839-0.732,5.303-2.196C163.28,116.872,163.28,74.647,137.33,48.696z"/>
-          	<path style="fill:#95165d;" d="M161.862,24.163c-2.928-2.927-7.677-2.929-10.606,0c-2.929,2.93-2.929,7.678,0,10.607
-          		c16.291,16.291,25.263,37.951,25.263,60.989c0,23.039-8.972,44.699-25.263,60.989c-2.929,2.93-2.929,7.678,0,10.607
-          		c1.464,1.464,3.384,2.196,5.303,2.196s3.839-0.732,5.303-2.196c19.124-19.124,29.656-44.551,29.656-71.597
-          		C191.519,68.714,180.986,43.288,161.862,24.163z"/>
-          	<path style="fill:#95165d;" d="M84.962,19.612c-2.664-1.225-5.796-0.784-8.018,1.127L29.287,61.693H7.5c-4.142,0-7.5,3.357-7.5,7.5
-          		v53.134c0,4.143,3.358,7.5,7.5,7.5h21.787l47.657,40.954c1.388,1.192,3.129,1.812,4.89,1.812c1.06,0,2.127-0.225,3.128-0.685
-          		c2.664-1.223,4.371-3.885,4.371-6.815V26.427C89.333,23.497,87.625,20.834,84.962,19.612z M15,76.693h9.567v38.134H15V76.693z
-          		 M74.333,148.758l-34.766-29.876V72.637l34.766-29.876V148.758z"/>
-          </g>
-          </svg>
-        </div>
+        </svg>
       </div>
-
-      <svg class="svg-filter">
-        <defs>
-          <filter id="teal-white" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feColorMatrix type="matrix" values=".33 .33 .33 0 0
-                      .33 .33 .33 0 0
-                      .33 .33 .33 0 0
-                      0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
-            <feComponentTransfer in="colormatrix" result="componentTransfer">
-              <feFuncR type="table" tableValues="1 0.98"/>
-              <feFuncG type="table" tableValues="1 0.96"/>
-              <feFuncB type="table" tableValues="1 0.6"/>
-              <feFuncA type="table" tableValues="0 1"/>
-            </feComponentTransfer>
-            <feBlend mode="color" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-          </filter>
-          <filter id="teal-white2" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feColorMatrix type="matrix" values=".33 .33 .33 0 0
-                      .33 .33 .33 0 0
-                      .33 .33 .33 0 0
-                      0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
-            <feComponentTransfer in="colormatrix" result="componentTransfer">
-                  <feFuncR type="table" tableValues="1 0.58"/>
-              <feFuncG type="table" tableValues="1 0.09"/>
-              <feFuncB type="table" tableValues="1 0.36"/>
-              <feFuncA type="table" tableValues="0 1"/>
-              </feComponentTransfer>
-            <feBlend mode="hue" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-          </filter>
-        </defs>
-      </svg>
     </div>
+    <svg class="w-screen h-screen fixed top-0 left-0 " xmlns="http://www.w3.org/2000/svg">
+      <line x1="10%" y1="0%" x2="10%" y2="100%" stroke="black" class="sv1" />
+      <line x1="90%" y1="0%" x2="90%" y2="100%" stroke="black" class="sv2" />
+      <line x1="0%" y1="20%" x2="100%" y2="20%" stroke="black" class="sv3" />
+      <line x1="0%" y1="80%" x2="100%" y2="80%" stroke="black" class="sv4" />
+      <rect x="5%" y="10%" stroke="black" width="90%" height="80%" class="following"/>
+      <line x1="10%" y1="10%" x2="10%" y2="90%" stroke="white"  class="sv5"/>
+      <line x1="90%" y1="10%" x2="90%" y2="90%" stroke="white"  class="sv6" />
+
+        <image href="~/assets/images/follow.gif" class="follow f3" height="50%" width="50%"/>
+        <image href="~/assets/images/follow.gif" class="follow f2" height="50%" width="50%"/>
+        <image href="~/assets/images/follow.gif" class="follow f1" height="50%" width="50%"/>
+
+    </svg>
+
     <Logo  v-if="!this.$store.state.preloading" />
+    <span class="fixed top-0 left-[250px] leading-[100px] font-title">SEPTEMBRE <b>2022</b></span>
+    <Nuxt v-if="!this.$store.state.preloading" class="overflow-hidden "/>
     <Menu />
-    <Nuxt v-if="!this.$store.state.preloading" />
+    <span class="fixed bottom-0 right-[250px] leading-[100px] font-title">RESTEZ CONNECTÉS</span>
+
+
   </div>
 </template>
-
-<style>
-
+<style lang="postcss">
+.cursor {
+  pointer-events: none;
+}
+.cursor__circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+  .visible {
+    visibility: visible!important;
+  }
+     .f1 {
+               -webkit-animation: lolking 5s linear;
+                       animation: lolking 5s linear;
+               -webkit-animation-iteration-count: infinite;
+                       animation-iteration-count: infinite;
+   }
+   .f2 {
+       -webkit-transition:.1s !important;
+       -o-transition:.1s !important;
+       transition:.1s !important;
+       position: absolute;
+       -webkit-animation: lolking 5s linear .2s;
+               animation: lolking 5s linear .2s;
+       -webkit-animation-iteration-count: infinite;
+               animation-iteration-count: infinite;
+   }
+   .f3 {
+       -webkit-filter: saturate(0);
+               filter: saturate(0);
+       -webkit-transition:.2s !important;
+       -o-transition:.2s !important;
+       transition:.2s !important;
+       position: absolute;
+       -webkit-animation: lolking 5s linear .4s;
+               animation: lolking 5s linear .4s;
+       -webkit-animation-iteration-count: infinite;
+               animation-iteration-count: infinite;
+   }
+   @keyframes lolking {
+     0% {
+       transform: rotate(0deg) translatey(-50%);
+     }
+     25% {
+       transform: rotate(-1deg) translatey(-50%);
+     }
+     50% {
+       transform: rotate(0deg) translatey(-50%);
+     }
+     75% {
+       transform: rotate(1deg) translatey(-50%);
+     }
+     100% {
+       transform: rotate(0deg) translatey(-50%);
+     }
+   }
+   .follow {
+       position:absolute;
+       visibility: hidden;
+       -webkit-transform: translateX(20px)  translateY(-50%);
+           -ms-transform: translateX(20px)  translateY(-50%);
+               transform: translateX(20px)  translateY(-50%);
+       pointer-events:none;
+       width:375px;
+       overflow:hidden;
+   }
+  .intro {
+    @apply flex items-center text-center justify-center m-[100px];
+     width:calc(100vw - 200px);
+     height:calc(100vh - 200px);
+     font-size:10em;
+     line-height:1em;
+  }
   .svg-filter {
     visibility: hidden;
     height: 0;
   }
 </style>
-
 <script>
   export default {
     methods: {
-      mute() {
-        this.$store.dispatch('muteed')
-      }
     },
     computed: {
-      muteeed () {
-        return this.$store.getters['muteed']
+    },
+    methods: {
+      enter() {
+          var t1 = this.$gsap.timeline(), mySplitText = new SplitType("span", {type:"words,chars"}), chars = mySplitText.chars;
+          t1.from(chars, {delay: 1, duration: .1, opacity:0, x:50, transformPerspective:800, transformOrigin:"center", rotationY:180,  ease:"power2.inOut", stagger: 0.1}, "+=0");
+
+
+          this.$gsap.from(".sv1", {delay: 0, duration: 3, opacity:0, y:'100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          this.$gsap.from(".sv2", {delay: 0, duration: 3, opacity:0, y:'-100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          this.$gsap.from(".sv3", {delay: 0, duration: 3, opacity:0, x:'100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          this.$gsap.from(".sv4", {delay: 0, duration: 3, opacity:0, x:'-100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          this.$gsap.from(".sv5", {delay: 0, duration: 3, opacity:0, y:'100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          this.$gsap.from(".sv6", {delay: 0, duration: 3, opacity:0, y:'-100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          this.$gsap.from(".following", {delay: 0, duration: 1, opacity:0, width:'0%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          const $cursor = document.querySelector(".cursor__circle");
+          const $hover = document.querySelectorAll("a");
+          document.body.addEventListener("mousemove", onMouseMove);
+          for (let i = 0; i < $hover.length; i++) {
+            $hover[i].addEventListener("mouseenter", onMouseHover);
+            $hover[i].addEventListener("mouseleave", onMouseHoverOut);
+          }
+          function onMouseMove(e) {
+            TweenMax.to($cursor, 0.4, {
+              x: e.pageX - 32,
+              y: e.pageY - 32
+            });
+          }
+          function onMouseHover() {
+            TweenMax.to($cursor, 0.4, {
+              scale: 3
+            });
+          }
+          function onMouseHoverOut() {
+            TweenMax.to($cursor, 0.4, {
+              scale: 1
+            });
+          }
+
+          $('.isDesktop').mouseenter(function(e){
+            console.log("enter");
+            $(this).find('.follow').addClass('visible')
+            $(this).find('.follow').css({x:(e.pageX)+50, y: (e.pageY)+50});
+          }).mousemove(function(e){
+            $(this).find('.follow').css({x:(e.pageX)+50, y: (e.pageY)+50});
+          }).mouseleave(function(e){
+            $(this).find('.follow').removeClass('visible');
+          });
       },
     },
     mounted() {
+      this.enter();
       this.$gsap.config({
         nullTargetWarn: false,
         trialWarn: false,
