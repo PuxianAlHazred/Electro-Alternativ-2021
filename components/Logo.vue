@@ -11,7 +11,7 @@
 </template>
 <style lang="postcss">
   .logo {
-     @apply w-[100px] top-[0px] left-[0px] fixed h-[100px]  p-[25px] z-50;
+     @apply w-[100px] top-[0px] left-[-25px] md:left-[25px] fixed h-[100px] p-[25px] z-50;
   }
 </style>
 <script>

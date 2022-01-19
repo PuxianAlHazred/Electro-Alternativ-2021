@@ -15,21 +15,19 @@
       <line x1="90%" y1="0%" x2="90%" y2="100%" stroke="black" class="sv2" />
       <line x1="0%" y1="20%" x2="100%" y2="20%" stroke="black" class="sv3" />
       <line x1="0%" y1="80%" x2="100%" y2="80%" stroke="black" class="sv4" />
-      <rect x="5%" y="10%" stroke="black" width="90%" height="80%" class="following"/>
+      <rect x="5vw" y="10vh" stroke="black" width="90vw" height="80vh" class="following"/>
       <line x1="10%" y1="10%" x2="10%" y2="90%" stroke="white"  class="sv5"/>
       <line x1="90%" y1="10%" x2="90%" y2="90%" stroke="white"  class="sv6" />
-
-        <image href="~/assets/images/follow.gif" class="follow f3" height="50%" width="50%"/>
-        <image href="~/assets/images/follow.gif" class="follow f2" height="50%" width="50%"/>
-        <image href="~/assets/images/follow.gif" class="follow f1" height="50%" width="50%"/>
-
+      <image href="~/assets/images/follow.gif" class="follow f3" height="50%" width="50%"/>
+      <image href="~/assets/images/follow.gif" class="follow f2" height="50%" width="50%"/>
+      <image href="~/assets/images/follow.gif" class="follow f1" height="50%" width="50%"/>
     </svg>
 
     <Logo  v-if="!this.$store.state.preloading" />
-    <span class="fixed top-0 left-[250px] leading-[100px] font-title">SEPTEMBRE <b>2022</b></span>
-    <Nuxt v-if="!this.$store.state.preloading" class="overflow-hidden "/>
+    <span class="fixed top-0 left-[15%] leading-[10vh] font-title">SEPTEMBRE <b>2022</b></span>
+    <Nuxt v-if="!this.$store.state.preloading" class="iore z-[55]"/>
     <Menu />
-    <span class="fixed bottom-0 right-[250px] leading-[100px] font-title">RESTEZ CONNECTÉS</span>
+    <span class="fixed bottom-0 right-[15%] leading-[10vh] font-title">RESTEZ CONNECTÉS</span>
 
 
   </div>
@@ -134,6 +132,7 @@
           this.$gsap.from(".sv5", {delay: 0, duration: 3, opacity:0, y:'100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
           this.$gsap.from(".sv6", {delay: 0, duration: 3, opacity:0, y:'-100%', ease:"power2.inOut", stagger: 0.1}, "+=0");
           this.$gsap.from(".following", {delay: 0, duration: 1, opacity:0, width:'0%', ease:"power2.inOut", stagger: 0.1}, "+=0");
+          
           const $cursor = document.querySelector(".cursor__circle");
           const $hover = document.querySelectorAll("a");
           document.body.addEventListener("mousemove", onMouseMove);
@@ -158,14 +157,14 @@
             });
           }
 
-          $('.isDesktop').mouseenter(function(e){
+          $('h1').mouseenter(function(e){
             console.log("enter");
-            $(this).find('.follow').addClass('visible')
-            $(this).find('.follow').css({x:(e.pageX)+50, y: (e.pageY)+50});
+            $('.follow').addClass('visible');
+            $('.follow').css({x:(e.pageX), y: (e.pageY)});
           }).mousemove(function(e){
-            $(this).find('.follow').css({x:(e.pageX)+50, y: (e.pageY)+50});
+            $('.follow').css({x:(e.pageX), y: (e.pageY)});
           }).mouseleave(function(e){
-            $(this).find('.follow').removeClass('visible');
+            $('.follow').removeClass('visible');
           });
       },
     },

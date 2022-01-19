@@ -1,17 +1,13 @@
 <template>
-  <section class="intro ">
+  <section class="intro">
 
-      <h1 class="text-white w-full font-title ">ELECTRO ALTERNATIV</h1>
+      <h1 class="text-white w-full font-title text-[0.2em] leading-[50px] md:text-[0.3em] md:leading-[50px] lg:text-[0.8em] lg:leading-[1em]">ELECTRO<br>ALTERNATIV</h1>
 
   </section>
 </template>
 <style lang="postcss">
   .intro {
-    @apply flex items-center text-center justify-center m-[100px];
-     width:calc(100vw - 200px);
-     height:calc(100vh - 200px);
-     font-size:10em;
-     line-height:1em;
+    @apply flex items-center w-[90vw] h-[80vh] text-center justify-center mx-[5vw] my-[10vh];
   }
 </style>
 <script>
