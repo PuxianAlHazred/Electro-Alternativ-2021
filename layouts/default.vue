@@ -134,7 +134,7 @@
           this.$gsap.from(".following", {delay: 0, duration: 1, opacity:0, width:'0%', ease:"power2.inOut", stagger: 0.1}, "+=0");
           
           const $cursor = document.querySelector(".cursor__circle");
-          const $hover = document.querySelectorAll("a");
+          const $hover = document.querySelectorAll(".hover");
           document.body.addEventListener("mousemove", onMouseMove);
           for (let i = 0; i < $hover.length; i++) {
             $hover[i].addEventListener("mouseenter", onMouseHover);
